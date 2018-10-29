@@ -1,0 +1,67 @@
+#As you see it's not so universal screept, so here it's example how it works
+
+Please Enter username: ansible_test
+Password:
+---------------------------------------------------------------
+List of VLANS:
+[6, 9, 16, 19, 23, 26, 110, 113, 114, 115, 116, 117, 130, 165, 166, 167, 170, 200, 700, 1170, 1171, 1172, 1173, 1175, 1177, 1179, 1180, 1182, 1183, 1191, 1193, 1194, 1195, 1920, 1931, 1932, 1933, 1950, 2001, 2011, 2042, 2043, 2044, 2045, 2480, 2500, 3005, 3006, 3011, 3015, 3030, 4000, 4001, 4002, 4003, 4033, 4040, 4041, 4092]
+VLAN ID=6  Internet address is 172.30.119.19/28 Potential number of hosts -  14. Count of active ARPs - 8. Free hosts in VLAN - 6
+VLAN ID=9 doesn't routed on core switch
+VLAN ID=16  Internet address is 172.30.168.1/24 Potential number of hosts -  252. Count of active ARPs - 29. Free hosts in VLAN - 223
+VLAN ID=19 doesn't routed on core switch
+VLAN ID=23 doesn't routed on core switch
+VLAN ID=26 doesn't routed on core switch
+VLAN ID=110  Internet address is 172.30.110.1/24 Potential number of hosts -  252. Count of active ARPs - 32. Free hosts in VLAN - 220
+VLAN ID=113  Internet address is 172.30.113.1/24 Potential number of hosts -  252. Count of active ARPs - 168. Free hosts in VLAN - 84
+VLAN ID=114  Internet address is 172.30.114.1/24 Potential number of hosts -  252. Count of active ARPs - 87. Free hosts in VLAN - 165
+VLAN ID=115  Internet address is 172.30.115.1/24 Potential number of hosts -  252. Count of active ARPs - 221. Free hosts in VLAN - 31
+VLAN ID=116  Internet address is 172.30.116.1/24 Potential number of hosts -  252. Count of active ARPs - 48. Free hosts in VLAN - 204
+VLAN ID=117  Internet address is 172.30.117.209/28 Potential number of hosts -  14. Count of active ARPs - 2. Free hosts in VLAN - 12
+VLAN ID=130  Internet address is 172.26.130.1/23 Potential number of hosts -  510. Count of active ARPs - 198. Free hosts in VLAN - 312
+VLAN ID=165  Internet address is 172.30.165.1/24 Potential number of hosts -  252. Count of active ARPs - 207. Free hosts in VLAN - 45
+VLAN ID=166  Internet address is 172.30.166.1/24 Potential number of hosts -  252. Count of active ARPs - 27. Free hosts in VLAN - 225
+VLAN ID=167  Internet address is 172.30.167.1/24 Potential number of hosts -  252. Count of active ARPs - 77. Free hosts in VLAN - 175
+VLAN ID=170  Internet address is 172.30.170.1/24 Potential number of hosts -  252. Count of active ARPs - 94. Free hosts in VLAN - 158
+VLAN ID=200 doesn't routed on core switch
+VLAN ID=700 doesn't routed on core switch
+VLAN ID=1170  Internet address is 172.30.117.225/27 Potential number of hosts -  30. Count of active ARPs - 9. Free hosts in VLAN - 21
+VLAN ID=1171  Internet address is 172.30.117.1/27 Potential number of hosts -  30. Count of active ARPs - 3. Free hosts in VLAN - 27
+VLAN ID=1172  Internet address is 172.30.117.33/28 Potential number of hosts -  14. Count of active ARPs - 2. Free hosts in VLAN - 12
+VLAN ID=1173  Internet address is 172.30.117.49/28 Potential number of hosts -  14. Count of active ARPs - 13. Free hosts in VLAN - 1
+VLAN ID=1175  Internet address is 172.30.117.97/27 Potential number of hosts -  30. Count of active ARPs - 2. Free hosts in VLAN - 28
+VLAN ID=1177  Internet address is 172.30.117.161/27 Potential number of hosts -  30. Count of active ARPs - 4. Free hosts in VLAN - 26
+VLAN ID=1179  Internet address is 172.30.117.201/29 Potential number of hosts -  6. Count of active ARPs - 3. Free hosts in VLAN - 3
+VLAN ID=1180  Internet address is 172.30.118.1/27 Potential number of hosts -  30. Count of active ARPs - 4. Free hosts in VLAN - 26
+VLAN ID=1182  Internet address is 172.30.118.129/25 Potential number of hosts -  126. Count of active ARPs - 7. Free hosts in VLAN - 119
+VLAN ID=1183  Internet address is 172.30.118.65/26 Potential number of hosts -  62. Count of active ARPs - 7. Free hosts in VLAN - 55
+VLAN ID=1191  Internet address is 172.30.119.9/29 Potential number of hosts -  6. Count of active ARPs - 2. Free hosts in VLAN - 4
+VLAN ID=1193  Internet address is 172.30.119.33/27 Potential number of hosts -  30. Count of active ARPs - 1. Free hosts in VLAN - 29
+VLAN ID=1194  Internet address is 172.30.119.65/26 Potential number of hosts -  62. Count of active ARPs - 20. Free hosts in VLAN - 42
+VLAN ID=1195  Internet address is 172.30.119.129/26 Potential number of hosts -  62. Count of active ARPs - 17. Free hosts in VLAN - 45
+VLAN ID=1920  Internet address is 172.25.192.1/24 Potential number of hosts -  252. Count of active ARPs - 61. Free hosts in VLAN - 191
+VLAN ID=1931  Internet address is 172.25.193.129/27 Potential number of hosts -  30. Count of active ARPs - 2. Free hosts in VLAN - 28
+VLAN ID=1932  Internet address is 172.25.193.161/27 Potential number of hosts -  30. Count of active ARPs - 3. Free hosts in VLAN - 27
+VLAN ID=1933 doesn't routed on core switch
+VLAN ID=1950  Internet address is 172.25.195.1/24 Potential number of hosts -  252. Count of active ARPs - 13. Free hosts in VLAN - 239
+VLAN ID=2001 doesn't routed on core switch
+VLAN ID=2011 doesn't routed on core switch
+VLAN ID=2042  Internet address is 172.25.204.65/27 Potential number of hosts -  30. Count of active ARPs - 6. Free hosts in VLAN - 24
+VLAN ID=2043  Internet address is 172.25.204.97/27 Potential number of hosts -  30. Count of active ARPs - 3. Free hosts in VLAN - 27
+VLAN ID=2044  Internet address is 172.25.204.129/27 Potential number of hosts -  30. Count of active ARPs - 1. Free hosts in VLAN - 29
+VLAN ID=2045  Internet address is 172.25.204.161/27 Potential number of hosts -  30. Count of active ARPs - 1. Free hosts in VLAN - 29
+VLAN ID=2480  Internet address is 172.25.248.1/24 Potential number of hosts -  252. Count of active ARPs - 1. Free hosts in VLAN - 251
+VLAN ID=2500  Internet address is 172.25.250.1/24 Potential number of hosts -  252. Count of active ARPs - 1. Free hosts in VLAN - 251
+VLAN ID=3005  Internet address is 192.168.251.1/24 Potential number of hosts -  252. Count of active ARPs - 6. Free hosts in VLAN - 246
+VLAN ID=3006  Internet address is 192.168.151.1/24 Potential number of hosts -  252. Count of active ARPs - 5. Free hosts in VLAN - 247
+VLAN ID=3011  Internet address is 192.168.253.1/24 Potential number of hosts -  252. Count of active ARPs - 3. Free hosts in VLAN - 249
+VLAN ID=3015 doesn't routed on core switch
+VLAN ID=3030 doesn't routed on core switch
+VLAN ID=4000 doesn't routed on core switch
+VLAN ID=4001 doesn't routed on core switch
+VLAN ID=4002 doesn't routed on core switch
+VLAN ID=4003 doesn't routed on core switch
+VLAN ID=4033 doesn't routed on core switch
+VLAN ID=4040 doesn't routed on core switch
+VLAN ID=4041 doesn't routed on core switch
+VLAN ID=4092 doesn't routed on core switch
+Время выполнение скрипта 0:00:52.414000
