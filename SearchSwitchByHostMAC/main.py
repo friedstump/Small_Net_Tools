@@ -31,7 +31,9 @@ def FindMac(SwitchIP, MacAdd):
         strECNum=strPort[2:]            # обрезаем после Po, что бы получить номер EtherChanel
         print ("Это etherchannel номер {}".format(strECNum))
         strShEtherChannel = net_connect.send_command("sh etherchannel {} summary".format(strECNum))  #дёргаем результат
-        strPort= strShEtherChannel.split()[-2][0:-3]   #берём последний порт в списке, обрезаем его сосстоиние
+     
+        
+        strPort= strShEtherChannel.split()[-7][0:-3]   #берём последний порт в списке, обрезаем его сосстоиние
 
 
 
@@ -59,7 +61,7 @@ def FindMac(SwitchIP, MacAdd):
 UserName=input("Please Enter username")
 strPass= getpass.getpass('Password:')
 
-HostIP="172.30.40.47" #Задаём изначальный IP. Потом будет браться откуда-то с другого места
+HostIP="172.30.242.33" #Задаём изначальный IP. Потом будет браться откуда-то с другого места
 start_time = datetime.now()
 
 CoreIP="172.30.21.1"  # Задаём IP коре, откуда начём поиск. Пока тоже ручками.
