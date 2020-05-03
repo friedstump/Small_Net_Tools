@@ -1,0 +1,1250 @@
+object-group service G-FIDESSA-FIX-SERVICES
+ service-object tcp destination range 9996 9997 
+object-group service G-FIDESSA-TRADE-APPS
+ service-object tcp destination eq 16081 
+ service-object tcp destination range 18996 18998 
+ service-object tcp destination eq 8208 
+object-group service G-BGP-SERVICES
+ description BGP Protocol
+ service-object tcp destination eq bgp 
+object-group service G-BLOOMBERG-SERVICES
+ description General ports used by Bloomberg apps
+ service-object tcp destination range 8194 8198 
+ service-object tcp destination range 8209 8220 
+ service-object tcp destination range 8290 8294 
+ service-object udp destination range 48129 48137 
+ service-object tcp destination eq 20150 
+ service-object tcp destination eq 13964 
+object-group service G-FIDESSA-SERVICES
+ description Generic Fidessa services
+ service-object tcp 
+object-group service G-BLOOMBERG-TCP-ANY-SERVICES
+ description For testing Fidessa integration with Bloomberg. TO REMOVE - nmakarov 20130703.
+ service-object tcp 
+object-group service G-CISCO-TRACEROUTE
+ description UDP ports used by Cisco-UNIX traceroute
+ service-object udp destination range 33434 33534 
+object-group service G-TACACS-SERVICES
+ description Ports used by TACACS+
+ service-object tcp destination eq tacacs 
+object-group service G-NETWORK-MANAGEMENT-OUT-SERVICES
+ description Ports used for network management (SSH, HTTPS)
+ service-object tcp destination eq ssh 
+ service-object tcp destination eq https 
+object-group service G-NTP-SERVICES
+ service-object udp destination eq ntp 
+object-group service G-SYSLOG-SERVICES
+ description Ports used by Syslog and snmptrap
+ service-object udp destination eq syslog 
+ service-object udp destination eq snmptrap 
+object-group service G-FIDESSA-PROD-SYBASE-SERVICES
+ service-object tcp destination eq 4100 
+object-group service G-FIDESSA-UAT-SYBASE-SERVICES
+ service-object tcp destination eq 4200 
+ service-object tcp destination eq 4300 
+object-group service G-FIDESSA-MD-SERVICES
+ service-object tcp destination eq 30520 
+object-group service G-FIDESSA-FIX-SIMULATOR-UAT-SERVICES
+ service-object tcp destination eq 36080 
+ service-object tcp destination eq 36081 
+object-group service G-FIDESSA-FDA-SERVICES
+ service-object tcp destination eq 8095 
+object-group service G-FIDESSA-UATC-SERVICES
+ service-object tcp destination eq 16081 
+ service-object tcp destination range 18996 18999 
+ service-object tcp destination eq 4200 
+ service-object tcp destination eq 8095 
+object-group service G-SMTP-SERVICES
+ service-object tcp destination eq smtp 
+object-group service G-BLOOMBERG-PRINT-SERVICES
+ service-object tcp destination eq 9100 
+ service-object udp destination eq 9100 
+object-group service G-BLOOMBERG-OPEN-APPS
+ service-object tcp destination eq 472 
+ service-object tcp destination range 48129 48137 
+ service-object tcp destination range 8194 8198 
+ service-object tcp destination range 8209 8220 
+ service-object tcp destination range 8290 8294 
+ service-object tcp destination eq ftp 
+ service-object udp destination range 48129 48137 
+ service-object tcp destination eq ftp-data 
+ service-object tcp destination eq 11011 
+object-group service G-BLOOMBERG-BTS-APPS
+ service-object tcp destination eq 25444 
+ service-object tcp destination eq 31401 
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq ftp-data 
+ service-object tcp destination eq 20772 
+object-group service G-BLOOMBERG-GATEWAY-APPS
+ service-object tcp destination eq 20003 
+ service-object tcp destination eq 20146 
+ service-object tcp destination eq 24585 
+ service-object tcp destination eq https 
+object-group service G-BLOOMBERG-CALYPSO-SERVICES
+ service-object tcp destination eq 25444 
+ service-object tcp destination eq 31401 
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq ftp-data 
+object-group service G-BLOOMBERG-MPS-SERVICES
+ service-object tcp destination eq 23549 
+object-group service G-BLOOMBERG-PRICELINK-SERVICES
+ service-object tcp destination eq 11011 
+object-group service G-BLOOMBERG-POSITION-FEED-SERVICES
+ service-object tcp destination eq 20287 
+object-group service G-BLOOMBERG-TOMS-SERVICES
+ service-object tcp destination eq 20150 
+ service-object tcp destination range 13964 13965 
+object-group service G-BLOOMBERG-MDF-SERVICES
+ service-object tcp destination eq 23797 
+object-group service G-BLOOMBERG-FEED-PROD-SERVICES
+ service-object tcp destination eq 20970 
+object-group service G-BLOOMBERG-FEED-UAT-SERVICES
+ service-object tcp destination eq 24090 
+object-group service G-BLOOMBERG-COUNTERPARTY-SERVICES
+ service-object tcp destination eq 20223 
+ service-object tcp destination eq 24090 
+object-group service G_BLOOMBERG_ICUBIC_TEST
+ service-object tcp destination eq 20003 
+ service-object tcp destination eq 20150 
+ service-object tcp destination eq 20287 
+ service-object tcp destination eq 23549 
+ service-object tcp destination eq 23797 
+ service-object tcp destination eq 2544 
+object-group service G-DMZ-RELAY-SERVICES
+ description C24736 - DNS, NTP, SMTP, Syslog relay services
+ service-object tcp destination eq smtp 
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+ service-object udp destination eq ntp 
+ service-object udp destination eq syslog 
+object-group service G-OBSERVEIT-SERVICES
+ description C28572 and later - ObserveIT Services
+ service-object tcp destination eq 4884 
+object-group service G-COMMVAULT-SERVICES
+ description C17757 - Standard CommVault ports
+ service-object tcp destination range 8400 8410 
+object-group service G-SPACEWALK-SERVICES
+ description C22701 SPACEWALK
+ service-object tcp destination eq https 
+ service-object tcp destination eq 5222 
+ service-object tcp destination eq www 
+object-group service G-MUNIN-SERVICES
+ description Munin monitoring
+ service-object tcp destination eq 4949 
+object-group service G_SNMP_SERVICES
+ service-object udp destination eq snmp 
+object-group service G-DMZ-LDAPS-SERVICES
+ description C25937 - LDAPS services
+ service-object tcp destination eq ldaps 
+object-group service G-SCOM-OUT-SERVICES
+ description C19236 and later - Microsoft System Center Operations Manager Services - outbound ports
+ service-object tcp destination eq 1270 
+object-group service G-SCOM-IN-SERVICES
+ description C19236 and later - Microsoft System Center Operations Manager Services - inbound ports
+ service-object tcp destination eq 5723 
+object-group service G-HP-SIM-IN-SERVICES
+ service-object udp destination eq snmptrap 
+object-group service G-HP-SIM-OUT-SERVICES
+ service-object udp destination eq snmp 
+object-group service G-HP-SIM-WEB-SERVICES
+ service-object tcp destination eq 2381 
+object-group service G-CCS-IN-SERVICES
+ description C18345, C19353, C25622 - Symantec CCS Manager (former ESM) inbound (CCS is destination) services
+ service-object tcp destination eq 5600 
+ service-object tcp destination eq 5601 
+object-group service G-CCS-OUT-SERVICES
+ description C18345, C19353, C25622 - Symantec CCS Manager (former ESM) outbound (CCS is source) services
+ service-object tcp destination eq 5601 
+ service-object tcp destination eq 5600 
+ service-object tcp destination eq 5599 
+object-group service G-EDX-CDS-SAIL-SERVICES
+ service-object tcp destination eq 51300 
+object-group service G-EDX-CDS-FIX-SERVICES
+ service-object tcp destination eq 51350 
+object-group service G-EDX-CDS-HSVF-SERVICES
+ service-object tcp destination eq 52300 
+object-group service G-EDX-CDS-BTS-SERVICES
+ service-object tcp destination eq 34900 
+ service-object udp destination eq 13 
+object-group service G-EDX-CDS-BCS-SERVICES
+ service-object udp destination eq 443 
+ service-object tcp destination eq 35900 
+object-group service G-EDX-CDS-OSLO-HSVF-SERVICES
+ service-object tcp destination eq 52301 
+object-group service G-RTS-FORTS-SERVICES
+ description Unknown, C32605, CRxxxxxx
+ service-object tcp destination eq 3001 
+ service-object tcp destination eq 4001 
+ service-object tcp destination eq 4002 
+ service-object tcp destination eq 4003 
+ service-object tcp destination eq 4004 
+ service-object tcp destination eq 3000 
+ service-object tcp destination eq 3003 
+ service-object tcp destination eq 3004 
+object-group service G_HTTP_SERVICES
+ description CR707021
+ service-object tcp destination eq www 
+object-group service G-CITRIX-XENAPP-SERVICES
+ description Ports used by Citrix XenApp
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq citrix-ica 
+ service-object tcp destination eq 2598 
+object-group service G-ZLS-CLEAN-SERVICES
+ description Ports used by ZLS Clean
+ service-object tcp destination eq rsh 
+ service-object udp destination eq syslog 
+object-group service G-HORIZON-OUT-PROD-SERVICES
+ service-object tcp destination range 10900 10903 
+ service-object tcp destination range 10905 10989 
+object-group service G-HORIZON-IN-PROD-SERVICES
+ service-object tcp destination range 10900 10903 
+ service-object tcp destination range 10940 10949 
+ service-object tcp destination range 10970 10979 
+object-group service G-HORIZON-IN-UAT-SERVICES
+ service-object tcp destination range 10900 10903 
+ service-object tcp destination range 10937 10938 
+ service-object tcp destination eq 10935 
+ service-object tcp destination range 10940 10949 
+ service-object tcp destination range 10980 10984 
+object-group service G-HORIZON-OUT-UAT-SERVICES
+ service-object tcp destination range 10900 11000 
+object-group service G-LSE-TURQUOISE-PROD-SAIL-SERVICES
+ service-object tcp destination eq 61300 
+object-group service G-LSE-OSLO-BORS-PROD-SAIL-SERVICES
+ service-object tcp destination eq 61301 
+object-group service G-LSE-TURQUOISE-PROD-SAIL-DROP-COPY-SERVICES
+ service-object tcp destination eq 61305 
+object-group service G-LSE-TURQUOISE-PROD-FIX-SERVICES
+ service-object tcp destination eq 61350 
+object-group service G-LSE-OSLO-BORS-PROD-FIX-SERVICES
+ service-object tcp destination eq 61351 
+object-group service G-LSE-TURQUOISE-PROD-HSVF-SERVICES
+ service-object tcp destination eq 62300 
+object-group service G-LSE-OSLO-BORS-PROD-HSVF-SERVICES
+ service-object tcp destination eq 62301 
+object-group service G-LSE-TURQUOISE-PROD-BTS-SERVICES
+ service-object tcp destination eq 34900 
+ service-object udp destination eq 13 
+object-group service G-LSE-OSLO-BORS-PROD-BTS-SERVICES
+ service-object tcp destination eq 34900 
+ service-object udp destination eq 13 
+object-group service G-LSE-TURQUOISE-PROD-BCS-SERVICES
+ service-object tcp destination eq https 
+ service-object tcp destination eq 35900 
+object-group service G-LSE-OSLO-BORS-PROD-BCS-SERVICES
+ service-object tcp destination eq 34900 
+ service-object tcp destination eq https 
+object-group service G-SUNGARD-GL-TRADE-RAD-SERVICES
+ description Sungard GL Trade RAD Services
+ service-object tcp destination eq 8921 
+ service-object tcp destination eq 8933 
+ service-object udp destination eq 8921 
+ service-object udp destination eq 8933 
+ service-object tcp destination eq 8932 
+ service-object udp destination eq 8932 
+ service-object tcp destination eq 8911 
+ service-object tcp destination eq 8912 
+ service-object tcp destination eq 8943 
+object-group service G-EUREX-CRE-SERVICES
+ description C32722 - Ports used by Eurex Common Report Engine (CRE)
+ service-object tcp destination eq 2221 
+ service-object tcp destination eq 2222 
+object-group service G-REUTERS-TRANSIT-SERVICES
+ description Ports used by Reuters clients to connect to Reuters in the cloud
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+ service-object tcp destination eq 5100 
+ service-object tcp destination eq 7091 
+ service-object udp destination eq 7091 
+ service-object tcp destination eq 10240 
+object-group service G-REUTERS-EIKON-SERVICES
+ description Ports used by Reuters clients when connecting to EIKON
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq 8302 
+object-group service G-REUTERS-RMDS-SERVICES
+ description Ports used by Reuters clients when connecting to the RMDS environment
+ service-object tcp destination eq ssh 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq 8101 
+ service-object tcp destination eq 8261 
+ service-object tcp destination eq 8302 
+ service-object tcp destination eq 14002 
+object-group service G-SUNGARD-ADAPTIV-SERVICES
+ description Ports used by clients when connecting to Sungard Adaptiv
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+object-group service G-QUIK-FIX-IN-SERVICES
+ description C34484 - Fidessa to Quik FIX (via UK B2B Fidessa leased lines)
+ service-object tcp destination eq 15200 
+object-group service G-VTBAUSTRIA-SFTP-SERVICES
+ description C16968, CR705773, CR827488 - SFTP and FTPS Ports used by VTB Austria
+ service-object tcp destination eq ssh 
+object-group service G-GRE-SERVICES
+ service-object gre 
+object-group service G_MICEX_FIX_UAT_SERVICES
+ description C35895 - HORIZON to MICEX FIX services
+ service-object tcp destination eq 29120 
+ service-object tcp destination eq 29121 
+ service-object tcp destination eq 29213 
+ service-object tcp destination eq 9120 
+ service-object tcp destination eq 9121 
+ service-object tcp destination eq 9123 
+object-group service G-PE-LYNCH-TO-FIDESSA-UAT-SERVICES
+ service-object tcp destination eq 12121 
+ service-object tcp destination eq 12221 
+object-group service G-PE-LYNCH-TO-FIDESSA-PROD-SERVICES
+ service-object tcp destination eq 22122 
+ service-object tcp destination eq 22222 
+object-group service G-QUIK-FIX-UAT-SERVICES
+ description C36489, CR321992 - Horizon to QuikFIX
+ service-object tcp destination eq 15300 
+ service-object tcp destination eq 15400 
+object-group service G-VTBAUSTRIA-TO-SUNGARD-ADAPTIV-SERVICES
+ description CR172705 - Ports used by VTBA clients when connecting to Sungard Adaptiv
+ service-object tcp destination eq https 
+object-group service G-VTB-ESH-VIDEO-SERVICES
+ description CR882022
+ service-object tcp-udp destination eq sip 
+ service-object tcp-udp destination eq 5061 
+ service-object tcp-udp destination eq 1719 
+ service-object tcp-udp destination eq 1720 
+ service-object tcp-udp destination eq 2776 
+ service-object tcp-udp destination eq 2777 
+ service-object tcp destination eq 7004 
+ service-object udp destination eq 6004 
+object-group service G_SCOM_OUT_SERVICES
+ description CR227738 and later - Microsoft System Center Operations Manager Services - outbound ports
+ service-object tcp destination eq 1270 
+object-group service G_MICEX_ASTS_UAT_SERVICES
+ description CR266238 - MICEX ASTS UAT services
+ service-object tcp destination eq pptp 
+ service-object gre 
+object-group service G_TACACS_SERVICE
+ service-object tcp destination eq tacacs 
+object-group service G_VTBAM_FIDESSA_SERVICES
+ service-object tcp destination eq 8212 
+object-group service G_VTBAM_FIDESSA_UAT_SERVICES
+ service-object tcp destination eq 8211 
+object-group service G_NETFLOW_SERVICES
+ description CR323100-Netflow-Gathering
+ service-object udp destination eq 2055 
+object-group service G_REUTERS_EIKON&OTHERS_APP_SERVICES
+ description REUTERS EIKON & OTHERS APP SERVICES - CR336911
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq 10240 
+ service-object tcp destination eq 60238 
+ service-object tcp destination eq 8443 
+object-group service G_REUTERS_EIKON_APP_SERVICES
+ description EUTERS EIKON APP SERVICES - CR336911
+ service-object tcp destination eq https 
+ service-object tcp destination eq www 
+object-group service REUTERS_DNS
+ description REUTERS DNS
+ service-object udp destination eq domain 
+ service-object tcp destination eq domain 
+object-group service G-FIDESSA-FDA-UPLOAD-SERVICES
+ service-object tcp destination eq 222 
+object-group service G-HORIZON-UAT-SERVICES
+ service-object tcp destination eq 15301 
+object-group service G_BLOOMBERG_SFTP_SERVICE
+ description CR415034 - SFTP Access for Bloomberg
+ service-object tcp destination eq 30206 
+ service-object tcp destination eq ssh 
+object-group service G_SYSLOG_SERVICES
+ description CR530212
+ service-object tcp destination eq rsh 
+ service-object udp destination eq syslog 
+object-group service G_VTBAUSTRIA_DEAL_TRACKER_PROD_SERVICES
+ description CR529405, CR688396
+ service-object tcp destination eq 2510 
+ service-object tcp destination eq 2511 
+ service-object tcp destination eq 2512 
+object-group service G_VTBAUSTRIA_DEAL_TRACKER_UAT_SERVICES
+ description CR529405, CR688396
+ service-object tcp destination eq 2510 
+ service-object tcp destination eq 2511 
+ service-object tcp destination eq 2512 
+object-group service G_ONEVIEW_ILO_IN_SERVICES
+ description CR544877
+ service-object tcp destination eq 5671 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq 2162 
+ service-object udp destination eq ntp 
+ service-object udp destination eq snmptrap 
+object-group service G_ONEVIEW_ILO_OUT_SERVICES
+ description CR544877
+ service-object tcp destination eq https 
+ service-object udp destination eq ntp 
+ service-object udp destination eq snmp 
+object-group service G_QUANTHOUSE_MARKETDATA_SERVICES
+ description CR754170 CR814173
+ service-object tcp destination range 6051 6053 
+object-group service G_REUTERS_ADS_SERVICES
+ description CR707021
+ service-object tcp destination eq 8101 
+object-group service G_BLOOMBERG_FIX_PROD_SERVICES
+ description CR709715
+ service-object tcp destination eq 22984 
+object-group service G_BLOOMBERG_FIX_UAT_SERVICES
+ description CR709715
+ service-object tcp destination eq 21630 
+object-group service G_QUANTHOUSE_LSE_PROD_FIX_TRADING_SERVICES
+ description CR754170
+ service-object tcp destination range 58201 58202 
+ service-object tcp destination range 58221 58222 
+object-group service G_QUANTHOUSE_LSE_PROD_POST_TRADE_SERVICES
+ description CR754170
+ service-object tcp destination range 58401 58402 
+ service-object tcp destination range 58421 58422 
+object-group service G_QUANTHOUSE_LSE_CDS_FIX_TRADING_SERVICES
+ description CR754170
+ service-object tcp destination range 51160 51161 
+object-group service G_QUANTHOUSE_LSE_CDS_POST_TRADE_SERVICES
+ description CR754170
+ service-object tcp destination eq 51170 
+object-group service G_QUANTHOUSE_EUREX_ETI_SIMULATION_SERVICES
+ description CR760138
+ service-object tcp destination eq 19506 
+ service-object tcp destination eq 19508 
+object-group service SWIFT-BOTTOMLINE-MGMT-SERVICES
+ description CR763723
+ service-object tcp destination eq ssh 
+object-group service G-SWIFT-BOTTOMLINE-SERVICE
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination range ftp ssh 
+object-group service G-SMA-SWIFT-CITRIX-SERVICE
+ service-object tcp destination eq www 
+ service-object tcp destination eq citrix-ica 
+ service-object tcp destination eq 2598 
+object-group service G-SOAP-HTTPS-SERVICE
+ service-object tcp destination range https 444 
+object-group service G-SMA-FILE-SHARE-SERVICE
+ service-object tcp destination range 137 netbios-ssn 
+ service-object tcp destination eq 445 
+object-group service G-SMA-SWIFT-APPLICATION-SERVICE
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq 9100 
+object-group service G-SWIFT-SESSION-REALIBILTY-SERVICE
+ service-object tcp destination eq 2598 
+object-group service G-SMA-MQ-LISTENER-SERVICE
+ service-object tcp destination range 1446 1447 
+object-group service G-SWIFT-SMA-WEB-FRONTEND-SERVICE
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G-SWIFT-C18624-TCP1415-SERVICE
+ service-object tcp destination eq 1415 
+object-group service G-SWIFT-C18624-TCP1446-7-SERVICE
+ service-object tcp destination range 1446 1447 
+object-group service G-SWIFT-MQ-SERVICE
+ service-object tcp destination range 1415 1417 
+object-group service G-SWIFT-PRINTERS-SERVICE
+ service-object tcp destination eq 9100 
+object-group service G_QUIK_BBG_PROD_SERVICES
+ description CR791597,CR795689,MA915930
+ service-object tcp destination eq 23388 
+ service-object tcp destination eq 24107 
+ service-object tcp destination eq 23764 
+ service-object tcp destination eq 21551 
+ service-object tcp destination eq 20015 
+object-group service G_QUIK_BBG_UAT_SERVICES
+ description CR791597,CR795689
+ service-object tcp destination eq 21800 
+ service-object tcp destination eq 21914 
+ service-object tcp destination eq 21915 
+ service-object tcp destination eq 22089 
+object-group service G_FORTS_UAT_SERVICES
+ description MA782613
+ service-object tcp destination eq 3000 
+ service-object tcp destination eq 3001 
+ service-object tcp destination eq 3003 
+ service-object tcp destination eq 3004 
+object-group service G_QUANTHOUSE_WARSAW_PROD_SERVICES
+ description CR814173
+ service-object tcp destination eq 11375 
+object-group service G_QUANTHOUSE_WARSAW_UAT_SERVICES
+ description CR814173
+ service-object tcp destination range 11375 11376 
+object-group service G-VTBCZUG-VTBA-SFTP-SERVICES
+ service-object tcp destination eq 9022 
+object-group service G_EUREX_QHMD_SERVICES
+ description MA843869 UAT access to Eurex via Quanthouse
+ service-object tcp destination eq 6043 
+object-group service G-VTB-ESH-VOICE-SERVICES
+ description CR852604
+ service-object object RTP 
+ service-object tcp-udp destination eq 5061 
+ service-object tcp-udp destination eq sip 
+object-group service G_AD_SERVICES
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq 464 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq domain 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 389 
+ service-object udp destination eq 464 
+ service-object udp destination eq domain 
+ service-object udp destination eq ntp 
+ service-object udp destination eq 88 
+object-group service G_SSH_SERVICES
+ service-object tcp destination eq ssh 
+object-group service G_ICMP_SERVICES
+ service-object icmp 
+object-group service G_LSE_UAT_QUANTHOUSE_SERVICES
+ service-object tcp destination eq 6051 
+object-group service G-SGH-CALYPSO-SERVICES
+ service-object tcp destination eq https 
+ service-object tcp destination eq citrix-ica 
+ service-object tcp destination eq 2598 
+object-group service G-VTB-ESH-NETFLOW-SERVICES
+ description CR912162
+ service-object udp destination eq 2055 
+object-group service G-VTB-ESH-RDP-SERVICES
+ description CR937727
+ service-object object rdp 
+object-group service G_VTB_ESH_EMS_TIBCO_UAT_SERVICES
+ description MA932935
+ service-object tcp destination eq 7222 
+object-group service G_VTB_ESH_INTRADAY_EOD_EMS_TIBCO_PROD_SERVICES
+ description MA932935
+ service-object tcp destination eq 7222 
+ service-object tcp destination eq 7223 
+object-group service G_EUREX_QH_HORIZON_UAT_SERVICES
+ description CR935627
+ service-object tcp destination eq 6040 
+object-group service G_QUANTHOUSE_US_MARKETDATA_SERVICES
+ service-object tcp destination eq 6041 
+object-group service G_QUANTHOUSE_LSE_PROD_TRADECHO_SERVICES
+ description CR754170
+ service-object tcp destination range 58350 58351 
+object-group service G_QUANTHOUSE_LSE_CDS_TRADECHO_SERVICES
+ description CR754170
+ service-object tcp destination range 51611 51612 
+object-group service G_QUANTHOUSE_LSE_CDS_TRADECHO_PORTAL_SERVICES
+ description CR754170
+ service-object tcp destination eq https 
+object-group service G_SYSLOG_SERVICE
+ service-object udp destination eq syslog 
+object-group service G_BLOOMBERG_FIX_GATEWAY_SERVICES
+ service-object tcp destination eq 8228 
+object-group service G_QUANTHOUSE_LSE_PROD_DROP_COPY_SERVICES
+ description CR1022842
+ service-object object 58501 
+ service-object object 58502 
+ service-object object 58521 
+ service-object object 58522 
+object-group service G_QUANTHOUSE_LSE_CDS_DROP_COPY_SERVICES
+ description CR1022842
+ service-object object 51180 
+object-group service G_BLOOMBERG_MQ_SERVICES
+ service-object tcp destination eq 14508 
+object-group service G_QUANTHOUSE_EUREX_LF_TRADING_SERVICES
+ description CR760138
+ service-object tcp destination eq 19006 
+ service-object tcp destination eq 19008 
+object-group service G_ESH_PEERING_DC_SERVICES
+ description CR1095672 CR1098393
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+ service-object tcp destination eq 445 
+ service-object udp destination eq 88 
+ service-object tcp destination eq domain 
+ service-object udp destination eq domain 
+ service-object tcp destination eq 135 
+ service-object udp destination eq ntp 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 464 
+ service-object tcp destination eq 88 
+ service-object udp destination eq 3268 
+ service-object udp destination eq 464 
+object-group service G_ESH_VTB_RDP_SERVICES
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+ service-object tcp destination eq 3389 
+object-group service G_BLOOMBERG_MiFID_II_REPORTING_SERVICES
+ description CR1115699
+ service-object tcp destination eq 14703 
+object-group service G_BLOOMBERG_MiFID_II_REPORTING_SERVICES_2
+ description CR1115849
+ service-object tcp destination eq 14702 
+object-group service G_HTTP_HTTPS_SERVICES
+ description CR1116067
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_REC7_SERVICES
+ description CR1117406
+ service-object tcp destination eq 8001 
+ service-object tcp destination eq www 
+object-group service G_ORACLE_HRMS_SERVICES
+ description CR1123666, CR1521576
+ service-object tcp destination eq 4443 
+ service-object tcp destination eq 4444 
+object-group service G_ESH_CITRIX_XENAPP_SERVICES
+ description CR1137197
+ service-object tcp destination eq 2598 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq citrix-ica 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_ORACLE_HRMS_UAT_SERVICES
+ description CR1151046
+ service-object tcp destination eq 4453 
+ service-object tcp destination eq 4463 
+ service-object tcp destination eq 4473 
+object-group service G_HTTPS_SERVICES
+ description CR1151076
+ service-object tcp destination eq https 
+object-group service RDP_VNC_SERVICES
+ description Emergency
+ service-object tcp destination eq 3389 
+ service-object tcp destination eq 5900 
+object-group service G_ESH_VTB_RADMIN_SERVICES
+ description Emergency_CR1161132
+ service-object tcp destination eq 4899 
+object-group service G_ESH_DC_SERVICES
+ description CR1161846
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 389 
+ service-object udp destination eq 88 
+object-group service G_DC_SERVICES
+ description CR1167894
+ service-object tcp destination eq 135 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq domain 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 389 
+ service-object udp destination eq 464 
+ service-object udp destination eq 88 
+ service-object udp destination eq domain 
+ service-object udp destination eq ntp 
+ service-object tcp destination range 49152 65535 
+ service-object udp destination range 49152 65535 
+ service-object tcp destination eq 464 
+object-group service G_VTB_ESH_HR_APP_DB_SERVICES
+ description CR1167379
+ service-object udp destination eq 1434 
+ service-object tcp destination eq 11400 
+object-group service G_QUANTHOUSE_LSE_CDS_TRADECHO_SERVICES_PHASE2
+ description CR1171002
+ service-object tcp destination eq 51641 
+ service-object tcp destination eq 51642 
+ service-object tcp destination eq 51651 
+ service-object tcp destination eq 51652 
+object-group service G_QUANTHOUSE_LSE_PROD_TRADECHO_SERVICES_PHASE2
+ description CR1171002
+ service-object tcp destination eq 58360 
+ service-object tcp destination eq 58361 
+object-group service G_ESH_CITRIX_SERVICES
+ description CR1202911
+ service-object tcp destination eq 88 
+ service-object tcp destination eq domain 
+ service-object udp destination eq 88 
+ service-object udp destination eq domain 
+ service-object tcp destination eq 135 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+object-group service G_ESH_LDAP_SERVICES
+ description CR1195662
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+object-group service G_KERBEROS_SERVICES
+ description CR1197416
+ service-object tcp destination eq 88 
+ service-object udp destination eq 88 
+object-group service G_ESH_SCSM_SERVICES
+ description CR1203936
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+ service-object tcp destination eq 3268 
+object-group service G_RACKTABLES_AUTORIZATION_SERVICES
+ description CR1210861
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination eq 464 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 389 
+ service-object udp destination eq 464 
+ service-object udp destination eq 88 
+object-group service G_DYNAMIC_RPC_SERVICES
+ description CR1210998
+ service-object tcp destination range 49152 65535 
+object-group service G_BNA_TO_ESH_SAN_SWITCHES_SERVICES
+ description CR1216594
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+ service-object udp destination eq snmp 
+object-group service G_ESH_SAN_SWITCHES_TO_BNA_SERVICES
+ description CR1216594
+ service-object udp destination eq snmptrap 
+ service-object udp destination eq syslog 
+object-group service G_ESH_DC_VTBC_MONITORING_PEERING_SERVICES
+ description CR1217737
+ service-object tcp destination eq 135 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+ service-object udp destination eq 88 
+object-group service G_VTBC_MONITORING_TO_ESH_MONITORING_GATEWAYS_PEERING_SERVICES
+ description CR1220552
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq 5723 
+ service-object tcp destination eq 5724 
+object-group service G_ESH_MONITORING_SERVICES
+ description CR1220654
+ service-object tcp destination eq 29009 
+ service-object tcp destination range 49152 65535 
+object-group service G_PRINT_SERVICES
+ description CR1220242
+ service-object tcp destination eq 9100 
+object-group service G_CRM_SERVICES
+ description CR1232713
+ service-object tcp destination eq 3268 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 3268 
+ service-object udp destination eq 389 
+ service-object udp destination eq 636 
+ service-object udp destination eq 88 
+object-group service G_ESH_DC_USERS_AUTH_SERVICES
+ description CR1233216
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq 389 
+ service-object udp destination eq 636 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object udp destination eq 3268 
+ service-object udp destination eq 3269 
+ service-object tcp destination eq 88 
+ service-object udp destination eq 88 
+ service-object tcp destination range 49152 65535 
+object-group service G_FILE_SHARE_SERVICES
+ description CR1233249
+ service-object tcp destination eq 445 
+ service-object udp destination eq 445 
+object-group service G_SEPM_SERVICES
+ service-object tcp destination eq 445 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq netbios-dgm 
+ service-object udp destination eq netbios-ns 
+object-group service G_VIENNA_CUCM_ACCESS_SERVICES
+ description CR1239788
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq 8443 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_VIENNA_IN_VOIP_GW_SERVICES
+ description CR1239788
+ service-object tcp destination eq 5061 
+ service-object tcp destination eq h323 
+ service-object tcp destination eq sip 
+ service-object udp destination range 16384 32767 
+ service-object udp destination eq sip 
+ service-object udp destination range 8000 8099 
+ service-object udp destination range 8000 48198 
+ service-object udp 
+object-group service G_VIENNA_IN_VOIP_SERVICES
+ description CR1239788
+ service-object tcp destination eq 5061 
+ service-object tcp destination eq sip 
+ service-object udp destination range 16384 32767 
+ service-object udp destination eq sip 
+object-group service G_VIENNA_OUT_VOIP_GW_SERVICES
+ description CR1239788
+ service-object tcp destination eq 2000 
+ service-object tcp destination eq 2428 
+ service-object tcp destination eq 5061 
+ service-object tcp destination eq h323 
+ service-object tcp destination eq sip 
+ service-object udp destination range 16384 32767 
+ service-object udp destination eq 1719 
+ service-object udp destination eq 2427 
+ service-object udp destination eq sip 
+ service-object udp destination eq tftp 
+ service-object udp destination range 8000 48198 
+ service-object udp 
+object-group service G_VIENNA_OUT_VOIP_SERVICES
+ description CR1239788
+ service-object tcp destination eq 2000 
+ service-object tcp destination eq 2443 
+ service-object tcp destination eq 2445 
+ service-object tcp destination eq 3804 
+ service-object tcp destination eq 5061 
+ service-object tcp destination eq 6970 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq sip 
+ service-object udp destination range 16384 32767 
+ service-object udp destination eq sip 
+ service-object udp destination eq tftp 
+ service-object tcp destination eq 8443 
+object-group service G_VTBC_INFRA_SERVICES
+ description CR1251512
+ service-object tcp-udp destination eq 389 
+ service-object tcp-udp destination range 49152 65535 
+ service-object tcp-udp destination eq 88 
+ service-object tcp destination eq 5725 
+ service-object tcp-udp destination eq 135 
+ service-object tcp-udp destination range 137 139 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq domain 
+object-group service G_ESH_JUMPBOX_SERVICES
+ description Emergency
+ service-object tcp destination range 1024 65535 
+ service-object tcp destination eq 135 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq 135 
+ service-object udp destination eq 139 
+ service-object udp destination eq 3268 
+ service-object udp destination eq 389 
+ service-object udp destination eq 445 
+ service-object udp destination eq 88 
+object-group service G_GRE_IPSEC_SERVICES
+ service-object gre 
+ service-object esp 
+ service-object udp destination eq 4500 
+ service-object udp destination eq isakmp 
+object-group service G_UNITY_CONNECTION_SERVICES
+ description CR1264241
+ service-object tcp destination range 21000 21512 
+object-group service G_UNITY_INBOUND_AUDIO_STREAMS_SERVICES
+ description CR1264241
+ service-object udp destination range 16384 21511 
+object-group service G_UNITY_OUTBOUND_AUDIO_STREAMS_SERVICES
+ description CR1264241
+ service-object udp destination range 16384 32767 
+object-group service G_UNITY_WORKSTATION_SERVICES
+ description CR1264241
+ service-object tcp destination eq 7993 
+ service-object tcp destination eq 8143 
+ service-object tcp destination eq 8993 
+ service-object tcp destination eq 993 
+ service-object tcp destination eq imap4 
+object-group service G_ESH_LDAP_AUTH_SERVICES
+ description CR1266261
+ service-object tcp destination eq ldap 
+ service-object udp destination eq 389 
+ service-object tcp destination eq 3268 
+object-group service G-RADIUS-SERVICES
+ description Ports used by RADIUS
+ service-object tcp destination eq 1812 
+object-group service G_VOICE_CORP_DIRECTORY_SERVICES
+ description Ports used by phones to access corporate directory
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq https 
+ service-object tcp destination eq 8443 
+object-group service G_VIENNA_PHONE_WEB_SERVICES
+ description Ports used to administer phones from desktops
+ service-object tcp destination eq www 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq https 
+ service-object tcp destination eq 8443 
+object-group service G_RADIUS_SERVICES
+ service-object udp destination eq 1812 
+object-group service G_HRMS_SERVICES
+ service-object tcp destination eq sqlnet 
+object-group service G_VTB_ITPORTAL_SERVICES
+ description CR1287563
+ service-object tcp destination eq 5724 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object udp destination eq 5724 
+object-group service G_VIENNA_OOB_SERVICES
+ description CR1302065
+ service-object tcp destination eq 2001 
+ service-object tcp destination range 2026 2041 
+object-group service G_VTBC_ACCELERATE_SERVERS_SERVICES
+ description CR1310112
+ service-object tcp destination eq 8199 
+ service-object tcp destination eq www 
+object-group service G_VTVSE_SCSM_AND_SP_SERVICES
+ description CR1351901
+ service-object tcp destination eq 42 
+ service-object tcp destination eq 135 
+ service-object tcp destination eq netbios-ssn 
+ service-object tcp destination eq 9389 
+ service-object tcp destination eq domain 
+ service-object tcp destination eq 137 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq 464 
+ service-object udp destination eq ntp 
+ service-object udp destination eq netbios-dgm 
+ service-object udp destination eq domain 
+ service-object udp destination eq netbios-ns 
+ service-object udp destination eq 445 
+ service-object udp destination eq 464 
+object-group service G_VIENNA_VOICE_SERVICES_TEST
+ description CR1340991
+ service-object udp destination range 8000 48198 
+object-group service G_ACTIVEBATCH_SERVICES
+ description CR1354129
+ service-object tcp destination eq 3655 
+object-group service G_APTARE_DATA_COLLECTOR_SERVICES
+ description CR1366040
+ service-object tcp destination eq 5988 
+ service-object tcp destination eq ssh 
+object-group service G_SNMPTRAP_SERVICES
+ description CR1423163
+ service-object udp destination eq snmptrap 
+object-group service G_EPAM_HORIZON_VIEW_VDI_SERVICES
+ description CR1426466
+ service-object tcp destination eq 1435 
+ service-object tcp destination range 1433 1434 
+ service-object udp destination range 1433 1434 
+object-group service G_SAN_STORAGE_VSP_MGMT_SERVICES
+ description CR1439360
+ service-object tcp destination eq 1099 
+ service-object tcp destination eq 10995 
+ service-object tcp destination eq 2000 
+ service-object tcp destination eq 23015 
+ service-object tcp destination eq 31001 
+ service-object tcp destination eq 34001 
+ service-object tcp destination eq 427 
+ service-object tcp destination eq 51099 
+ service-object tcp destination eq 51100 
+ service-object tcp destination eq 5989 
+ service-object tcp destination eq www 
+ service-object udp destination eq snmp 
+object-group service G_LSEDM_UAT_SERVICES
+ description CR1441779
+ service-object tcp destination eq 52300 
+ service-object tcp destination eq 51300 
+object-group service G_SLSEDM_CDS_UAT_SAIL_COPY_FROM_QUIK
+ description CR1450483
+ service-object tcp destination eq 51305 
+object-group service G_VTBSE_ILO_BROWSER_SERVICES
+ description CR1454464
+ service-object tcp destination eq 17990 
+object-group service G_VTBSE_ILO_SERVICES_IN
+ description CR1454464
+ service-object tcp destination eq 17988 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+ service-object udp destination eq ntp 
+ service-object udp destination eq snmp 
+object-group service G_VTBSE_ILO_SERVICES_OUT
+ description CR1454464
+ service-object tcp destination eq 5671 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+ service-object udp destination eq 2162 
+ service-object udp destination eq ntp 
+ service-object udp destination eq snmptrap 
+object-group service G_VTBC_VTBSE_SIP_TRUNK_SERVICES
+ description CR1460438
+ service-object tcp-udp destination eq 5061 
+ service-object tcp-udp destination eq sip 
+object-group service G_CCS_AGENT_OUT_SERVICES
+ description CR1464183
+ service-object tcp destination eq 5601 
+ service-object tcp destination eq 5599 
+object-group service G_CCS_AGENT_IN_SERVICES
+ description CR1464183
+ service-object tcp destination eq 5600 
+ service-object tcp destination eq 3993 
+object-group service G_VTBSE_BACKUP_INVENTORY_SERVICES
+ description CR1471678
+ service-object tcp destination eq 53043 
+object-group service G_SCSM_FILE_SHARE_SERVICES
+ description CR1478305
+ service-object tcp destination eq 445 
+object-group service G_JIRA_POP_SERVICES
+ description CR1483710
+ service-object object pop3s 
+ service-object tcp destination eq pop3 
+object-group service G_AD_DS_SHAREPOINT_SERVICES
+ description CR1487184
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp-udp destination eq 88 
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq 138 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq netbios-ns 
+object-group service G_KERBEROS_TICKET
+ description CR1487184
+ service-object tcp-udp destination eq 88 
+object-group service G_LOG_SPLUNK_STORE_SERVICES
+ description CR1490902
+ service-object tcp destination eq 1518 
+object-group service G_DOMAIN_CACHE
+ description CR1491709
+ service-object tcp destination eq 135 
+ service-object tcp destination eq 445 
+ service-object tcp destination eq ldap 
+object-group service G_COMMVAULT_METRIX_REPORTING_SERVICES
+ description CR1500409
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq 81 
+ service-object tcp destination eq 82 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_RUBIK_DB_SERVICES
+ description CR1517220
+ service-object tcp destination eq 1433 
+object-group service G_RUBIK_APPLICATION_SERVICES
+ description CR1517508
+ service-object tcp destination range 8000 9000 
+object-group service G_VTBQR_FILESERVERS_SERVICES
+ description CR1522367
+ service-object tcp destination eq 445 
+object-group service G_VTBC_CALYPSO_IWS_SERVICES
+ description CR1521510
+ service-object tcp destination eq 8200 
+object-group service G_SCSM_SERVICES
+ description CR1529112
+ service-object tcp-udp destination eq 389 
+ service-object tcp-udp destination eq 443 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp-udp destination eq 88 
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq 135 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq 9389 
+ service-object tcp destination eq ldaps 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq ntp 
+object-group service G_VTBC_AUTOMATE_SERVICES
+ description CR1537427, CR1550367
+ service-object tcp destination eq pop3 
+ service-object tcp destination eq 995 
+ service-object tcp destination eq https 
+ service-object tcp destination eq www 
+ service-object tcp destination eq imap4 
+ service-object tcp destination eq 993 
+ service-object tcp destination eq 587 
+object-group service G_CALYPSO_IWS_SERVICES
+ description CR1541209
+ service-object tcp destination range 8099 8201 
+object-group service G_ADAPTIVE_UAT_SERVICES
+ description CR1546062
+ service-object tcp destination eq https 
+ service-object udp destination eq 443 
+object-group service G_FRA_CUCM_WEB_ACCESS_SERVICES
+ description CR1547701
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq 8443 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+object-group service G_FRA_SIP_SERVICES
+ description CR1547701
+ service-object tcp destination eq 5061 
+ service-object tcp destination eq h323 
+ service-object tcp destination eq sip 
+object-group service G_RTP_SERVICES
+ description CR1547852
+ service-object tcp destination eq ssh 
+ service-object udp destination range 16384 32767 
+object-group service G_FRA_VOICE_SERVICES
+ description CR1547974
+ service-object udp destination range 8000 48198 
+object-group service G_FRA_UNITY_SERVICES
+ description CR1547974
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq 8443 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+ service-object tcp destination range 5000 5004 
+ service-object tcp destination eq 20532 
+ service-object tcp destination range 21000 21512 
+ service-object udp destination range 16384 21511 
+ service-object udp destination eq snmp 
+object-group service G_FRA_WEBEX_SERVICES
+ description CR1548108
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+ service-object tcp destination eq ssh 
+object-group service G_ROOT_DC_SERVICES
+ description CR1566079
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+ service-object udp destination eq ntp 
+object-group service G_RSA_FRANKFURT_SWIFT_SERVICES
+ description CR1571825
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+object-group service G_VTB_SE_CITRIX_STOREFRONT_SERVICES
+ description CR1574014
+ service-object tcp destination eq 2598 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq citrix-ica 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_SWIFT_RSA_SERVICES
+ description CR1573292
+ service-object tcp destination eq 5500 
+ service-object tcp destination eq 5580 
+ service-object udp destination eq 5500 
+ service-object tcp destination eq 5550 
+object-group service G_IWS_FILESHARE_SERVICES
+ description CR1580087
+ service-object tcp destination eq 445 
+object-group service G_MOSCOW_QUIK_QORT_SERVICES
+ description CR1582383
+ service-object tcp destination eq 15100 
+ service-object tcp destination eq 16000 
+object-group service G_SPLUNK_SERVICES
+ description CR1597743
+ service-object tcp destination eq 8089 
+ service-object tcp destination eq 9997 
+object-group service G_CISCO_SMART_SOFTWARE_MANAGER_SATELLITE_SERVICES
+ description CR1645559
+ service-object tcp destination eq 8443 
+object-group service G_VTBC_INFRA_SERVICES_CHARLOT
+ description CR1647967
+ service-object tcp destination eq 5724 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_IWSCPSSUPPORT_CALYPSO_SERVICES
+ description CR1651718
+ service-object tcp destination eq 8201 
+object-group service G_IWS_CALYPSO_SERVICES
+ description CR1651718, CR1661761
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq 135 
+ service-object udp destination eq 389 
+ service-object udp destination eq 88 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq 88 
+ service-object tcp destination eq ldap 
+ service-object tcp destination eq ldaps 
+object-group service G_CUCM_FTP_SERVICES
+ description CR1653580
+ service-object tcp destination eq ftp 
+object-group service G_FTP_SFTP_SERVICES
+ description CR1653580
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq ssh 
+object-group service G_RTP_STREAM_SERVICES
+ description CR1653580
+ service-object udp destination range 16384 32767 
+object-group service G_PROJECT_CHARLOT_CALYPSO_SERVICES
+ description CR1661761
+ service-object tcp destination eq 8102 
+ service-object tcp destination eq 8103 
+ service-object tcp destination eq 8111 
+ service-object tcp destination eq 8112 
+ service-object tcp destination eq 8118 
+object-group service G_PROJECT_CHARLOT_DC_SERVICES
+ description CR1661761
+ service-object tcp-udp destination eq 135 
+ service-object tcp-udp destination eq 389 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp-udp destination eq 88 
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination range 49152 65535 
+ service-object tcp destination eq ldaps 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq netbios-dgm 
+object-group service G_PROJECT_CHARLOT_RUBIK_SERVICES
+ description CR1661761
+ service-object tcp destination eq 8080 
+object-group service G_PROJECT_CHARLOT_RUBIK_SERVICES_2
+ description CR1661761
+ service-object tcp destination eq 8081 
+object-group service G_PROJECT_CHARLOT_RUBIK_SERVICES_3
+ description CR1661761
+ service-object tcp destination eq 8084 
+ service-object tcp destination eq 8094 
+object-group service G_NEW_ESH_CITRIX_SERVICES
+ description CR1663789
+ service-object tcp-udp destination eq 1494 
+ service-object tcp-udp destination eq 2598 
+ service-object tcp destination eq 8080 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 
+object-group service G_PROJECT_CHARLOT_DC_SERVICES_2
+ description CR1663789
+ service-object tcp-udp destination eq 135 
+ service-object tcp-udp destination eq 389 
+ service-object tcp-udp destination eq 88 
+ service-object tcp-udp destination eq domain 
+ service-object tcp destination eq ldaps 
+ service-object tcp destination eq netbios-ssn 
+ service-object udp destination eq netbios-dgm 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp destination eq 3268 
+ service-object tcp destination eq 3269 
+ service-object tcp destination range 49152 65535 
+object-group service G_VTBE_TRADER_WORKSTATION_SERVICES
+ description CR1665756
+ service-object tcp destination eq 3389 
+object-group service G_PROJECT_CHARLOT_FILE_SHARE_SERVICES
+ description CR1665756
+ service-object tcp destination eq 445 
+object-group service G_ACTIVEBATCH_SERVICES_1
+ description CR1695081, CR1702389
+ service-object tcp destination eq 3655 
+ service-object tcp destination eq 3656 
+ service-object object 1024-65535 
+ service-object tcp-udp destination eq 135 
+object-group service G_CHARLOT_QUICK_SERVICE
+ description CR1700600
+ service-object object 15100 
+object-group service G_CHARLOT_QUICK_UAT_SERVICE
+ description CR1700600
+ service-object object 16000 
+object-group service G_SP_AD_SERVICES
+ description CR1701523
+ service-object object 3268 
+ service-object object 3269 
+ service-object object 389 
+ service-object object 5725 
+ service-object object 636 
+ service-object tcp-udp destination eq 445 
+ service-object tcp-udp destination eq 464 
+ service-object tcp-udp destination eq 88 
+object-group service G_FRANKFURT_VIDEO_KEYPOINT_SERVICES
+ description CR1701533
+ service-object tcp destination eq ftp 
+ service-object tcp destination eq www 
+ service-object tcp destination eq https 

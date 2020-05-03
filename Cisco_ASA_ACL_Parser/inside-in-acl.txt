@@ -1,0 +1,498 @@
+access-list inside-in remark ### PERMIT Cisco-UNIX traceroute on the inside only ###
+access-list inside-in extended permit object-group G-CISCO-TRACEROUTE any4 any4 
+access-list inside-in extended permit icmp any4 object S_10.16.0.0s14_ESH log warnings 
+access-list inside-in remark ### PERMIT SSH MGMT TO B2B DMZ ###
+access-list inside-in extended permit object-group G-NETWORK-MANAGEMENT-OUT-SERVICES object-group G-GLOBAL-NETWORK-MANAGEMENT object-group G-LON-B2B-NETWORK-DEVICES 
+access-list inside-in remark CR1325629
+access-list inside-in extended permit object-group G_SNMP_SERVICES object-group G_GLOBAL_SNMP_SERVERS object-group G_VIENNA_MONITORED_DEVICES 
+access-list inside-in remark CR1258141
+access-list inside-in extended permit object-group G_SNMP_SERVICES object-group G_GLOBAL_SNMP_SERVERS object-group G_B2B_ESH_NETWORK_DEVICES 
+access-list inside-in remark ### PERMIT SNMP MONITORING TO B2B DMZ ###
+access-list inside-in extended permit object-group G_SNMP_SERVICES object-group G_GLOBAL_SNMP_SERVERS object-group G-LON-B2B-NETWORK-DEVICES 
+access-list inside-in extended permit object-group G_SNMP_SERVICES object-group G_GLOBAL_SNMP_SERVERS object-group G-LON-EUREX-NETWORK-DEVICES 
+access-list inside-in remark Permit SNMP Monitoring for VTB ESH
+access-list inside-in extended permit object-group G_SNMP_SERVICES object-group G_GLOBAL_SNMP_SERVERS object-group G-VTB-ESH-SNMP-CLIENTS-REAL-IP 
+access-list inside-in extended permit object-group G-NETWORK-MANAGEMENT-OUT-SERVICES object-group G-GLOBAL-NETWORK-MANAGEMENT object-group G-LON-EUREX-NETWORK-DEVICES 
+access-list inside-in remark Permit BGP communication from inside to outside B2B BGP peers
+access-list inside-in extended permit object-group G-BGP-SERVICES object-group G-LON-B2BA-BGP-PEERS object-group G-LON-B2BB-BGP-PEERS 
+access-list inside-in remark Permit management access to B2B servers
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_GLOBAL_CORPORATE_NETWORK object-group G-LON-B2B-SERVERS 
+access-list inside-in remark Permit London Commvault to it agents
+access-list inside-in extended permit object-group G-COMMVAULT-SERVICES object-group G-COMMVAULT-SERVERS object-group G-COMMVAULT-AGENTS 
+access-list inside-in remark Permit SCOM to Linux
+access-list inside-in extended permit object-group G-SCOM-OUT-SERVICES object-group G-SCOM-SERVERS object-group G-SCOM-LINUX-CLIENTS 
+access-list inside-in remark Permit access to HP SIM agent integrated web server
+access-list inside-in extended permit object-group G-HP-SIM-WEB-SERVICES object-group G_GLOBAL_CORPORATE_NETWORK object-group G-HP-SIM-CLIENTS 
+access-list inside-in remark Permit Munin monitoring
+access-list inside-in extended permit object-group G-MUNIN-SERVICES object-group G-MUNIN-SERVERS object-group G-MUNIN-AGENTS 
+access-list inside-in remark Permit CCS traffic to outside
+access-list inside-in extended permit object-group G-CCS-OUT-SERVICES object-group G-CCS-SERVERS object-group G-CCS-CLIENTS 
+access-list inside-in remark Permit needed ports between Horizon Calc and GW servers
+access-list inside-in extended permit object-group G-HORIZON-OUT-UAT-SERVICES object-group G-HORIZON-CALC-UAT-SERVERS object-group G-HORIZON-GW-UAT-SERVERS 
+access-list inside-in remark Permit users to Horizon GW server
+access-list inside-in extended permit object-group G-HORIZON-OUT-UAT-SERVICES object-group G-HORIZON-GW-UAT-CLIENTS object-group G-HORIZON-GW-UAT-SERVERS 
+access-list inside-in remark Permit needed ports between Horizon Calc and GW servers PROD environment
+access-list inside-in extended permit object-group G-HORIZON-OUT-PROD-SERVICES object-group G-HORIZON-CALC-PROD-SERVERS object-group G-HORIZON-GW-PROD-SERVERS 
+access-list inside-in remark Permit users to Horizon GW server PROD environment
+access-list inside-in extended permit object-group G-HORIZON-OUT-PROD-SERVICES object-group G-HORIZON-GW-PROD-CLIENTS object-group G-HORIZON-GW-PROD-SERVERS 
+access-list inside-in remark Permit SSH from Powerbroker to Horizon GW UAT
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G-POWERBROKER-SERVERS object-group G-HORIZON-GW-UAT-SERVERS 
+access-list inside-in extended permit object-group G-BLOOMBERG-OPEN-APPS object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-SERVERS 
+access-list inside-in extended permit object-group G-BLOOMBERG-BTS-APPS object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-BTS-GATEWAY 
+access-list inside-in extended permit object-group G-BLOOMBERG-GATEWAY-APPS object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-BTS-GATEWAY 
+access-list inside-in extended permit object-group G-BLOOMBERG-CALYPSO-SERVICES object-group G-CALYPSO-SERVERS object-group G-BLOOMBERG-CALYPSO-NETWORKS 
+access-list inside-in remark ### PERMIT VTB HOSTS TO ACCESS BBG (Data License/ MPS) C16332
+access-list inside-in extended permit object-group G-BLOOMBERG-MPS-SERVICES object-group G-BLOOMBERG-MPS-CLIENTS object-group G-BLOOMBERG-SERVERS 
+access-list inside-in remark ### Access to Bloomberg Pricing Link C23277 START ###
+access-list inside-in extended permit object-group G-BLOOMBERG-PRICELINK-SERVICES object-group G-BLOOMBERG-PRICELINK-CLIENTS object-group G-BLOOMBERG-PRICELINK-SERVERS 
+access-list inside-in remark ### Bloomberg Online Position Feed - C14878 ###
+access-list inside-in extended permit object-group G-BLOOMBERG-POSITION-FEED-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-POSITION-FEED-SERVERS 
+access-list inside-in remark ### Bloomberg TOMS fix - C14892 ###
+access-list inside-in extended permit object-group G-BLOOMBERG-TOMS-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-TOMS-SERVERS 
+access-list inside-in remark ### Bloomberg MDF - C14856 ###
+access-list inside-in extended permit object-group G-BLOOMBERG-MDF-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-MDF-SERVERS 
+access-list inside-in remark ### C24989 - Bloomberg New Feed Site ###
+access-list inside-in extended permit object-group G-BLOOMBERG-FEED-PROD-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-FEED-PROD-SERVERS 
+access-list inside-in remark C25892 ALLOW UAT SERVERS to BLOOMBERG
+access-list inside-in extended permit object-group G-BLOOMBERG-FEED-UAT-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-FEED-UAT-SERVERS 
+access-list inside-in remark ### C25472 CALYPSO TO BBG COUNTERPARTY FEED SERVERS  ###
+access-list inside-in extended permit object-group G-BLOOMBERG-COUNTERPARTY-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-COUNTERPARTY-SERVERS 
+access-list inside-in remark Permit Bloomberg traffic
+access-list inside-in extended permit object-group G-BLOOMBERG-SERVICES object-group G-BLOOMBERG-CLIENTS object-group G-BLOOMBERG-SERVERS 
+access-list inside-in remark MA847477 Fidessa Sybase access for MSK clients PROD
+access-list inside-in extended permit object-group G-FIDESSA-PROD-SYBASE-SERVICES object-group G_FIDESSA_SYBASE_MSK_CLIENTS object-group G_FIDESSA_SYBASE_PROD_SERVERS 
+access-list inside-in remark MA847477 Fidessa Sybase access for MSK clients UAT
+access-list inside-in extended permit object-group G-FIDESSA-UAT-SYBASE-SERVICES object-group G_FIDESSA_SYBASE_MSK_CLIENTS object-group G_FIDESSA_SYBASE_UAT_SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA FIX ###
+access-list inside-in extended permit object-group G-FIDESSA-FIX-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-FIX-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA PRODUCTION ###
+access-list inside-in extended permit object-group G-FIDESSA-TRADE-APPS object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-PRODUCTION-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA UAT ###
+access-list inside-in extended permit object-group G-FIDESSA-TRADE-APPS object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-UAT-SERVERS 
+access-list inside-in remark ## PERMIT TRADING TO ACCESS FIDESSA PRODUCTION SYBASE ###
+access-list inside-in extended permit object-group G-FIDESSA-PROD-SYBASE-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-PRODUCTION-SYBASE-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA UAT SYBASE ###
+access-list inside-in extended permit object-group G-FIDESSA-UAT-SYBASE-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-UAT-SYBASE-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA MDS APAS LIVE ###
+access-list inside-in extended permit object-group G-FIDESSA-MD-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-MD-PROD-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA MDS APAS LIVE ###
+access-list inside-in extended permit object-group G-FIDESSA-MD-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-MD-UAT-SERVERS 
+access-list inside-in remark ### Access FIDESSA FIX SIMULATOR C23253 START ###
+access-list inside-in extended permit object-group G-FIDESSA-FIX-SIMULATOR-UAT-SERVICES object-group G-FIDESSA-FIX-SIMULATOR-UAT-CLIENTS object-group G-FIDESSA-FIX-SIMULATOR-UAT-SERVERS 
+access-list inside-in remark ### PERMIT Fidessa TO Access FIDESSA FDA NEW C21344 ###
+access-list inside-in extended permit object-group G-FIDESSA-FDA-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-FDA-SERVERS 
+access-list inside-in remark ### PERMIT ACCESS TO FIDESSA UATC ENVIRONMENT C19590 + C20850 ###
+access-list inside-in extended permit object-group G-FIDESSA-UATC-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-UATC-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA PRODUCTION ###
+access-list inside-in extended permit object-group G-FIDESSA-FDA-UPLOAD-SERVICES object-group G-FIDESSA-FDA-UPLOAD-CLIENTS object-group G-FIDESSA-PRODUCTION-SERVERS 
+access-list inside-in remark ### PERMIT TRADING TO ACCESS FIDESSA UAT ###
+access-list inside-in extended permit object-group G-FIDESSA-FDA-UPLOAD-SERVICES object-group G-FIDESSA-FDA-UPLOAD-CLIENTS object-group G-FIDESSA-UAT-SERVERS 
+access-list inside-in remark Permit Fidessa traffic
+access-list inside-in extended permit object-group G-FIDESSA-SERVICES object-group G-FIDESSA-CLIENTS object-group G-FIDESSA-SERVERS 
+access-list inside-in remark Permit clients to LSE Turquoise PROD BCS
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-BCS-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-BCS-GATEWAYS 
+access-list inside-in remark Permit clients to LSE Turquoise PROD BTS
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-BTS-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-BTS-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS BCS
+access-list inside-in extended permit object-group G-EDX-CDS-BCS-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-BCS-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS BTS
+access-list inside-in extended permit object-group G-EDX-CDS-BTS-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-BTS-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS SAIL
+access-list inside-in extended permit object-group G-EDX-CDS-SAIL-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-SAIL-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS FIX
+access-list inside-in extended permit object-group G-EDX-CDS-FIX-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-FIX-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS HSVF
+access-list inside-in extended permit object-group G-EDX-CDS-HSVF-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-HSVF-GATEWAYS 
+access-list inside-in remark Permit client UAT access to EDX CDS Oslo HSVF
+access-list inside-in extended permit object-group G-EDX-CDS-OSLO-HSVF-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-EDX-CDS-OSLO-HSVF-GATEWAYS 
+access-list inside-in remark Permit client PROD access to LSE Turquoise PROD SAIL trading
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-SAIL-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-SAIL-GATEWAYS 
+access-list inside-in remark Permit client PROD access to LSE Turquoise PROD SAIL Drop Copy trading
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-SAIL-DROP-COPY-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-SAIL-GATEWAYS 
+access-list inside-in remark Permit client PROD access to LSE Turquoise PROD FIX
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-FIX-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-FIX-GATEWAYS 
+access-list inside-in remark Permit client PROD access to LSE Turquoise PROD HSVF Market Data
+access-list inside-in extended permit object-group G-LSE-TURQUOISE-PROD-HSVF-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-TURQUOISE-PROD-HSVF-GATEWAYS 
+access-list inside-in remark Permit client PROD access to LSE Oslo BORS HSVF Market Data
+access-list inside-in extended permit object-group G-LSE-OSLO-BORS-PROD-HSVF-SERVICES object-group G-LSE-TURQUOISE-CLIENTS object-group G-LSE-OSLO-BORS-PROD-HSVF-GATEWAYS 
+access-list inside-in remark Permit clients to Sungard Adaptiv
+access-list inside-in extended permit object-group G-SUNGARD-ADAPTIV-SERVICES object-group G-SUNGARD-ADAPTIV-CLIENTS object-group G-SUNGARD-ADAPTIV-SERVERS 
+access-list inside-in remark Permit users to SunGard GL Trade RAD
+access-list inside-in extended permit object-group G-SUNGARD-GL-TRADE-RAD-SERVICES object-group G-SUNGARD-GLTRADE-RAD-CLIENTS object-group G-SUNGARD-GLTRADE-RAD-SERVERS 
+access-list inside-in remark C16968, CR692447 - Permit Calypso to VTB Austria SFTP and FTPS Servers
+access-list inside-in extended permit object-group G-VTBAUSTRIA-SFTP-SERVICES object-group G-VTBAUSTRIA-SFTP-CLIENTS object-group G-VTBAUSTRIA-SFTP-SERVERS 
+access-list inside-in remark CR827488 - Permit VTBC Zug to VTB Austria SFTP servers
+access-list inside-in extended permit object-group G-VTBCZUG-VTBA-SFTP-SERVICES object-group G-VTBCZUG-VTBA-SFTP-CLIENTS object-group G-VTBAUSTRIA-SFTP-SERVERS 
+access-list inside-in remark CR529045, Access to Deal Tracker system from PROD Calypso servers
+access-list inside-in extended permit object-group G_VTBAUSTRIA_DEAL_TRACKER_PROD_SERVICES object-group G_VTBAUSTRIA_DEAL_TRACKER_PROD_CLIENTS object-group G_VTBAUSTRIA_DEAL_TRACKER_SERVERS 
+access-list inside-in remark CR529045, Access to Deal Tracker system from PROD Calypso servers
+access-list inside-in extended permit object-group G_VTBAUSTRIA_DEAL_TRACKER_UAT_SERVICES object-group G_VTBAUSTRIA_DEAL_TRACKER_UAT_CLIENTS object-group G_VTBAUSTRIA_DEAL_TRACKER_SERVERS 
+access-list inside-in remark CR852604 - Permit access between VTBC and VTB ESH voice systems
+access-list inside-in extended permit object-group G-VTB-ESH-VOICE-SERVICES object-group G-VTB-ESH-LOCAL-VOICE-SYSTEMS object-group G-VTB-ESH-REMOTE-VOICE-SYSTEMS 
+access-list inside-in remark CR882022 - Permit access between VTBC and VTB ESH VIDEO systems
+access-list inside-in extended permit object-group G-VTB-ESH-VIDEO-SERVICES object-group G-VTB-ESH-LOCAL-VIDEO-SYSTEMS object-group G-VTB-ESH-REMOTE-VIDEO-SYSTEMS 
+access-list inside-in remark CR937727 RDP access to VTB ESH hosts
+access-list inside-in extended permit object-group G-VTB-ESH-RDP-SERVICES object-group G-VTB-ESH-RDP-CLIENTS object-group G-VTB-ESH-RDP-SERVERS 
+access-list inside-in remark Permit Global VTBC to Guernsey
+access-list inside-in extended permit ip object-group G_GLOBAL_CORPORATE_NETWORK object-group G-GUERNSEY-USERS log disable 
+access-list inside-in remark Permit GRE tunnel between Guernsey and WAN routers
+access-list inside-in extended permit object-group G-GRE-SERVICES object-group G-LON-GRE-ENDPOINTS object-group G-GUERNSEY-GRE-ENDPOINTS log disable 
+access-list inside-in remark ### C35939 PE Lynch  FIDESSA ###
+access-list inside-in extended permit object-group G-PE-LYNCH-TO-FIDESSA-UAT-SERVICES object-group G-PE-LYNCH-TO-FIDESSA-UAT-CLIENTS object-group G-PE-LYNCH-TO-FIDESSA-UAT-SERVERS 
+access-list inside-in extended permit object-group G-PE-LYNCH-TO-FIDESSA-PROD-SERVICES object-group G-PE-LYNCH-TO-FIDESSA-PROD-CLIENTS object-group G-PE-LYNCH-TO-FIDESSA-PROD-SERVERS 
+access-list inside-in remark CR227738 - ALL B2B/DMZ SUBNETS TO SCOM SERVERS
+access-list inside-in extended permit object-group G_SCOM_OUT_SERVICES object-group G_SCOM_SERVERS object-group G_SCOM_LINUX_CLIENTS 
+access-list inside-in remark CR227738 - ALL B2B/DMZ SUBNETS TO SCOM SERVERS
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_SCOM_SERVERS object-group G_SCOM_LINUX_CLIENTS 
+access-list inside-in remark CR283795
+access-list inside-in extended permit object-group G_VTBAM_FIDESSA_SERVICES object-group G_VTBAM_FIDESSA_CLIENTS object-group G_VTBAM_FIDESSA_FIX_SERVERS 
+access-list inside-in remark CR415034 - SFTP Access for Bloomberg
+access-list inside-in extended permit object-group G_BLOOMBERG_SFTP_SERVICE object-group G_BLOOMBERG_SFTP_CLIENTS object-group G_BLOOMBERG_SFTP_SERVERS 
+access-list inside-in remark SFTP Access for Bloomberg via 22 port
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_BLOOMBERG_SFTP_CLIENT object-group G_BLOOMBERG_SFTP_SERVERS 
+access-list inside-in remark CR544877 Permit access from ONEVIEW Servers to ILO
+access-list inside-in extended permit object-group G_ONEVIEW_ILO_OUT_SERVICES object-group G_ONEVIEW_SERVERS object-group G_ONEVIEW_ILO_CLIENTS 
+access-list inside-in remark CR709715 Bloomberg FIX production access
+access-list inside-in extended permit object-group G_BLOOMBERG_FIX_PROD_SERVICES object-group G_QUIK_LSE_GW_PROD_SERVERS object-group G_BLOOMBERG_FIX_PROD_SERVERS 
+access-list inside-in remark CR709715 Bloomberg FIX UAT access
+access-list inside-in extended permit object-group G_BLOOMBERG_FIX_UAT_SERVICES object-group G_QUIK_LSE_GW_UAT_SERVERS object-group G_BLOOMBERG_FIX_UAT_SERVERS 
+access-list inside-in remark CR763723 - Permit Bottomline to access their VPN box from another VPN box
+access-list inside-in extended permit object-group SWIFT-BOTTOMLINE-MGMT-SERVICES object-group SWIFT-BOTTOMLINE-MGMT-CLIENTS object-group SWIFT-BOTTOMLINE-MGMT-SERVERS 
+access-list inside-in remark CR791597 - Bloomberg access for QUIK PROD
+access-list inside-in extended permit object-group G_QUIK_BBG_PROD_SERVICES object-group G_QUIK_BBG_PROD_CLIENTS object-group G_QUIK_BBG_PROD_SERVERS 
+access-list inside-in remark CR791597 - Bloomberg access for QUIK UAT
+access-list inside-in extended permit object-group G_QUIK_BBG_UAT_SERVICES object-group G_QUIK_BBG_UAT_CLIENTS object-group G_QUIK_BBG_UAT_SERVERS 
+access-list inside-in remark CR766033 - SWIFT BOTTOMLINE SERVICES
+access-list inside-in extended permit object-group G-SWIFT-BOTTOMLINE-SERVICE object H-SLON02AP163 object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S1-SWIFT-CITRIX-SERVER-PROD-102 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-SNGDR-USERACCESS object H-S1-SWIFT-CITRIX-SERVER-PROD-102 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-SNG-TO-LND-SWIFT object H-S1-SWIFT-CITRIX-SERVER-PROD-102 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S1-SWIFT-CITRIX-SERVER-PROD-102 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-SNGDR-USERACCESS object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-SNG-TO-LND-SWIFT object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object G-MOSCOW-NETWORK object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object G-SNGDR-USERACCESS object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object-group G-SNG-TO-LND-SWIFT object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object-group G-VTBCAPITAL-UK object H-S1-SWIFT-CITRIX-SERVER-PROD-103 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S1-SWIFT-CITRIX-SERVER-PROD-104 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-SNGDR-USERACCESS object H-S1-SWIFT-CITRIX-SERVER-PROD-104 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-SNG-TO-LND-SWIFT object H-S1-SWIFT-CITRIX-SERVER-PROD-104 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S1-SWIFT-CITRIX-SERVER-PROD-104 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S2-SWIFT-CITRIX-TEST 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S2-SWIFT-CITRIX-TEST 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object G-MOSCOW-NETWORK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object-group G-VTBCAPITAL-UK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object G-MOSCOW-NETWORK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object-group G-VTBCAPITAL-UK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G_SSH_SERVICES object G-MOSCOW-NETWORK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G-VTBCAPITAL-UK object H-S4-SWIFT-SERVER-TEST 
+access-list inside-in extended permit object-group G-SWIFT-SESSION-REALIBILTY-SERVICE object G-MOSCOW-NETWORK object H-S5-SWIFT-WEB-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SWIFT-SESSION-REALIBILTY-SERVICE object G-SNGDR-USERACCESS object H-S5-SWIFT-WEB-SERVER-PRODUCTION 
+access-list inside-in extended permit object-group G-SWIFT-SESSION-REALIBILTY-SERVICE object-group G-VTBCAPITAL-UK object H-S5-SWIFT-WEB-SERVER-PRODUCTION 
+access-list inside-in extended permit tcp object G-MOSCOW-NETWORK object H-S5-SWIFT-WEB-SERVER-PRODUCTION eq https 
+access-list inside-in extended permit tcp object G-SNGDR-USERACCESS object H-S5-SWIFT-WEB-SERVER-PRODUCTION eq https 
+access-list inside-in extended permit tcp object-group G-VTBCAPITAL-UK object H-S5-SWIFT-WEB-SERVER-PRODUCTION eq https 
+access-list inside-in extended permit object-group G-SWIFT-SESSION-REALIBILTY-SERVICE object-group G-SNG-TO-LND-SWIFT object H-S5-SWIFT-WEB-SERVER-PRODUCTION 
+access-list inside-in extended permit tcp object-group G-SNG-TO-LND-SWIFT object H-S5-SWIFT-WEB-SERVER-PRODUCTION eq https 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY 
+access-list inside-in extended permit tcp object G-MOSCOW-NETWORK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY eq www 
+access-list inside-in extended permit tcp object-group G-VTBCAPITAL-UK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY eq www 
+access-list inside-in extended permit tcp object G-MOSCOW-NETWORK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY eq https 
+access-list inside-in extended permit tcp object-group G-VTBCAPITAL-UK object H-S6-S8-SWIFT-WEB-CITRIX-SERVER-CONTINGENCY eq https 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-S7-SWIFTSERVER-CONTINGENCY 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S7-SWIFTSERVER-CONTINGENCY 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object G-MOSCOW-NETWORK object H-S7-SWIFTSERVER-CONTINGENCY 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object-group G-VTBCAPITAL-UK object H-S7-SWIFTSERVER-CONTINGENCY 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-CALYPSOTD-MQ object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-SLONO2AP27VM object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-VTBC-PRODLDN object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object-group G-VTBCAPITAL-UK object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-CALYPSOTD-MQ object H-SWIFT-MQ-PRODUCTION-LISTENER 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-SLONO2AP27VM object H-SWIFT-MQ-PRODUCTION-LISTENER 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object H-VTBC-PRODLDN object H-SWIFT-MQ-PRODUCTION-LISTENER 
+access-list inside-in extended permit object-group G-SMA-MQ-LISTENER-SERVICE object-group G-VTBCAPITAL-UK object H-SWIFT-MQ-PRODUCTION-LISTENER 
+access-list inside-in extended permit ip object G-MOSCOW-NETWORK object H-SWIFT-SMA-FTP 
+access-list inside-in extended permit ip object-group G-VTBCAPITAL-UK object H-SWIFT-SMA-FTP 
+access-list inside-in extended permit object-group G-SWIFT-SMA-WEB-FRONTEND-SERVICE object G-MOSCOW-NETWORK object H-SWIFT-SMA-WEB-FRONTEND 
+access-list inside-in extended permit object-group G-SWIFT-SMA-WEB-FRONTEND-SERVICE object-group G-VTBCAPITAL-UK object H-SWIFT-SMA-WEB-FRONTEND 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object G-MOSCOW-NETWORK object H-SWIFT-SMA-CITRIX 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-SWIFT-SMA-CITRIX 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object G-MOSCOW-NETWORK object H-SWIFT-SMA-CITRIX 
+access-list inside-in extended permit object-group G-SOAP-HTTPS-SERVICE object-group G-VTBCAPITAL-UK object H-SWIFT-SMA-CITRIX 
+access-list inside-in extended permit object-group G-SWIFT-C18624-TCP1415-SERVICE object H-10.100.129.139s32 object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SWIFT-C18624-TCP1446-7-SERVICE object H-10.100.129.139s32 object H-SWIFT-MQ-TEST 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G-SMA-FILE-SHARE-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G-SMA-SWIFT-CITRIX-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G-SMA-SWIFT-APPLICATION-SERVICE object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G_SSH_SERVICES object G-MOSCOW-NETWORK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G-VTBCAPITAL-UK object H-S3-SWIFT-SERVER-PRODUCTION-BACKUP 
+access-list inside-in remark ##### LONDON - SHANGHAI CONNECTION TESTING #####
+access-list inside-in extended permit udp object H_10.104.252.28_SLON01TE14 host 10.105.52.15 range 5001 5100 
+access-list inside-in extended permit udp object H_10.101.130.1_SLON02TE14 host 10.105.52.15 range 5001 5100 
+access-list inside-in extended permit ip object H_10.101.130.1_SLON02TE14 host 10.105.52.7 
+access-list inside-in extended permit ip object H_10.101.130.1_SLON02TE14 host 10.105.52.15 
+access-list inside-in extended permit ip object H_10.104.252.28_SLON01TE14 host 10.105.52.15 
+access-list inside-in remark CR1022794
+access-list inside-in extended permit object-group G_BLOOMBERG_FIX_GATEWAY_SERVICES object-group G_QUIK_BBG_PROD_CLIENTS object-group G_BLOOMBERG_FIX_GATEWAY_PROD_SERVERS 
+access-list inside-in remark CR1022794
+access-list inside-in extended permit object-group G_BLOOMBERG_FIX_GATEWAY_SERVICES object-group G_QUIK_BBG_UAT_CLIENTS object-group G_BLOOMBERG_FIX_GATEWAY_UAT_SERVERS 
+access-list inside-in remark CR1040515
+access-list inside-in extended permit object-group G_BLOOMBERG_MQ_SERVICES object-group G_BLOOMBERG_MQ_CLIENTS object-group G_BLOOMBERG_MQ_SERVERS 
+access-list inside-in remark ESH-VTBC CR1095672 TRUST DC communication
+access-list inside-in extended permit object-group G_ESH_PEERING_DC_SERVICES object-group G_ESH_PEERING_VTBC_DC object-group G_ESH_PEERING_ESH_DC 
+access-list inside-in remark CR1115699
+access-list inside-in extended permit object-group G_BLOOMBERG_MiFID_II_REPORTING_SERVICES object-group G_BLOOMBERG_MiFID_II_REPORTING_SOURCES object-group G_BLOOMBERG_MiFID_II_REPORTING_SERVERS 
+access-list inside-in remark CR1115849
+access-list inside-in extended permit object-group G_BLOOMBERG_MiFID_II_REPORTING_SERVICES_2 object-group G_BLOOMBERG_MiFID_II_REPORTING_SOURCES_UAT object-group G_BLOOMBERG_MiFID_II_REPORTING_SERVERS_BETA 
+access-list inside-in remark CR1137197
+access-list inside-in extended permit object-group G_ESH_CITRIX_XENAPP_SERVICES object-group G_LONDON_NETS_FOR_ESH_RDP_ACCESS object-group G_ESH_RDP_USERS 
+access-list inside-in remark CR1153128
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTB_ESH_EUCLID_CIENTS object-group G_VTB_ESH_EUCLID_SERVERS 
+access-list inside-in remark Emergency
+access-list inside-in extended permit object-group RDP_VNC_SERVICES object S_10.77.48.0s25_MSK9_USER_ACCESS object S_10.19.10.0s23_VTBAUSTRIA_USER_ACCESS 
+access-list inside-in remark Emergency_CR1161132
+access-list inside-in extended permit object-group G_ESH_VTB_RADMIN_SERVICES object-group G_VTB_ESH_EUCLID_CIENTS object-group G_VTB_ESH_EUCLID_SERVERS 
+access-list inside-in remark CR1161676
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_MOSCOW_SWIFT_CLIENTS object-group G_VTB_AUSTRIA_SWIFT_SGSVR 
+access-list inside-in remark CR1161846
+access-list inside-in extended permit object-group G_ESH_DC_SERVICES object-group G_MSK_LDAP_KERBEROSS_CLIENTS object-group G_ESH_DC_SERVERS 
+access-list inside-in remark CR1165999
+access-list inside-in extended permit object-group G_ESH_DC_SERVICES object-group G_MSK_TIBCO_ESH_CLIENTS object-group G_ESH_DC_SERVERS 
+access-list inside-in remark CR1167894
+access-list inside-in extended permit object-group G_DC_SERVICES object-group G_VTBC_DC_SERVERS object-group G_ESH_DC log 
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_ESH_RDP_CLIENTS object-group G_ESH_RDP_DESTINATIONS 
+access-list inside-in remark CR1182094
+access-list inside-in extended permit object-group G_ESH_CITRIX_SERVICES object-group G_VTBC_DC_SERVERS object-group G_ESH_VTB_EU_CLIENTS 
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G-POWERBROKER-SERVERS object-group G_ESH_LINUX 
+access-list inside-in remark CR1192360
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBC_TO_ESH_RDP_CLIENTS object-group G_ESH_ADMIN_JUMP_HOSTS 
+access-list inside-in remark CR1194233
+access-list inside-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_MOSCOW_COMMON_SUBNET object-group G_VTBAUSTRIA_DEAL_TRACKER_SERVERS 
+access-list inside-in remark CR1197416
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_MSK_LDAP_KERBEROSS_CLIENTS object-group G_ESH_INTRANET_PORTAL_CLIENTS 
+access-list inside-in remark CR1198890
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_MOSCOW_COMMON_SUBNET object-group G_ESH_SAN_SWITCHES 
+access-list inside-in remark CR1203936
+access-list inside-in extended permit object-group G_ESH_SCSM_SERVICES object-group G_SCSM_SERVERS object-group G_ESH_DC_SERVERS_FOR_SCSM_ACCESS 
+access-list inside-in remark CR1210861
+access-list inside-in extended permit object-group G_RACKTABLES_AUTORIZATION_SERVICES object-group G_RACKTABLES_SERVERS object-group G_ESH_DC 
+access-list inside-in remark CR1210998
+access-list inside-in extended permit object-group G_DYNAMIC_RPC_SERVICES object-group G_MSK_LDAP_KERBEROSS_CLIENTS object-group G_ESH_DC 
+access-list inside-in remark CR1216594
+access-list inside-in extended permit object-group G_BNA_TO_ESH_SAN_SWITCHES_SERVICES object-group G_VTBC_SAN_MONITORING_SERVERS object-group G_ESH_SAN_SWITCHES_TO_BNA 
+access-list inside-in remark CR1217737
+access-list inside-in extended permit object-group G_ESH_DC_VTBC_MONITORING_PEERING_SERVICES object-group G_VTBC_MONITORING_SERVERS object-group G_ESH_DC 
+access-list inside-in remark CR1220552
+access-list inside-in extended permit object-group G_VTBC_MONITORING_TO_ESH_MONITORING_GATEWAYS_PEERING_SERVICES object-group G_VTBC_MONITORING_SERVERS_TO_ESH_MONITORING_GATEWAYS object-group G_ESH_MONITORING_GATEWAYS 
+access-list inside-in remark CR1220654
+access-list inside-in extended permit object-group G_ESH_MONITORING_SERVICES object-group G_VTBC_PRTG_CORE_SERVER object-group G_ESH_MONITORING_GATEWAYS 
+access-list inside-in remark CR1220535
+access-list inside-in extended permit object-group G_HTTP_SERVICES object-group G_VTB_ESH_RMS_CLIENTS object-group G_VTB_ESH_RMS_SERVERS 
+access-list inside-in remark CR1231687
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_ESH_MONITORING_RDP_CLIENTS object-group G_ESH_MONITORING_GATEWAYS 
+access-list inside-in remark CR1232713
+access-list inside-in extended permit object-group G_CRM_SERVICES object-group G_CRM_SERVERS object-group G_ESH_DC 
+access-list inside-in remark CR1232713
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_CRM_SERVERS object-group G_ESH_INTRANET_PORTAL_CLIENTS 
+access-list inside-in remark CR1233216
+access-list inside-in extended permit object-group G_ESH_DC_USERS_AUTH_SERVICES object-group G_MSK_JIRA_and_CONFLUENCE_SERVERS object-group G_ESH_DC 
+access-list inside-in remark CR1233216
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_MSK_JIRA_and_CONFLUENCE_SERVERS object-group G_ESH_VTBAUSTRIA_USER_ACCESS 
+access-list inside-in remark CR1233249
+access-list inside-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_MSK_AND_LON_SUBNETS object-group G_ESH_FILE_SHARES_SERVERS 
+access-list inside-in remark CR1235255
+access-list inside-in extended permit object-group G_ESH_SCSM_SERVICES object-group G_MSK_VOICE_SERVERS object-group G_VIENNA_DC_FOR_WEBEX_SERVERS 
+access-list inside-in remark CR1233977
+access-list inside-in extended permit object-group G_SEPM_SERVICES object-group G_SEP_SERVERS object-group G_LON_B2B_VTBC_DMZ_SUBNETS 
+access-list inside-in remark CR1239788
+access-list inside-in extended permit object-group G_HTTP_SERVICES object-group G_VOICE_SERVERS_VIENNA object-group G_VIENNA_VOICE_SUBNET 
+access-list inside-in remark CR1239788
+access-list inside-in extended permit object-group G_VIENNA_IN_VOIP_SERVICES object-group G_VOICE_SERVERS_VIENNA object-group G_VIENNA_VOICE_SUBNET 
+access-list inside-in remark CR1239788
+access-list inside-in extended permit object-group G_VIENNA_IN_VOIP_GW_SERVICES object-group G_VOICE_SERVERS_VIENNA object-group G_VIE1WANARO_DEVICES 
+access-list inside-in extended permit object-group G_VIENNA_IN_VOIP_GW_SERVICES object-group G_VIENNA_VOICE_CLIENTS object-group G_VIENNA_VOICE_SUBNET 
+access-list inside-in remark CR1246845
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_EXCHANGE_SERVERS object-group G_VTBSE_AUTODISCOVER_SERVERS 
+access-list inside-in remark CR1251568
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_MSK_USER_ACCESS object-group G_VTBAUSTRIA_DEAL_TRACKER_SERVERS 
+access-list inside-in remark CR1251512
+access-list inside-in extended permit object-group G_VTBC_INFRA_SERVICES object-group G_VTBC_INFRA_SERVERS object-group G_ESH_DC_SERVERS 
+access-list inside-in remark CR1251512
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_VTBC_INFRA_SERVERS object-group G_ESH_VTBAUSTRIA_USER_ACCESS 
+access-list inside-in remark CR1258141
+access-list inside-in extended permit object-group G_GRE_IPSEC_SERVICES object-group G_VIENNA_ROUTERS object-group G_VTBC_B2B_ROUTERS 
+access-list inside-in remark CR1258141
+access-list inside-in extended permit object-group G-NETWORK-MANAGEMENT-OUT-SERVICES object-group G-GLOBAL-NETWORK-MANAGEMENT object-group G_B2B_ESH_NETWORK_DEVICES 
+access-list inside-in remark CR1264241
+access-list inside-in extended permit object-group G_UNITY_OUTBOUND_AUDIO_STREAMS_SERVICES object-group G_VIENNA_UNITY_SERVERS object-group G_VIENNA_VOICE_SUBNET 
+access-list inside-in remark CR1266261
+access-list inside-in extended permit object-group G_ESH_LDAP_AUTH_SERVICES object-group G_TELEPHONY_INTERNATIONAL_SERVERS object-group G_ESH_DC_LDAP_AUTH_SERVERS 
+access-list inside-in remark CR1269372
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_CCTV_CLIENTS object-group G_CCTV_SERVER 
+access-list inside-in extended permit object-group G_VIENNA_PHONE_WEB_SERVICES object-group G_VIENNA_PHONE_WEB_CLIENTS object-group G_VIENNA_VOICE_SUBNET 
+access-list inside-in remark CR1272786
+access-list inside-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_CCTV_CLIENTS object-group G_CCTV_SERVER_iLO 
+access-list inside-in remark CR1285606
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_INFRA_SERVERS object-group G_ESH_vCENTER_SERVERS 
+access-list inside-in remark CR1287563
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_VTB_ITPORTAL_SERVERS object-group G_ESH_VTB_EU_CLIENTS 
+access-list inside-in remark CR1287563
+access-list inside-in extended permit object-group G_ESH_DC_USERS_AUTH_SERVICES object-group G_VTB_ITPORTAL_SERVERS object-group G_VTBSE_ITPORTAL_CLIENTS 
+access-list inside-in remark CR1302065
+access-list inside-in extended permit object-group G_VIENNA_OOB_SERVICES object-group G_VIENNA_OOB_CLIENTS object-group G_VIENNA_OOB_DEVICES 
+access-list inside-in remark CR1308980
+access-list inside-in extended permit object-group G_KERBEROS_SERVICES object-group G_VTB_ITPORTAL_SERVERS object-group G_VTB_SE_USER_ACCESS 
+access-list inside-in remark CR1311638
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_EXCHANGE_WITH_ACS object-group G_VTBSE_AUTODISCOVER_SERVERS 
+access-list inside-in remark CR1318265
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_SGH_CALYPSO_SERVERS object-group G_SUNGARD_ADAPTIV_CREDIT_RISK_SYSTEM 
+access-list inside-in remark CR1328399
+access-list inside-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_SNG_SUBNETS object-group G_ESH_FILE_SHARES_SERVERS 
+access-list inside-in remark CR1333002
+access-list inside-in extended permit object-group G_ESH_CITRIX_XENAPP_SERVICES object-group G_VTBC_VDI_DESKTOPS object-group G_VTBSE_CITRIX_ENVIRONMENT 
+access-list inside-in remark CR1340991
+access-list inside-in extended permit object-group G_VIENNA_VOICE_SERVICES_TEST object-group G_VIENNA_IP_PHONE_TEST object-group G_VIENNA_WANARO_DEVICES_TEST 
+access-list inside-in remark CR1351901
+access-list inside-in extended permit object-group G_VTVSE_SCSM_AND_SP_SERVICES object-group G_VTBC_SCSM_AND_SP_SERVERS object-group G_VTBSE_ITPORTAL_CLIENTS 
+access-list inside-in remark CR1354129
+access-list inside-in extended permit object-group G_ACTIVEBATCH_SERVICES object-group G_VTBC_ACTIVEBATCH_SERVERS object-group G_VTBSE_ACTIVEBATCH_SCHED_CLIENTS 
+access-list inside-in remark CR1366040
+access-list inside-in extended permit object-group G_APTARE_DATA_COLLECTOR_SERVICES object-group G_APTARE_DATA_COLLECTOR object-group G_ESH_3PAR_STORAGES 
+access-list inside-in remark CR1378177
+access-list inside-in extended permit object-group G_REUTERS_ADS_SERVICES object-group G_NEW_CALYPSO_SERVERS_PROD object-group G_REUTERS_ADS_SERVERS 
+access-list inside-in remark CR1378485
+access-list inside-in extended permit object-group G_VTBAUSTRIA_DEAL_TRACKER_PROD_SERVICES object-group G_NEW_CALYPSO_SERVERS_PROD object-group G_VTBAUSTRIA_DEAL_TRACKER_SERVERS 
+access-list inside-in remark CR1380359
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_INFRA_SERVERS object-group G_ESH_SPACEWALK_SERVERS 
+access-list inside-in remark CR1403480, CR1408068
+access-list inside-in extended permit object-group G_DC_SERVICES object-group G_VTBC_ACTIVEBATCH_SERVERS object-group G_VTBSE_DC_SERVERS 
+access-list inside-in remark CR1382245
+access-list inside-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_VTBC_ACTIVEBATCH_SERVERS object-group G_ESH_DC_SERVERS_FOR_SCSM_ACCESS 
+access-list inside-in remark CR1387077
+access-list inside-in extended permit object-group G_DYNAMIC_RPC_SERVICES object-group G_MOSCOW_SWIFT_CLIENTS object-group G_VTBSE_ITPORTAL_CLIENTS 
+access-list inside-in remark CR1426466
+access-list inside-in extended permit object-group G_EPAM_HORIZON_VIEW_VDI_SERVICES object-group G_EPAM_HORIZON_VIEW_VDI_SERVERS object-group G_VTBSE_DB_SERVERS 
+access-list inside-in remark CR1426466
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_EPAM_HORIZON_VIEW_VDI_SERVERS object-group G_VTBSE_APP_SERVERS 
+access-list inside-in remark CR1432409, CR1640704
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBC_TO_VTBSE_RDP_CLIENTS object-group G_VTBSE_RDP_SERVERS 
+access-list inside-in remark CR1439360
+access-list inside-in extended permit object-group G_SAN_STORAGE_VSP_MGMT_SERVICES object-group G_HI_COMMAND_SUITE_SERVERS object-group G_FRANKFURT_SAN_STORAGES 
+access-list inside-in remark CR1475811
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_HI_COMMAND_SUITE_SERVERS object-group G_FRANKFURT_SAN_STORAGES 
+access-list inside-in remark CR1441779
+access-list inside-in extended permit object-group G_LSEDM_UAT_SERVICES object-group G_QUIK_LSE_GW_UAT_SERVERS object-group G_LSEDM_UAT_GATEWAYS 
+access-list inside-in remark CR1450483
+access-list inside-in extended permit object-group G_SLSEDM_CDS_UAT_SAIL_COPY_FROM_QUIK object-group G_QUIK_LSE_GW_UAT_SERVERS object-group G-EDX-CDS-SAIL-GATEWAYS 
+access-list inside-in remark CR1454464
+access-list inside-in extended permit object-group G_VTBSE_ILO_SERVICES_IN object-group G_ONEVIEW_SERVERS object-group G_VTBSE_ILO 
+access-list inside-in remark CR1454464
+access-list inside-in extended permit object-group G_VTBSE_ILO_BROWSER_SERVICES object-group G_VTBC_TO_VTBSE_ILO_CLIENTS object-group G_VTBSE_ILO 
+access-list inside-in remark CR1460438
+access-list inside-in extended permit object-group G_VTBC_VTBSE_SIP_TRUNK_SERVICES object-group G_VTBC_LONDON_CUCM_SERVERS object-group G_VTBSE_SIP_SERVERS 
+access-list inside-in remark CR1464183
+access-list inside-in extended permit object-group G_CCS_AGENT_OUT_SERVICES object-group G-CCS-SERVERS object-group G_VTBSE_CCS_AGENTS 
+access-list inside-in remark CR1462097
+access-list inside-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_GLOBAL_CORPORATE_NETWORK object-group G_VIENNA_BMS_SERVER 
+access-list inside-in remark CR1471678
+access-list inside-in extended permit object-group G_VTBSE_BACKUP_INVENTORY_SERVICES object-group G_VTBC_INFRA_SERVERS object-group G_VTBSE_BACKUP_INVENTORY_SERVER 
+access-list inside-in remark CR1483710
+access-list inside-in extended permit object-group G_JIRA_POP_SERVICES object-group G_MSK_JIRA_SERVERS object-group G_ESH_EXCHANGE_SERVER 
+access-list inside-in remark CR1487184
+access-list inside-in extended permit object-group G_AD_DS_SHAREPOINT_SERVICES object-group G_SHAREPOINT_PORTAL_SERVERS object-group G_VTBSE_AD_DS_FIM_AGENT_SERVERS 
+access-list inside-in remark CR1487184
+access-list inside-in extended permit object-group G_KERBEROS_TICKET object-group G_SHAREPOINT_PORTAL_SERVERS object-group G_ESH_VTB_EU_CLIENTS 
+access-list inside-in remark CR1491709
+access-list inside-in extended permit object-group G_DOMAIN_CACHE object-group G-CCS-SERVERS object-group G_VTBASG_DC 
+access-list inside-in remark CR1496869
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_MONITORING_SERVERS_TO_ESH_MONITORING_GATEWAYS object-group G_VTBSE_SCOM_MONITORING_DEVICES 
+access-list inside-in remark CR1497121
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_SWIFT_CLIENTS object-group G_ESH_NEW_SWIFT_UAT_SERVER 
+access-list inside-in remark CR1500876
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_ACTIVEBATCH_EXECUTION_AGENT_SERVERS object-group G_ESH_NEW_SWIFT_UAT_SERVER 
+access-list inside-in remark CR1513273
+access-list inside-in extended permit object-group G_HTTP_SERVICES object-group G_VTBC_FT_USERS object-group G_VTB_ESH_RMS_SERVERS 
+access-list inside-in remark CR1529112
+access-list inside-in extended permit object-group G_SCSM_SERVICES object-group G_GLOBAL_USER_SUBNETS object-group G_VTBSE_ITPORTAL_CLIENTS 
+access-list inside-in remark CR1537427
+access-list inside-in extended permit object-group G_VTBC_AUTOMATE_SERVICES object-group G_VTBC_AUTOMATE_SERVERS object-group G_ESH_EXCHANGE_SERVER 
+access-list inside-in remark CR1542852
+access-list inside-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_ACTIVEBATCH_UAT_SERVER object-group G_VTBASG_DC 
+access-list inside-in remark CR1546175
+access-list inside-in extended permit object-group G-NETWORK-MANAGEMENT-OUT-SERVICES object-group G_MSK9_MANAGEMENT_NETWORKS object-group G_FRANKFURT_MANAGEMENT_NETWORKS 
+access-list inside-in remark CR1547701
+access-list inside-in extended permit object-group G_FRA_CUCM_WEB_ACCESS_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_CUCM_SERVERS 
+access-list inside-in remark CR1547701
+access-list inside-in extended permit object-group G_FRA_SIP_SERVICES object-group G_VTBC_VOICE_SERVERS object-group G_FRANKFURT_CUCM_SERVERS 
+access-list inside-in remark CR1547800
+access-list inside-in extended permit object-group G_VIENNA_OUT_VOIP_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_CUCM_SERVERS 
+access-list inside-in remark CR1547852
+access-list inside-in extended permit object-group G_RTP_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_VG_SERVERS 
+access-list inside-in remark CR1547974
+access-list inside-in extended permit object-group G_FRA_UNITY_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_UNITY_SERVERS 
+access-list inside-in remark CR1548094
+access-list inside-in extended permit object-group G_FRA_CUCM_WEB_ACCESS_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_UCCX_SERVERS 
+access-list inside-in remark CR1548108
+access-list inside-in extended permit object-group G_FRA_WEBEX_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_WEBEX_SERVERS 
+access-list inside-in remark CR1548125
+access-list inside-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_VOICE_RECORDING_SERVERS 
+access-list inside-in remark CR1553836
+access-list inside-in extended permit object-group G-NETWORK-MANAGEMENT-OUT-SERVICES object-group G_NETWORK_MANAGEMENT_ACCESS object-group G_FRA_WAN_AGGREGATION 
+access-list inside-in remark CR1562917
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_SINGAPORE_EXCHANGE_2016_SERVERS object-group G_VTBSE_AUTODISCOVER_SERVERS 
+access-list inside-in remark CR1566079
+access-list inside-in extended permit object-group G_ROOT_DC_SERVICES object-group G_VTBC_SNG_DC_SERVERS object-group G_ESH_ROOT_DC_SERVERS 
+access-list inside-in remark CR1571722
+access-list inside-in extended permit object-group G_DC_SERVICES object-group G_NEW_ESH_CITRIX_SERVERS object-group G_ESH_GERMANY_DC 
+access-list inside-in remark CR1571825
+access-list inside-in extended permit object-group G_RSA_FRANKFURT_SWIFT_SERVICES object-group G_RSA_FRANKFURT_SWIFT_CLIENTS object-group G_RSA_FRANKFURT_SWIFT_SERVERS 
+access-list inside-in remark CR1574014
+access-list inside-in extended permit object-group G_VTB_SE_CITRIX_STOREFRONT_SERVICES object-group G_MOSCOW_USERS_SUBNETS object-group G_ESH_VTBAUSTRIA_USER_ACCESS 
+access-list inside-in extended permit tcp host 10.101.28.177 host 10.144.23.199 eq 3389 
+access-list inside-in remark CR1573357
+access-list inside-in extended permit object-group G_ACTIVEBATCH_SERVICES object-group G_VTBC_ACTIVEBATCH_SERVERS object-group G_VTBE_ACTIVEBATCH_AGENTS 
+access-list inside-in extended permit tcp host 10.101.28.177 host 10.144.23.199 eq 12345 
+access-list inside-in remark CR1575147
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_LON_VDI_DESKTOPS object-group G_SWIFT_SERVERS 
+access-list inside-in remark CR1578218
+access-list inside-in extended permit object-group G-GRE-SERVICES object-group G_FRA_GRE_ENDPOINT object-group G_LON_GRE_ENDPOINT 
+access-list inside-in remark CR1579115
+access-list inside-in extended permit object-group G-SMTP-SERVICES object-group G_VTBC_MSK_EXCHANGE_SERVERS object-group G_VTBSE_EXCHANGE_SERVERS 
+access-list inside-in extended permit udp host 10.101.28.177 host 10.144.23.199 eq 12345 
+access-list inside-in remark CR1645559
+access-list inside-in extended permit object-group G_CISCO_SMART_SOFTWARE_MANAGER_SATELLITE_SERVICES object-group G_MSK9_MANAGEMENT_NETWORKS object-group G_CISCO_SMART_SOFTWARE_MANAGER_SATELLITE 
+access-list inside-in remark CR1609350
+access-list inside-in extended permit object-group G_DC_SERVICES object-group G_VTB_CAPITAL_CALYPSO_SERVERS object-group G_VTB_GERMANY_DOMAIN_CONTROLLERS 
+access-list inside-in remark CR1653580
+access-list inside-in extended permit object-group G_VIENNA_PHONE_WEB_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_BE600M_VOICE_SERVERS 
+access-list inside-in remark CR1653580
+access-list inside-in extended permit object-group G_CUCM_FTP_SERVICES object-group G_FRANKFURT_CUCM_CLIENTS object-group G_FRANKFURT_ALL_CUCM_SERVERS 
+access-list inside-in remark CR1653580
+access-list inside-in extended permit object-group G_RTP_STREAM_SERVICES object-group G_VTBC_OFFICES_IPT_NETWORKS object-group G_FRANKFURT_OFFICE_IPT_RANGE 
+access-list inside-in remark CR1660779
+access-list inside-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBC_CITRIX_FARM_DELIVERY_CONTROLLERS object-group G_VTBE_STOREFRONT_SERVERS 
+access-list inside-in remark CR1665756
+access-list inside-in extended permit object-group G_VTBE_TRADER_WORKSTATION_SERVICES object-group G_USER_SUBNETS_TO_VTBE_TRADER object-group G_VTBE_TRADER_WORKSTATION_DESTINATION 
+access-list inside-in remark CR1670064
+access-list inside-in extended permit object-group G_SSH_SERVICES object-group G_VOICE_ENGINEERS_WORKSTATIONS object-group G_FRANKFURT_VOICE_SERVERS 
+access-list inside-in remark CR1673248
+access-list inside-in extended permit object-group G_KERBEROS_TICKET object-group G_CRM_SERVERS object-group G_PROJECT_CHARLOT_PCS 
+access-list inside-in remark CR1691371
+access-list inside-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBC_DBASUPPORT_TERMINAL_SERVERS object-group G_VTBSE_CITRIX_ADMIN_SILO_SERVERS 
+access-list inside-in remark CR1701533
+access-list inside-in extended permit object-group G_FRANKFURT_VIDEO_KEYPOINT_SERVICES object-group G_FRANKFURT_VIDEO_KEYPOINT_CLIENTS object-group G_FRANKFURT_VIDEO_KEYPOINT_DEVICES 

@@ -1,0 +1,2931 @@
+object network S_10.104.41.0s24_LON2_NETWORK_MANAGEMENT_SUBNET
+ subnet 10.104.41.0 255.255.255.0
+object network S_10.104.57.0s24_LON1_NETWORK_MANAGEMENT_SUBNET
+ subnet 10.104.57.0 255.255.255.0
+object network S_10.72.41.0s24_MSK2_NETWORK_MANAGEMENT_SUBNET
+ subnet 10.72.41.0 255.255.255.0
+object network S_10.72.57.0s24_MSK1_NETWORK_MANAGEMENT_SUBNET
+ subnet 10.72.57.0 255.255.255.0
+object network S_10.72.0.0s13_MSK_RANGE
+ subnet 10.72.0.0 255.248.0.0
+object network H_10.105.145.132_SLON02TE29
+ host 10.105.145.132
+object network H_10.73.209.132_SMSK01TE30
+ host 10.73.209.132
+object network S_10.100.0.0s15_LON_SUBNET
+ subnet 10.100.0.0 255.254.0.0
+object network S_10.58.0.0s25_HKG3_USER_ACCESS
+ subnet 10.58.0.0 255.255.255.128
+object network H_10.72.208.48_SMSK01MO39
+ host 10.72.208.48
+object network H_10.105.0.128_LON2B2BARO01
+ host 10.105.0.128
+object network H_10.105.0.129_LND2B2AXR04
+ host 10.105.0.129
+object network H_10.105.0.3_LON2B2BBXR01
+ host 10.105.0.3
+object network H_10.105.2.28_GGY1WANARO01
+ host 10.105.2.28
+object network H_10.105.64.128_LND1B2BARO01
+ host 10.105.64.128
+object network H_10.105.64.129_LND1B2BAXR04
+ host 10.105.64.129
+object network H_10.105.64.3_LON1B2BBXR01
+ host 10.105.64.3
+object network H_10.196.11.0_VIE1WANARO01
+ host 10.196.11.0
+object network H_10.196.11.1_VIE1WANARO02
+ host 10.196.11.1
+object network S_10.22.59.0s24_SNG1_NETWORK_MANAGEMENT_SUBNET
+ subnet 10.22.59.0 255.255.255.0
+object network H_10.196.1.76_VIENNA_BMS
+ host 10.196.1.76
+ description CR1325629
+object network H_10.196.1.77_VIENNA_UPS
+ host 10.196.1.77
+ description CR1325775
+object network H_10.105.2.6_LON2B2BBRO01
+ host 10.105.2.6
+object network H_10.105.66.6_LON1B2BBRO01
+ host 10.105.66.6
+object network H_10.144.22.0_FRA2WANARO01
+ host 10.144.22.0
+object network H_10.144.22.128_FRA1WANARO01
+ host 10.144.22.128
+object network H_10.144.22.158_FRA1SVCAWA01
+ host 10.144.22.158
+object network H_10.144.22.30_FRA2SVCAWA01
+ host 10.144.22.30
+object network H_10.196.1.192_VIE1UADAXR01
+ host 10.196.1.192
+object network H_10.196.11.38_VIE1SVCAWA01
+ host 10.196.11.38
+object network H_10.196.11.57_VIE1WEBDFW01
+ host 10.196.11.57
+object network H_10.196.1.193_VIE1VFDAVG01
+ host 10.196.1.193
+ description MA1269147
+object network H_10.196.1.194_VIE1VFDAVG02
+ host 10.196.1.194
+ description MA1269147
+object network H_10.196.11.50_VIE1SVCAWA02
+ host 10.196.11.50
+object network H_10.144.22.131_FRA1WANAXR01
+ host 10.144.22.131
+ description CR1575333
+object network H_10.144.22.3_FRA2WANAXR01
+ host 10.144.22.3
+ description CR1575333
+object network H_10.144.23.195_FRA1MGTAFW01
+ host 10.144.23.195
+ description CR1575333
+object network H_10.144.23.196_FRA1MGTAFW01-2
+ host 10.144.23.196
+ description CR1575333
+object network H_10.144.23.67_FRA2MGTAFW01
+ host 10.144.23.67
+ description CR1575333
+object network H_10.144.23.68_FRA2MGTAFW01-2
+ host 10.144.23.68
+ description CR1575333
+object network H-10.20.9.90-VTB-ESH-FRANCE-WAN-GW-REAL-IP
+ host 10.20.9.90
+ description CR912162
+object network H-10.21.1.5-VTB-ESH-CORNHILL-WAN-GW-REAL-IP
+ host 10.21.1.5
+ description CR912162
+object network H-10.21.129.5-VTB-ESH-ACTON-WAN-GW-REAL-IP
+ host 10.21.129.5
+ description CR912162
+object network H-10.18.96.254-VTB-ESH-AUSTRIA-WAN-GW-REAL-IP
+ host 10.18.96.254
+ description CR912162
+object network H-10.19.98.254-VTB-ESH-GERMANY-WAN-GW-REAL-IP
+ host 10.19.98.254
+ description CR912162
+object network S_10.19.0.0s16_VTB_ESH_NET
+ subnet 10.19.0.0 255.255.0.0
+object network H_10.100.129.12_SLON01AP186_CR705773
+ host 10.100.129.12
+ description CR705773
+object network H_10.101.129.12_SLON02AP186_CR705773
+ host 10.101.129.12
+ description CR705773
+object network H_10.100.129.91_SLON01AP330U_CR705773
+ host 10.100.129.91
+ description CR705773
+object network H_10.101.129.89_SLON02AP330U_CR705773
+ host 10.101.129.89
+ description CR705773
+object network H_10.74.4.7_DMSK0385_CR705773
+ host 10.74.4.7
+ description CR705773
+object network H_10.76.194.205_SMSK01GW12
+ host 10.76.194.205
+ description CR872409
+object network H_10.78.194.148_SMSK02GW12
+ host 10.78.194.148
+ description CR872409
+object network H_10.100.129.13_SLON01AP187
+ host 10.100.129.13
+ description CR529045
+object network H_10.100.129.16_SLON01AP192
+ host 10.100.129.16
+ description CR529045
+object network H_10.100.129.188_SLON01AP189
+ host 10.100.129.188
+ description CR529045
+object network H_10.100.129.216_SLON01AP193
+ host 10.100.129.216
+ description CR529045
+object network H_10.100.129.8_SLON01AP185
+ host 10.100.129.8
+ description CR529045
+object network H_10.100.141.30_SLON01AP190
+ host 10.100.141.30
+ description CR529045
+object network H_10.100.141.43_SLON01AP188
+ host 10.100.141.43
+ description CR529045
+object network H_10.100.149.26_SLON01AP191
+ host 10.100.149.26
+ description CR529045
+object network H_10.101.129.11_SLON02AP185
+ host 10.101.129.11
+ description CR529045
+object network H_10.101.129.13_SLON02AP187
+ host 10.101.129.13
+ description CR529045
+object network H_10.101.129.153_SLON02AP188
+ host 10.101.129.153
+ description CR529045
+object network H_10.101.129.154_SLON02AP190
+ host 10.101.129.154
+ description CR529045
+object network H_10.101.129.155_SLON02AP191
+ host 10.101.129.155
+ description CR529045
+object network H_10.101.129.16_SLON02AP192
+ host 10.101.129.16
+ description CR529045
+object network H_10.101.129.174_SLON02AP193
+ host 10.101.129.174
+ description CR529045
+object network H_10.101.129.56_SLON02AP189
+ host 10.101.129.56
+ description CR529045
+object network H_10.101.133.13_VTBAUSTRIA
+ host 10.101.133.13
+object network H_10.100.129.114_SLON01AP346
+ host 10.100.129.114
+object network H_10.101.129.106_SLON02AP346
+ host 10.101.129.106
+object network H_10.101.128.90_SLON02AP380
+ host 10.101.128.90
+ description CR1378177
+object network H_10.101.128.91_SLON02AP381
+ host 10.101.128.91
+ description CR1378177
+object network H_10.101.128.92_SLON02AP382
+ host 10.101.128.92
+ description CR1378177
+object network H_10.101.128.93_SLON02AP383
+ host 10.101.128.93
+ description CR1378177
+object network H_10.101.128.94_SLON02AP384
+ host 10.101.128.94
+ description CR1378177X
+object network H_10.101.128.95_SLON02AP385
+ host 10.101.128.95
+ description CR1378177
+object network H_10.100.128.100_SLON01AP380
+ host 10.100.128.100
+ description CR1378177
+object network H_10.100.128.101_SLON01AP381
+ host 10.100.128.101
+ description CR1378177
+object network H_10.100.128.102_SLON01AP382
+ host 10.100.128.102
+ description CR1378177
+object network H_10.100.128.103_SLON01AP383
+ host 10.100.128.103
+ description CR1378177
+object network H_10.100.128.104_SLON01AP384
+ host 10.100.128.104
+ description CR1378177
+object network H_10.100.128.105_SLON01AP385
+ host 10.100.128.105
+ description CR1378177
+object network H_10.16.4.23_VTBAUSTRIA_SFTP_SERVER_CR692447
+ host 10.16.4.23
+ description CR692447
+object network H_10.18.4.4_VTBAUSTRIA_SFTP_SERVER
+ host 10.18.4.4
+object network H_10.138.0.11_DZUG0034
+ host 10.138.0.11
+object network H_10.138.0.12_DZUG0024
+ host 10.138.0.12
+object network H_10.138.0.19_LZUG0011
+ host 10.138.0.19
+object network H_10.138.0.6_DZUG0037
+ host 10.138.0.6
+object network H_10.100.129.12_SLON02AP186
+ host 10.100.129.12
+ description CR529045
+object network H_10.101.129.12_SLON02AP186
+ host 10.101.129.12
+ description CR529045
+object network H_10.16.4.10_VTBAUSTRIA_DEAL_TRACKER_SERVER
+ host 10.16.4.10
+ description CR529045
+object network H_10.100.129.203_SLON01AP196U
+ host 10.100.129.203
+ description CR529045
+object network H_10.100.129.204_SLON01AP197U
+ host 10.100.129.204
+ description CR529045
+object network H_10.100.129.28_SLON01AP204U
+ host 10.100.129.28
+ description CR529045
+object network H_10.101.129.172_SLON02AP185U
+ host 10.101.129.172
+ description CR529045
+object network H_10.101.129.172_SLON02AP186U
+ host 10.101.129.172
+ description CR529045
+object network H_10.101.129.80_SLON02AP192U
+ host 10.101.129.80
+ description CR529045
+object network H_10.101.129.64_SLON02AP194U
+ host 10.101.129.64
+ description CR529045
+object network H_10.101.129.58_SLON02AP195U
+ host 10.101.129.58
+ description CR529045
+object network H_10.101.129.79_SLON02AP198U
+ host 10.101.129.79
+ description CR529045
+object network H_10.100.129.91_SLON01AP330U
+ host 10.100.129.91
+ description CR529045
+object network H_10.101.129.89_SLON02AP330U
+ host 10.101.129.89
+ description CR529045
+object network H-10.104.24.5-LON2VFDAVG06
+ host 10.104.24.5
+ description CR852604
+object network H-10.104.25.20-LON2VFDACM01
+ host 10.104.25.20
+ description CR852604
+object network H-10.104.28.3-LON1VFDAVG06
+ host 10.104.28.3
+ description CR852604
+object network H-10.104.29.20-LON1VFDACM01
+ host 10.104.29.20
+ description CR852604
+object network H-10.16.18.21-VTB-ESH-PBX01-REAL-IP
+ host 10.16.18.21
+ description CR852604
+object network H-10.18.18.21-VTB-AUSTRIA-PBX01-REAL-IP
+ host 10.18.18.21
+ description CR852604
+object network H-10.19.18.21-VTB-DEUTSCHLAND-PBX01-REAL-IP
+ host 10.19.18.21
+ description CR852604
+object network H-10.20.18.21-VTB-FRANCE-PBX01-REAL-IP
+ host 10.20.18.21
+ description CR852604
+object network H-10.16.18.25-VTB-ESH-PBX02-REAL-IP
+ host 10.16.18.25
+ description CR852604
+object network H-10.19.18.27-VTB-ESH-VOICE-GATEWAY02-REAL-IP
+ host 10.19.18.27
+ description CR912162
+object network H-10.19.54.10-VTB-ESH-VOICE-GATEWAY01-REAL-IP
+ host 10.19.54.10
+ description CR912162
+object network H-10.100.129.42-SLON01VS13
+ host 10.100.129.42
+ description CR882022
+object network H-10.101.128.16-SLON02VS15
+ host 10.101.128.16
+ description CR882022
+object network H-10.100.129.39-SLON01VS12
+ host 10.100.129.39
+ description CR882022
+object network H-10.101.128.12-SLON02VS14
+ host 10.101.128.12
+ description CR882022
+object network H-10.101.34.24-MCU
+ host 10.101.34.24
+ description CR896480
+object network H-10.101.129.166-TMS
+ host 10.101.129.166
+ description CR896480
+object network H-10.101.34.23-VCS
+ host 10.101.34.23
+ description CR896480
+object network H-217.110.121.197-VTB-ESH-VCSEXT01-REAL-IP
+ host 217.110.121.197
+ description CR882022
+object network H-172.16.16.11-VTB-ESH-VCSINT01-REAL-IP
+ host 172.16.16.11
+ description CR882022
+object network H-172.16.16.10-VTB-ESH-VCSTMS01-REAL-IP
+ host 172.16.16.10
+ description CR882022
+object network H-172.16.16.12-VTB-ESH-VCSMCU01-REAL-IP
+ host 172.16.16.12
+ description CR882022
+object network H-10.74.2.13-DMSK0962
+ host 10.74.2.13
+ description Alsu Yambaeva host
+object network H-10.18.41.32-VTB-ESH-ATWS913-REAL-IP
+ host 10.18.41.32
+ description CR937727
+object network S_10.101.0.0s19_LONDON_USER_ACCESS
+ subnet 10.101.0.0 255.255.224.0
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+object network S_10.106.0.0s19_LONDON_USER_ACCESS
+ subnet 10.106.0.0 255.255.224.0
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+object network S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+ subnet 10.19.4.0 255.255.254.0
+object network S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+ subnet 10.16.4.0 255.255.254.0
+object network H_10.101.6.12_DLON4951
+ host 10.101.6.12
+ description CR1194703
+object network H_10.101.6.36_DLON4861
+ host 10.101.6.36
+ description CR1194703
+object network H_10.101.8.108_DLON4776
+ host 10.101.8.108
+ description CR1194703
+object network H_10.106.4.14_DLON6353
+ host 10.106.4.14
+ description CR1194703
+object network H_10.16.4.35_VTB_SE_EUCLID_VTBA
+ host 10.16.4.35
+ description CR1153128
+object network H_10.19.38.236_VTB_ESH_EUCLID_VTBD
+ host 10.19.38.236
+ description CR1153128
+object network S_10.74.0.0s19_VTBC_FT
+ subnet 10.74.0.0 255.255.224.0
+ description CR1161676
+object network S_10.74.96.0s19_VTBC_FT
+ subnet 10.74.96.0 255.255.224.0
+ description CR1161676
+object network S_10.77.32.0s19_VTBC_VO
+ subnet 10.77.32.0 255.255.224.0
+ description CR1161676
+object network S_10.79.0.0s21_VTBC_ET
+ subnet 10.79.0.0 255.255.248.0
+ description CR1161676
+object network H_10.16.0.31_SGSVR114
+ host 10.16.0.31
+object network H_10.16.0.33_SGSVR116
+ host 10.16.0.33
+object network H_10.76.198.97_SMSK01WE78
+ host 10.76.198.97
+ description CR1116067
+object network H_10.78.198.37_SMSK02WE78U
+ host 10.78.198.37
+ description CR1116067
+object network H_10.78.198.97_SMSK02WE78
+ host 10.78.198.97
+ description CR1116067
+object network H_10.16.0.10_SGSVR001
+ host 10.16.0.10
+ description CR1161846
+object network H_10.16.0.11_SGSVR002
+ host 10.16.0.11
+ description CR1161846
+object network H_10.16.0.12_SGSVR017
+ host 10.16.0.12
+ description CR1161846
+object network H_10.16.0.13_SGSVR004
+ host 10.16.0.13
+ description CR1161846
+object network H_10.16.0.90_SGSVR083
+ host 10.16.0.90
+ description CR1161846
+object network H_10.16.4.14_SGSVR005
+ host 10.16.4.14
+ description CR1161846
+object network H_10.16.4.15_SGSVR006
+ host 10.16.4.15
+ description CR1161846
+object network H_10.18.4.10_SGSVR016
+ host 10.18.4.10
+ description CR1161846
+object network H_10.18.4.16_SGSVR032
+ host 10.18.4.16
+ description CR1161846
+object network H_10.19.4.15_SGSVR009
+ host 10.19.4.15
+ description CR1161846
+object network H_10.19.4.23_SGSVR003
+ host 10.19.4.23
+ description CR1161846
+object network H_10.20.4.10_SGSVR018
+ host 10.20.4.10
+ description CR1165999
+object network H_10.20.4.19_SGSVR019
+ host 10.20.4.19
+ description CR1165999
+object network H_10.76.194.13_SMSK01WE31
+ host 10.76.194.13
+ description CR1158604
+object network H_10.78.194.234_SMSK02WE31U
+ host 10.78.194.234
+ description CR1158604
+object network H_10.100.129.1_SLON01DC01
+ host 10.100.129.1
+ description CR1167894
+object network H_10.100.129.2_SLON01DC02
+ host 10.100.129.2
+ description CR1167894
+object network H_10.100.129.3_SLON01DC03
+ host 10.100.129.3
+ description CR1167894
+object network H_10.100.129.4_SLON01DC04
+ host 10.100.129.4
+ description CR1167894
+object network H_10.100.130.2_SLON01DC05
+ host 10.100.130.2
+ description CR1167894
+object network H_10.101.129.1_SLON02DC01
+ host 10.101.129.1
+ description CR1167894
+object network H_10.101.129.2_SLON02DC02
+ host 10.101.129.2
+ description CR1167894
+object network H_10.101.129.3_SLON02DC03
+ host 10.101.129.3
+ description CR1167894
+object network H_10.101.129.4_SLON02DC04
+ host 10.101.129.4
+ description CR1167894
+object network H_10.101.130.2_SLON02DC05
+ host 10.101.130.2
+ description CR1167894
+object network H_10.72.108.10_SMSK01DC01T
+ host 10.72.108.10
+ description CR1167894
+object network H_10.72.108.11_SMSK01DC02T
+ host 10.72.108.11
+ description CR1167894
+object network H_10.72.160.101_SMSK02DC01T
+ host 10.72.160.101
+ description CR1167894
+object network H_10.72.160.110_SMSK02DC02T
+ host 10.72.160.110
+ description CR1167894
+object network H_10.76.128.21_SMSK01DC01
+ host 10.76.128.21
+ description CR1167894
+object network H_10.76.128.22_SMSK01DC02
+ host 10.76.128.22
+ description CR1167894
+object network H_10.76.128.23_SMSK01DC03
+ host 10.76.128.23
+ description CR1167894
+object network H_10.76.128.24_SMSK01DC04
+ host 10.76.128.24
+ description CR1167894
+object network H_10.78.194.120_SMSK02DC03
+ host 10.78.194.120
+ description CR1167894
+object network H_10.78.194.121_SMSK02DC04
+ host 10.78.194.121
+ description CR1167894
+object network H_10.78.194.55_SMSK02DC01
+ host 10.78.194.55
+ description CR1167894
+object network H_10.78.194.56_SMSK02DC02
+ host 10.78.194.56
+ description CR1167894
+object network H_10.101.128.132_SLON02MG60
+ host 10.101.128.132
+object network H_10.76.194.132_SMSK01MG60
+ host 10.76.194.132
+object network S_10.101.28.0s24_LONDON_USER_ACCESS
+ subnet 10.101.28.0 255.255.255.0
+ description CR CR1178061
+object network S_10.101.26.0s24_LONDON_USER_ACCESS
+ subnet 10.101.26.0 255.255.255.0
+ description CR CR1178061
+object network S_10.104.176.0s24_LONDON_USER_ACCESS
+ subnet 10.104.176.0 255.255.255.0
+ description CR CR1178061
+object network S_10.101.148.0s22_BLOOMBERG
+ subnet 10.101.148.0 255.255.252.0
+object network H_10.76.194.84_SMSK01TE24
+ host 10.76.194.84
+ description CR1320664
+object network H_10.101.129.183_SLON02TE15
+ host 10.101.129.183
+ description CR1320664
+object network S_10.77.48.0s25_MSK9_USER_ACCESS
+ subnet 10.77.48.0 255.255.255.128
+object network H_10.16.8.31_VTB_SE_RDP_DESTINATION
+ host 10.16.8.31
+ description Emergency
+object network H_10.16.5.110_SGSVR310
+ host 10.16.5.110
+ description CR1192360
+object network H_10.76.194.181_SMSK01SE35
+ host 10.76.194.181
+object network H_10.78.194.92_SMSK02SE35
+ host 10.78.194.92
+object network H_10.19.8.75_ESH_LINUX
+ host 10.19.8.75
+object network H_10.16.5.111_SGSVR311
+ host 10.16.5.111
+ description CR1192360
+object network H_10.16.5.112_SGSVR312
+ host 10.16.5.112
+ description CR1192360
+object network H_10.16.5.113_SGSVR313
+ host 10.16.5.113
+ description CR1192360
+object network H_10.16.5.100_SGSVR300
+ host 10.16.5.100
+ description CR1195662
+object network S_10.64.0.0s12_MOSCOW_COMMON_SUBNET
+ subnet 10.64.0.0 255.240.0.0
+ description CR1194233
+object network H_10.19.8.206_DESTM001
+ host 10.19.8.206
+ description Emergency_ESH_Access
+object network H_10.19.8.209_DESTM004
+ host 10.19.8.209
+ description Emergency_ESH_Access
+object network H_10.19.8.210_DESTM005
+ host 10.19.8.210
+ description Emergency_ESH_Access
+object network H_10.19.8.229_DESTM006
+ host 10.19.8.229
+ description Emergency_ESH_Access
+object network H_10.19.8.232_DESTM009
+ host 10.19.8.232
+ description Emergency_ESH_Access
+object network H_10.19.8.233_DESTM010
+ host 10.19.8.233
+ description Emergency_ESH_Access
+object network H_10.78.198.54_SMSK02AP136D
+ host 10.78.198.54
+ description CR1203936
+object network H_10.76.194.218_SMSK01AP97
+ host 10.76.194.218
+ description CR1203936
+object network H_10.76.194.246_SMSK01MG33
+ host 10.76.194.246
+ description CR1210861
+object network H_10.76.194.249_SMSK01MG33
+ host 10.76.194.249
+ description CR1210861
+object network H_10.78.194.246_SMSK02MG33
+ host 10.78.194.246
+ description CR1210861
+object network H_10.78.194.252_SMSK02MG33
+ host 10.78.194.252
+ description CR1210861
+object network H_10.76.198.53_SMSK01MG54
+ host 10.76.198.53
+ description CR1216594
+object network H_10.78.198.53_SMSK02MG54
+ host 10.78.198.53
+ description CR1216594
+object network H_10.72.41.21_SMSK02MO09
+ host 10.72.41.21
+ description CR1217737
+object network H_10.76.194.222_SMSK01MO20
+ host 10.76.194.222
+ description CR1217737
+object network H_10.76.194.223_SMSK01MO21
+ host 10.76.194.223
+ description CR1217737
+object network H_10.78.194.222_SMSK02MO20
+ host 10.78.194.222
+ description CR1217737
+object network H_10.78.194.223_SMSK02MO21
+ host 10.78.194.223
+ description CR1217737
+object network H_10.16.8.49_SGSVR109
+ host 10.16.8.49
+ description CR1217802
+object network H_10.16.8.50_SGSVR110
+ host 10.16.8.50
+ description CR1217802
+object network H_10.74.0.60_DMSK0653
+ host 10.74.0.60
+ description CR1220535
+object network H_10.74.3.121_DMSK0026
+ host 10.74.3.121
+ description CR1220535
+object network H_10.74.2.60_DMSK0026
+ host 10.74.2.60
+ description CR1260085
+object network H_10.74.0.25_DMSK0861
+ host 10.74.0.25
+ description CR1277137
+object network H_10.19.0.135_DESVR048
+ host 10.19.0.135
+ description CR1220535
+object network H_10.19.0.136_DESVR049
+ host 10.19.0.136
+ description CR1220535
+object network H_10.19.0.35_DESVR046
+ host 10.19.0.35
+ description CR1220535
+object network H_10.76.194.11_SMSK01WE28
+ host 10.76.194.11
+object network H_10.76.194.12_SMSK01AP02
+ host 10.76.194.12
+object network H_10.76.194.54_SMSK01AP11
+ host 10.76.194.54
+object network H_10.78.194.10_SMSK02AP02D
+ host 10.78.194.10
+object network H_10.78.194.146_SMSK02AP04U
+ host 10.78.194.146
+object network H_10.78.194.171_SMSK02AP02
+ host 10.78.194.171
+object network H_10.78.194.195_SMSK02WE03
+ host 10.78.194.195
+object network H_10.78.194.37_SMSK02AP104U
+ host 10.78.194.37
+object network H_10.78.194.46_SMSK02AP111
+ host 10.78.194.46
+object network H_10.76.198.32_SMSK01WE43
+ host 10.76.198.32
+ description CR1233216
+object network H_10.78.198.32_SMSK02WE43
+ host 10.78.198.32
+ description CR1233216
+object network H_10.78.198.31_SMSK02WE43U
+ host 10.78.198.31
+ description CR1233216
+object network H_10.76.198.33_SMSK01WE43-01
+ host 10.76.198.33
+ description CR1233216
+object network H_10.78.198.33_SMSK02WE43-01
+ host 10.78.198.33
+ description CR1233216
+object network H_10.78.198.34_SMSK02WE43U-01
+ host 10.78.198.34
+ description CR1233216
+object network S_10.96.0.0s12_LON_COMMON_SUBNET
+ subnet 10.96.0.0 255.240.0.0
+object network H_10.19.0.202_FILE01
+ host 10.19.0.202
+ description CR1233249
+object network H_10.16.4.20_SGSVR012
+ host 10.16.4.20
+ description CR1233249
+object network H_10.16.5.224_SGSVR504
+ host 10.16.5.224
+ description CR1233249
+object network H_10.16.5.225_SGSVR505
+ host 10.16.5.225
+ description CR1233249
+object network H_10.16.5.226_SGSVR506
+ host 10.16.5.226
+ description CR1233249
+object network H_10.16.5.227_SGSVR507
+ host 10.16.5.227
+ description CR1233249
+object network H_10.16.5.228_SGSVR508
+ host 10.16.5.228
+ description CR1233249
+object network H_10.16.5.229_SGSVR509
+ host 10.16.5.229
+ description CR1233249
+object network H_10.16.5.230_SGSVR510
+ host 10.16.5.230
+ description CR1233249
+object network H_10.72.212.20_MEETADMIN
+ host 10.72.212.20
+object network H_10.72.212.21_SMSK01VS09
+ host 10.72.212.21
+object network H_10.72.212.22_SMSK02VS09
+ host 10.72.212.22
+object network H_10.72.212.23_SMSK01VS10
+ host 10.72.212.23
+object network H_10.72.212.24_SMSK02VS10
+ host 10.72.212.24
+object network H_10.72.25.6_MSK1VFDACM02
+ host 10.72.25.6
+object network H_10.72.25.7_MSK1VFDACM03
+ host 10.72.25.7
+object network H_10.72.29.5_MSK2VFDACM01
+ host 10.72.29.5
+object network H_10.20.4.15_SGSVR015
+ host 10.20.4.15
+object network H_10.104.25.22_SLON02VS11
+ host 10.104.25.22
+ description CR1264241
+object network H_10.104.29.22_SLON01VS11
+ host 10.104.29.22
+ description CR1264241
+object network H_10.104.28.1_LON1VFDAVG01
+ host 10.104.28.1
+object network H_10.104.28.2_LON1VFDAVG02
+ host 10.104.28.2
+object network H_10.77.48.148_Test_IP_PHONE
+ host 10.77.48.148
+object network S_10.196.0.128s25_VIENNA_PHONE_SUBNET
+ subnet 10.196.0.128 255.255.255.128
+ description CR1239788
+object network S_10.120.0.0s13_SOFIA_COMMON_SUBNET
+ subnet 10.120.0.0 255.248.0.0
+object network S_10.136.0.0s13_ZUG_COMMON_SUBNET
+ subnet 10.136.0.0 255.248.0.0
+object network S_10.16.0.0s12_SINGAPORE_COMMON_SUBNET
+ subnet 10.16.0.0 255.240.0.0
+object network S_10.48.0.0s12_HONG_KONG_COMMON_SUBNET
+ subnet 10.48.0.0 255.240.0.0
+object network S_10.96.0.0s12_LONDON_COMMON_SUBNET
+ subnet 10.96.0.0 255.240.0.0
+object network H_10.100.156.5_SLON01MX15VM
+ host 10.100.156.5
+object network H_10.100.156.6_SLON01MX16VM
+ host 10.100.156.6
+object network H_10.101.156.5_SLON02MX15VM
+ host 10.101.156.5
+object network H_10.101.156.6_SLON02MX16VM
+ host 10.101.156.6
+object network H_10.72.133.70_SMSK01MX41
+ host 10.72.133.70
+object network H_10.72.133.71_SMSK02MX41
+ host 10.72.133.71
+object network H_10.72.197.70_SMSK01MX40
+ host 10.72.197.70
+object network H_10.72.197.71_SMSK01MX41
+ host 10.72.197.71
+object network H_10.16.2.12_SGCAS001
+ host 10.16.2.12
+object network S_10.77.40.0s26_MSK9_USER_ACCESS
+ subnet 10.77.40.0 255.255.255.192
+ description CR1436416
+object network H_10.72.208.16_SMSK01WE16
+ host 10.72.208.16
+object network H_10.76.194.58_SMSK01WE32U
+ host 10.76.194.58
+object network H_10.78.194.196_SMSK02WE32U
+ host 10.78.194.196
+object network H_10.78.194.19_SMSK02WE16
+ host 10.78.194.19
+object network H_10.76.194.38_SMSK01WE32U
+ host 10.76.194.38
+ description CR1274249
+object network H_10.76.198.48_SMSK01WE16
+ host 10.76.198.48
+ description CR1274249
+object network H_10.78.198.48_SMSK02WE16
+ host 10.78.198.48
+ description CR1274249
+object network H_10.105.225.9_VIE1WANARO01_NATED
+ host 10.105.225.9
+object network H_10.196.11.3_VIE1WANARO02
+ host 10.196.11.3
+object network H_10.105.2.7_LON2B2BBRO01
+ host 10.105.2.7
+object network H_10.105.66.7_LON1B2BBRO01
+ host 10.105.66.7
+object network H_10.144.22.129_FRA1WANARO01
+ host 10.144.22.129
+object network H_10.144.22.1_FRA1WANARO02
+ host 10.144.22.1
+object network H_10.72.196.74_SMSK01VS05
+ host 10.72.196.74
+ description CR1266261
+object network H_10.72.131.77_SMSK02VS05
+ host 10.72.131.77
+ description CR1266261
+object network H_10.196.1.157_ATSVR181
+ host 10.196.1.157
+ description CR1269372
+object network H_10.196.1.158_ILOATSVR181
+ host 10.196.1.158
+ description CR1272786
+object network H_10.19.8.73_DESRV022
+ host 10.19.8.73
+ description CR1285606
+object network H_10.72.208.35_SCSM
+ host 10.72.208.35
+ description CR1287563
+object network H_10.72.208.46_CMSK00WE123
+ host 10.72.208.46
+ description CR1287563
+object network H_10.76.194.115_SMSK01WE123
+ host 10.76.194.115
+ description CR1287563
+object network H_10.76.194.245_SMSK01MG39
+ host 10.76.194.245
+ description CR1287563
+object network H_10.78.194.188_SMSK02AP97
+ host 10.78.194.188
+ description CR1287563
+object network H_10.78.194.248_SMSK02WE123
+ host 10.78.194.248
+ description CR1287563
+object network H_10.76.194.210_SMSK01WE18
+ host 10.76.194.210
+ description CR1116067
+object network S_10.19.38.0s23_ESH_USER_ACCESS
+ subnet 10.19.38.0 255.255.254.0
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+object network H_10.72.133.101_SMSK02MX49
+ host 10.72.133.101
+ description CR1311638
+object network H_10.72.133.102_SMSK02MX50
+ host 10.72.133.102
+ description CR1311638
+object network H_10.72.197.101_SMSK01MX49
+ host 10.72.197.101
+ description CR1311638
+object network H_10.72.197.102_SMSK01MX50
+ host 10.72.197.102
+ description CR1311638
+object network H_10.104.132.73_SLON02MX38
+ host 10.104.132.73
+ description CR1430560
+object network H_10.104.132.74_SLON02MX39
+ host 10.104.132.74
+ description CR1430560
+object network H_10.104.196.73_SLON01MX38
+ host 10.104.196.73
+ description CR1430560
+object network H_10.104.196.74_SLON01MX39
+ host 10.104.196.74
+ description CR1430560
+object network S_10.20.0.0s14_SNG_USER_ACCESS
+ subnet 10.20.0.0 255.252.0.0
+ description CR1328399
+object network S_10.104.176.0s23_LON02_VDI_212_VLAN
+ subnet 10.104.176.0 255.255.254.0
+ description CR1332960
+object network S_10.104.240.0s23_LON01_VDI_212_VLAN
+ subnet 10.104.240.0 255.255.254.0
+ description CR1332960
+object network H_10.101.29.169_VIENNA_TEST_PHONE
+ host 10.101.29.169
+ description CR1340991
+object network H_10.78.194.218_SMSK02WE18
+ host 10.78.194.218
+ description CR1116067
+object network H_10.101.128.55_SLON02AP355
+ host 10.101.128.55
+ description CR1354129
+object network H_10.100.128.63_SLON01AP355
+ host 10.100.128.63
+ description CR1354129
+object network H_10.100.128.95_SLON01AP391U
+ host 10.100.128.95
+ description CR1542834
+object network H_10.16.0.54_SGDB0011
+ host 10.16.0.54
+ description CR1354129
+object network H_10.76.194.59_SMSK01AP58
+ host 10.76.194.59
+ description CR1366040
+object network H_10.16.8.23_SGSVR107
+ host 10.16.8.23
+ description CR1380359
+object network H_10.16.0.53_SGDB0010
+ host 10.16.0.53
+ description CR1426466
+object network H_10.16.0.60_SGSVR127
+ host 10.16.0.60
+ description CR1426466
+object network H_10.74.6.13_DMSK0774
+ host 10.74.6.13
+ description CR1432409
+object network H_10.16.5.114_SGSVR314
+ host 10.16.5.114
+ description CR1432409
+object network H_10.76.194.253_SMSK01MG42
+ host 10.76.194.253
+ description CR1439360
+object network H_10.78.198.253_SMSK02MG42
+ host 10.78.198.253
+ description CR1439360
+object network H_10.144.128.13_AFRA02NN01
+ host 10.144.128.13
+ description CR1439365
+object network H_10.144.192.13_AFRA01NN01
+ host 10.144.192.13
+ description MA1439165
+object network H_10.76.194.75_SMSK01MG49
+ host 10.76.194.75
+ description CR544877
+object network H_10.78.194.84_SMSK02MG49
+ host 10.78.194.84
+ description CR544877
+object network S_10.16.8.0s23_VTBSE_ILO
+ subnet 10.16.8.0 255.255.254.0
+ description CR1454464
+object network S_10.76.194.0s24_VTBC_SERVERS
+ subnet 10.76.194.0 255.255.255.0
+ description CR1454464
+object network H_10.19.18.24_VTBSE_SIP_TRUNK_SERVER
+ host 10.19.18.24
+ description CR1460438
+object network H_10.100.129.225_SLON01SE03
+ host 10.100.129.225
+object network H_10.101.129.225_SLON02SE03
+ host 10.101.129.225
+object network S_10.0.0.0s8_GLOBAL_VTBC_NETWORK
+ subnet 10.0.0.0 255.0.0.0
+object network H_10.19.0.89_COMMSERV01
+ host 10.19.0.89
+ description CR1471678
+object network H_10.76.198.113_SMSK01WE130
+ host 10.76.198.113
+ description CR1487184
+object network H_10.78.198.125_SMSK02WE130
+ host 10.78.198.125
+ description CR1487184
+object network H_10.78.198.129_SMSK02WE130U
+ host 10.78.198.129
+ description CR1487184
+object network H_10.18.4.10_SGSVR001
+ host 10.18.4.10
+ description CR1487184
+object network H_10.144.128.14_SFRA02MG003
+ host 10.144.128.14
+ description CR1496869
+object network S_10.74.0.0_s22_MSK5_USER_ACCESS
+ subnet 10.74.0.0 255.255.252.0
+ description MA847477
+object network S_10.74.4.0_s22_MSK5_USER_ACCESS
+ subnet 10.74.4.0 255.255.252.0
+ description MA847477
+object network H_10.16.16.6_SFRA01AP02U
+ host 10.16.16.6
+ description CR1497121
+object network H_10.16.16.16_SFRA01AP02
+ host 10.16.16.16
+ description CR1526925
+object network H_10.16.16.17_SFRA02AP02
+ host 10.16.16.17
+ description CR1526925
+object network S_10.100.176.0s22_LON_USER_ACCESS
+ subnet 10.100.176.0 255.255.252.0
+ description CR1529112
+object network S_10.122.0.0s25_SOF_USER_ACCESS
+ subnet 10.122.0.0 255.255.255.128
+ description CR1529112
+object network S_10.138.0.0s25_ZUG_USER_ACCESS
+ subnet 10.138.0.0 255.255.255.128
+ description CR1529112
+object network S_10.22.0.0s24_SNG_USER_ACCESS
+ subnet 10.22.0.0 255.255.255.0
+ description CR1529112
+object network S_10.22.13.0s25_SNG_USER_ACCESS
+ subnet 10.22.13.0 255.255.255.128
+ description CR1529112
+object network S_10.22.5.0s25_SNG_USER_ACCESS
+ subnet 10.22.5.0 255.255.255.128
+ description CR1529112
+object network S_10.22.8.0s24_SNG_USER_ACCESS
+ subnet 10.22.8.0 255.255.255.0
+ description CR1529112
+object network S_10.60.0.0s25_HKG_USER_ACCESS
+ subnet 10.60.0.0 255.255.255.128
+ description CR1529112
+object network H_10.76.194.170_SMSK01MO13
+ host 10.76.194.170
+ description CR1537427
+object network H_10.76.198.106_SMSK01MO40
+ host 10.76.198.106
+ description CR1537427
+object network S_10.144.1.0s24_FRA_CORE_AREA_LOOPBACKS
+ subnet 10.144.1.0 255.255.255.0
+ description CR1546175
+object network S_10.144.4.0s24_FRA_CORE_DIST_AREA_P2P
+ subnet 10.144.4.0 255.255.255.0
+ description CR1546175
+object network S_10.145.128.0s24_FRA1_INTERNET_DMZ_SOUTH
+ subnet 10.145.128.0 255.255.255.0
+ description CR1546175
+object network S_10.145.129.0s24_FRA1_INTERNET_DMZ_NORTH
+ subnet 10.145.129.0 255.255.255.0
+ description CR1546175
+object network S_10.145.192.0s24_FRA2_INTERNET_DMZ_SOUTH
+ subnet 10.145.192.0 255.255.255.0
+ description CR1546175
+object network S_10.145.193.0s24_FRA2_INTERNET_DMZ_NORTH
+ subnet 10.145.193.0 255.255.255.0
+ description CR1546175
+object network S_10.19.84.201s32_FRA_ESH_INTERCONNECT
+ host 10.19.84.201
+object network S_10.146.0.128s25_FRA3_LOOPBACKS
+ subnet 10.146.0.128 255.255.255.128
+ description CR1546175
+object network S_10.144.23.224s28_FRA1_VXLAN_OOBM
+ subnet 10.144.23.224 255.255.255.240
+ description CR1683436
+object network S_10.144.23.96s28_FRA2_VXLAN_OOBM
+ subnet 10.144.23.96 255.255.255.240
+ description CR1683436
+object network S_10.101.29.0s24_LON_USER_SUBNET
+ subnet 10.101.29.0 255.255.255.0
+ description CR1547701
+object network S_10.77.48.0s24_MSK9_USER_SUBNET
+ subnet 10.77.48.0 255.255.255.0
+ description CR1547701
+object network H_10.144.129.165_SFRA02VS01
+ host 10.144.129.165
+ description CR1547701
+object network H_10.144.193.165_SFRA01VS01
+ host 10.144.193.165
+ description CR1547701
+object network H_10.22.34.1_SNG1VFDACM01
+ host 10.22.34.1
+ description CR1547701
+object network H_10.28.4.5_SNG2VFDACM01
+ host 10.28.4.5
+ description CR1547701
+object network H_10.144.24.1_FRA1VFDAVG01
+ host 10.144.24.1
+ description CR1547852
+object network H_10.144.28.1_FRA2VFDAVG01
+ host 10.144.28.1
+ description CR1547852
+object network H_10.144.193.166_SFRA01VS02
+ host 10.144.193.166
+ description CR1547974
+object network H_10.144.129.166_SFRA02VS02
+ host 10.144.129.166
+ description CR1547974
+object network H_10.144.193.167_SFRA01VS03
+ host 10.144.193.167
+ description CR1548094
+object network H_10.144.129.167_SFRA02VS03
+ host 10.144.129.167
+ description CR1548094
+object network H_10.144.193.170_SFRA01VS05
+ host 10.144.193.170
+ description CR1548108
+object network H_10.144.193.171_SFRA01VS06
+ host 10.144.193.171
+ description CR1548108
+object network H_10.144.193.173_SFRA01VS08
+ host 10.144.193.173
+ description CR1548108
+object network H_10.144.193.168_SFRA01VS04
+ host 10.144.193.168
+ description CR1548125
+object network H_10.144.129.168_SFRA02VS04
+ host 10.144.129.168
+ description CR1548125
+object network S_10.77.32.0s20_MSK9_MGMT_SUBNET
+ subnet 10.77.32.0 255.255.240.0
+ description CR1553836
+object network S_10.144.22.0s23_FRA_WAN_AGGREGATION_SUBNET
+ subnet 10.144.22.0 255.255.254.0
+ description CR1553836
+object network H_10.22.49.230_SSNG01MX14
+ host 10.22.49.230
+ description CR1562917
+object network H_10.22.49.231_SSNG01MX15
+ host 10.22.49.231
+ description CR1562917
+object network H_10.28.1.230_SSNG02MX14
+ host 10.28.1.230
+ description CR1562917
+object network H_10.28.1.231_SSNG02MX15
+ host 10.28.1.231
+ description CR1562917
+object network H_10.22.48.11_SSNG01DC03
+ host 10.22.48.11
+ description CR1566079
+object network H_10.22.48.12_SSNG01DC04
+ host 10.22.48.12
+ description CR1566079
+object network H_10.28.1.203_SSNG02DC03
+ host 10.28.1.203
+ description CR1566079
+object network H_10.28.1.204_SSNG02DC04
+ host 10.28.1.204
+ description CR1566079
+object network H_10.100.128.52_SLON01TE40U
+ host 10.100.128.52
+ description CR1151076
+object network H_10.100.128.58_SLON01TE40
+ host 10.100.128.58
+ description CR1151076
+object network H_10.100.128.59_SLON01TE42
+ host 10.100.128.59
+ description CR1151076
+object network H_10.100.128.60_SLON01TE43
+ host 10.100.128.60
+ description CR1151076
+object network H_10.100.128.61_SLON01TE41
+ host 10.100.128.61
+ description CR1151076X
+object network H_10.101.128.47_SLON02TE40
+ host 10.101.128.47
+ description CR1151076
+object network H_10.101.128.48_SLON02TE43
+ host 10.101.128.48
+ description CR1151076
+object network H_10.101.128.50_SLON02TE42
+ host 10.101.128.50
+ description CR1151076
+object network H_10.101.128.51_SLON02TE41
+ host 10.101.128.51
+ description CR1151076
+object network H_10.101.128.56_SLON02TE40U
+ host 10.101.128.56
+ description CR1151076
+object network H_10.100.129.30_SLON01SE01.UK.VTBCAPITAL.INTERNAL
+ host 10.100.129.30
+ description CR1571825
+object network H_10.101.129.28_SLON02SE01.UK.VTBCAPITAL.INTERNAL
+ host 10.101.129.28
+ description CR1571825
+object network H_10.76.194.128_SMSK01SE01.CORP.VTBCAPITAL.INTERNAL
+ host 10.76.194.128
+ description CR1571825
+object network H_10.78.194.54_SMSK02SE01.CORP.VTBCAPITAL.INTERNAL
+ host 10.78.194.54
+ description CR1571825
+object network H_10.16.16.18_SFRA01DC01.VTBSE.DMZ
+ host 10.16.16.18
+ description CR1571825
+object network H_10.16.16.19_SFRA02DC01.VTBSE.DMZ
+ host 10.16.16.19
+ description CR1571825
+object network S_10.77.39.0_MSK9_6TH_FLOOR
+ subnet 10.77.39.0 255.255.255.192
+ description CR1573815
+object network H_10.144.130.22_SFRA02DB01U.VTBASG.VTBGRP.INTERNAL
+ host 10.144.130.22
+ description CR1573357
+object network H_10.144.194.20_SFRA01DB01.VTBASG.VTBGRP.INTERNAL
+ host 10.144.194.20
+ description CR1573357
+object network H_10.144.194.21_SFRA01DB01D.VTBASG.VTBGRP.INTERNAL
+ host 10.144.194.21
+ description CR1573357
+object network H_10.144.130.23_SFRA02DB01.VTBASG.VTBGRP.INTERNAL
+ host 10.144.130.23
+ description CR1573539
+object network H_10.144.22.132_FRA1WANARO01
+ host 10.144.22.132
+ description CR1578218
+object network H_10.144.22.4_FRA2WANARO01
+ host 10.144.22.4
+ description CR1578218
+object network H_10.105.2.8_LON2B2BBRO01
+ host 10.105.2.8
+ description CR1578218
+object network H_10.105.66.8_LON1B2BBRO01
+ host 10.105.66.8
+ description CR1578218
+object network H_10.16.2.10_SGSVR007
+ host 10.16.2.10
+object network H_10.16.2.11_SGSVR008
+ host 10.16.2.11
+object network H_10.144.192.31_SFRA01SE04
+ host 10.144.192.31
+ description CR1645559
+object network H_10.100.141.119_SLON01AP207U
+ host 10.100.141.119
+ description CR1609350
+object network H_10.100.141.120_SLON01AP208U
+ host 10.100.141.120
+ description CR1609350
+object network H_10.100.128.87_SLON01AP367U
+ host 10.100.128.87
+ description CR1609350
+object network H_10.100.128.91_SLON01AP368U
+ host 10.100.128.91
+ description CR1609350
+object network H_10.101.128.63_SLON02AP358U
+ host 10.101.128.63
+ description CR1609350
+object network H_10.101.128.87_SLON02AP370U
+ host 10.101.128.87
+ description CR1609350
+object network H_10.100.129.12_SLON01AP186
+ host 10.100.129.12
+ description CR1609350
+object network H_10.144.128.91_SFRA02VH20MGMT01
+ host 10.144.128.91
+ description CR1653580
+object network H_10.144.128.92_SFRA02VH20
+ host 10.144.128.92
+ description CR1653580
+object network H_10.144.192.91_SFRA01VH20MGMT01
+ host 10.144.192.91
+ description CR1653580
+object network H_10.144.192.92_SFRA01VH20
+ host 10.144.192.92
+ description CR1653580
+object network H_10.144.192.93_SFRA01VH21MGMT01
+ host 10.144.192.93
+ description CR1653580
+object network H_10.144.192.94_SFRA01VH21
+ host 10.144.192.94
+ description CR1653580
+object network H_10.144.192.95_SFRA01VH22MGMT01
+ host 10.144.192.95
+ description CR1653580
+object network H_10.144.192.96_SFRA01VH22
+ host 10.144.192.96
+ description CR1653580
+object network S_10.196.0.0s20_VIENNA_COMMON_SUBNET
+ subnet 10.196.0.0 255.255.240.0
+ description CR1653580
+object network H_10.144.129.180_FRA2VFDAVG01
+ host 10.144.129.180
+ description CR1653580
+object network H_10.144.193.180_FRA1VFDAVG01
+ host 10.144.193.180
+ description CR1653580
+object network S_10.146.32.0s20_FRA_OFFICE
+ subnet 10.146.32.0 255.255.240.0
+ description CR1653580
+object network H_10.100.128.30_SLON01MG62
+ host 10.100.128.30
+ description CR1660779
+object network H_10.100.128.31_SLON01MG63
+ host 10.100.128.31
+ description CR1660779
+object network H_10.101.128.32_SLON02MG63
+ host 10.101.128.32
+ description CR1660779
+object network H_10.101.128.33_SLON02MG62
+ host 10.101.128.33
+ description CR1660779
+object network H_10.16.5.101_SGSVR301
+ host 10.16.5.101
+ description CR1660779
+object network S_10.21.4.0s24_SNG_USER_LAN
+ subnet 10.21.4.0 255.255.255.0
+ description CR1665756
+object network H_VTBE_TRADER_WORKSTATION_DESTINATION
+ host 10.19.47.11
+ description CR1665756
+object network H_10.101.28.128_DLON6006
+ host 10.101.28.128
+ description CR1670064
+object network H_10.77.48.50_DMSK0569
+ host 10.77.48.50
+ description CR1670064
+object network H_10.77.48.69_DMSK0621
+ host 10.77.48.69
+ description CR1670064
+object network S_10.19.47.0s24_PROJECT_CHARLOT_PCS
+ subnet 10.19.47.0 255.255.255.0
+ description CR1647967
+object network S_10.58.0.0s24_HKG_USER_SUBNET
+ subnet 10.58.0.0 255.255.255.0
+ description CR1701533
+object network S_10.77.49.0s24_MSK9_6_FL_USER_SUBNET
+ subnet 10.77.49.0 255.255.255.0
+ description CR1701533
+object network H_10.16.8.12_FRA_TMS
+ host 10.16.8.12
+ description CR1701533
+object network H_10.19.36.30_DEVCSMUSSORGSKY
+ host 10.19.36.30
+ description CR1701533
+object network H_10.19.36.31_DEVCSPROKOFIEV
+ host 10.19.36.31
+ description CR1701533
+object network H_10.19.36.32_DEVCSCHOPIN
+ host 10.19.36.32
+ description CR1701533
+object network H_10.19.36.33_DEVCSMOZART
+ host 10.19.36.33
+ description CR1701533
+object network H_10.19.36.34_DEVCSBEETHOVEN
+ host 10.19.36.34
+ description CR1701533
+object network H_10.19.36.36_DEVCSSTRAUSS
+ host 10.19.36.36
+ description CR1701533
+object network H_10.19.36.37_DEVCSSCHOSTAKOVICH
+ host 10.19.36.37
+ description CR1701533
+object network H_10.19.36.38_DEVCSGLINKA
+ host 10.19.36.38
+ description CR1701533
+object network H_10.196.1.101_ATVCSSCHUBERT
+ host 10.196.1.101
+ description CR1701533
+object network H_10.196.1.102_ATVCSMEHIC
+ host 10.196.1.102
+ description CR1701533
+object network H_10.105.52.56_SGH1WANARO01
+ host 10.105.52.56
+object network H_10.105.52.57_SGH1WANARO02
+ host 10.105.52.57
+object network H_10.105.52.58_SGH1UADAXR01
+ host 10.105.52.58
+object network H_10.105.52.59_SGH1UADAXR02
+ host 10.105.52.59
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!! Config groups !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+object-group network G-GLOBAL-NETWORK-MANAGEMENT
+ description Subnets used for network management
+ network-object object S_10.104.41.0s24_LON2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.104.57.0s24_LON1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.41.0s24_MSK2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.57.0s24_MSK1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.0.0s13_MSK_RANGE
+ network-object object H_10.105.145.132_SLON02TE29
+ network-object object H_10.73.209.132_SMSK01TE30
+ network-object object S_10.100.0.0s15_LON_SUBNET
+ network-object object S_10.58.0.0s25_HKG3_USER_ACCESS
+ network-object object H_10.72.208.48_SMSK01MO39
+object-group network G-LON-B2B-NETWORK-DEVICES
+ description Network devices in the B2B DMZ behind the firewall
+ group-object G-SGH-NETWORK-DEVICES
+ network-object object H_10.105.0.128_LON2B2BARO01
+ network-object object H_10.105.0.129_LND2B2AXR04
+ network-object object H_10.105.0.3_LON2B2BBXR01
+ network-object object H_10.105.2.28_GGY1WANARO01
+ network-object object H_10.105.64.128_LND1B2BARO01
+ network-object object H_10.105.64.129_LND1B2BAXR04
+ network-object object H_10.105.64.3_LON1B2BBXR01
+ network-object object H_10.196.11.0_VIE1WANARO01
+ network-object object H_10.196.11.1_VIE1WANARO02
+object-group network G_GLOBAL_SNMP_SERVERS
+ network-object object S_10.104.41.0s24_LON2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.104.57.0s24_LON1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.41.0s24_MSK2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.57.0s24_MSK1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.22.59.0s24_SNG1_NETWORK_MANAGEMENT_SUBNET
+ network-object object H_10.72.208.48_SMSK01MO39
+object-group network G_VIENNA_MONITORED_DEVICES
+ description CR1325629
+ network-object object H_10.196.1.76_VIENNA_BMS
+ network-object object H_10.196.1.77_VIENNA_UPS
+object-group network G_B2B_ESH_NETWORK_DEVICES
+ description CR1258141, MA1269147, CR1575333, CR1593494
+ network-object object H_10.105.2.6_LON2B2BBRO01
+ network-object object H_10.105.66.6_LON1B2BBRO01
+ network-object object H_10.144.22.0_FRA2WANARO01
+ network-object object H_10.144.22.128_FRA1WANARO01
+ network-object object H_10.144.22.158_FRA1SVCAWA01
+ network-object object H_10.144.22.30_FRA2SVCAWA01
+ network-object object H_10.196.1.192_VIE1UADAXR01
+ network-object object H_10.196.11.0_VIE1WANARO01
+ network-object object H_10.196.11.1_VIE1WANARO02
+ network-object object H_10.196.11.38_VIE1SVCAWA01
+ network-object object H_10.196.11.57_VIE1WEBDFW01
+ network-object object H_10.196.1.193_VIE1VFDAVG01
+ network-object object H_10.196.1.194_VIE1VFDAVG02
+ network-object object H_10.196.11.50_VIE1SVCAWA02
+ network-object object H_10.144.22.131_FRA1WANAXR01
+ network-object object H_10.144.22.3_FRA2WANAXR01
+ network-object object H_10.144.23.195_FRA1MGTAFW01
+ network-object object H_10.144.23.196_FRA1MGTAFW01-2
+ network-object object H_10.144.23.67_FRA2MGTAFW01
+ network-object object H_10.144.23.68_FRA2MGTAFW01-2
+ group-object G_FRANKFURT_MANAGEMENT_NETWORKS
+object-group network G-VTB-ESH-SNMP-CLIENTS-REAL-IP
+ description CR912162
+ network-object object H-10.20.9.90-VTB-ESH-FRANCE-WAN-GW-REAL-IP
+ network-object object H-10.21.1.5-VTB-ESH-CORNHILL-WAN-GW-REAL-IP
+ network-object object H-10.21.129.5-VTB-ESH-ACTON-WAN-GW-REAL-IP
+ network-object object H-10.18.96.254-VTB-ESH-AUSTRIA-WAN-GW-REAL-IP
+ network-object object H-10.19.98.254-VTB-ESH-GERMANY-WAN-GW-REAL-IP
+ network-object object S_10.19.0.0s16_VTB_ESH_NET
+object-group network G-VTBAUSTRIA-SFTP-CLIENTS
+ description C16968, CR705773, CR1384558- SFTP and FTPS clients to access VTBA servers
+ network-object object H_10.100.129.12_SLON01AP186_CR705773
+ network-object object H_10.101.129.12_SLON02AP186_CR705773
+ network-object object H_10.100.129.91_SLON01AP330U_CR705773
+ network-object object H_10.101.129.89_SLON02AP330U_CR705773
+ network-object object H_10.74.4.7_DMSK0385_CR705773
+ network-object object H_10.76.194.205_SMSK01GW12
+ network-object object H_10.78.194.148_SMSK02GW12
+ network-object object H_10.100.129.13_SLON01AP187
+ network-object object H_10.100.129.16_SLON01AP192
+ network-object object H_10.100.129.188_SLON01AP189
+ network-object object H_10.100.129.216_SLON01AP193
+ network-object object H_10.100.129.8_SLON01AP185
+ network-object object H_10.100.141.30_SLON01AP190
+ network-object object H_10.100.141.43_SLON01AP188
+ network-object object H_10.100.149.26_SLON01AP191
+ network-object object H_10.101.129.11_SLON02AP185
+ network-object object H_10.101.129.13_SLON02AP187
+ network-object object H_10.101.129.153_SLON02AP188
+ network-object object H_10.101.129.154_SLON02AP190
+ network-object object H_10.101.129.155_SLON02AP191
+ network-object object H_10.101.129.16_SLON02AP192
+ network-object object H_10.101.129.174_SLON02AP193
+ network-object object H_10.101.129.56_SLON02AP189
+ network-object object H_10.101.133.13_VTBAUSTRIA
+ network-object object H_10.100.129.114_SLON01AP346
+ network-object object H_10.101.129.106_SLON02AP346
+ network-object object H_10.101.128.90_SLON02AP380
+ network-object object H_10.101.128.91_SLON02AP381
+ network-object object H_10.101.128.92_SLON02AP382
+ network-object object H_10.101.128.93_SLON02AP383
+ network-object object H_10.101.128.94_SLON02AP384
+ network-object object H_10.101.128.95_SLON02AP385
+ network-object object H_10.100.128.100_SLON01AP380
+ network-object object H_10.100.128.101_SLON01AP381
+ network-object object H_10.100.128.102_SLON01AP382
+ network-object object H_10.100.128.103_SLON01AP383
+ network-object object H_10.100.128.104_SLON01AP384
+ network-object object H_10.100.128.105_SLON01AP385
+object-group network G-VTBAUSTRIA-SFTP-SERVERS
+ description C16968, CR622384, CR692447 - VTBA SFTP and FTPS servers
+ network-object object H_10.16.4.23_VTBAUSTRIA_SFTP_SERVER_CR692447
+ network-object object H_10.18.4.4_VTBAUSTRIA_SFTP_SERVER
+object-group network G-VTBCZUG-VTBA-SFTP-CLIENTS
+ network-object object H_10.138.0.11_DZUG0034
+ network-object object H_10.138.0.12_DZUG0024
+ network-object object H_10.138.0.19_LZUG0011
+ network-object object H_10.138.0.6_DZUG0037
+object-group network G_VTBAUSTRIA_DEAL_TRACKER_PROD_CLIENTS
+ description CR529045
+ network-object object H_10.100.129.8_SLON01AP185
+ network-object object H_10.100.129.12_SLON02AP186
+ network-object object H_10.100.129.13_SLON01AP187
+ network-object object H_10.100.141.43_SLON01AP188
+ network-object object H_10.100.129.188_SLON01AP189
+ network-object object H_10.100.141.30_SLON01AP190
+ network-object object H_10.100.149.26_SLON01AP191
+ network-object object H_10.100.129.16_SLON01AP192
+ network-object object H_10.100.129.216_SLON01AP193
+ network-object object H_10.101.129.11_SLON02AP185
+ network-object object H_10.101.129.12_SLON02AP186
+ network-object object H_10.101.129.13_SLON02AP187
+ network-object object H_10.101.129.153_SLON02AP188
+ network-object object H_10.101.129.56_SLON02AP189
+ network-object object H_10.101.129.154_SLON02AP190
+ network-object object H_10.101.129.155_SLON02AP191
+ network-object object H_10.101.129.16_SLON02AP192
+ network-object object H_10.101.129.174_SLON02AP193
+object-group network G_VTBAUSTRIA_DEAL_TRACKER_SERVERS
+ description CR529045
+ network-object object H_10.16.4.10_VTBAUSTRIA_DEAL_TRACKER_SERVER
+object-group network G_VTBAUSTRIA_DEAL_TRACKER_UAT_CLIENTS
+ description CR529045
+ network-object object H_10.100.129.203_SLON01AP196U
+ network-object object H_10.100.129.204_SLON01AP197U
+ network-object object H_10.100.129.28_SLON01AP204U
+ network-object object H_10.101.129.172_SLON02AP185U
+ network-object object H_10.101.129.172_SLON02AP186U
+ network-object object H_10.101.129.80_SLON02AP192U
+ network-object object H_10.101.129.64_SLON02AP194U
+ network-object object H_10.101.129.58_SLON02AP195U
+ network-object object H_10.101.129.79_SLON02AP198U
+ network-object object H_10.100.129.91_SLON01AP330U
+ network-object object H_10.101.129.89_SLON02AP330U
+object-group network G-VTB-ESH-LOCAL-VOICE-SYSTEMS
+ network-object object H-10.104.24.5-LON2VFDAVG06
+ network-object object H-10.104.25.20-LON2VFDACM01
+ network-object object H-10.104.28.3-LON1VFDAVG06
+ network-object object H-10.104.29.20-LON1VFDACM01
+object-group network G-VTB-ESH-REMOTE-VOICE-SYSTEMS
+ network-object object H-10.16.18.21-VTB-ESH-PBX01-REAL-IP
+ network-object object H-10.18.18.21-VTB-AUSTRIA-PBX01-REAL-IP
+ network-object object H-10.19.18.21-VTB-DEUTSCHLAND-PBX01-REAL-IP
+ network-object object H-10.20.18.21-VTB-FRANCE-PBX01-REAL-IP
+ network-object object H-10.16.18.25-VTB-ESH-PBX02-REAL-IP
+ network-object object H-10.19.18.27-VTB-ESH-VOICE-GATEWAY02-REAL-IP
+ network-object object H-10.19.54.10-VTB-ESH-VOICE-GATEWAY01-REAL-IP
+object-group network G-VTB-ESH-LOCAL-VIDEO-SYSTEMS
+ description CR896480
+ network-object object H-10.100.129.42-SLON01VS13
+ network-object object H-10.101.128.16-SLON02VS15
+ network-object object H-10.100.129.39-SLON01VS12
+ network-object object H-10.101.128.12-SLON02VS14
+ network-object object H-10.101.34.24-MCU
+ network-object object H-10.101.129.166-TMS
+ network-object object H-10.101.34.23-VCS
+object-group network G-VTB-ESH-REMOTE-VIDEO-SYSTEMS
+ description CR882022
+ network-object object H-217.110.121.197-VTB-ESH-VCSEXT01-REAL-IP
+ network-object object H-172.16.16.11-VTB-ESH-VCSINT01-REAL-IP
+ network-object object H-172.16.16.10-VTB-ESH-VCSTMS01-REAL-IP
+ network-object object H-172.16.16.12-VTB-ESH-VCSMCU01-REAL-IP
+object-group network G-VTB-ESH-RDP-CLIENTS
+ description CR937727
+ network-object object H-10.74.2.13-DMSK0962
+object-group network G-VTB-ESH-RDP-SERVERS
+ description CR937727
+ network-object object H-10.18.41.32-VTB-ESH-ATWS913-REAL-IP
+object-group network G_ESH_PEERING_VTBC_DC
+ description CR1095672 VTBC Domain Controllers
+ network-object host 10.76.128.21
+ network-object host 10.76.128.22
+ network-object host 10.78.194.55
+ network-object host 10.78.194.56
+ network-object host 10.101.129.1
+ network-object host 10.100.129.1
+object-group network G_ESH_PEERING_ESH_DC
+ description CR1095672 ESH Domain Controllers
+ network-object host 10.16.0.10
+ network-object host 10.16.0.11
+ network-object host 10.16.0.90
+object-group network G_LONDON_NETS_FOR_ESH_RDP_ACCESS
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+ network-object object S_10.101.0.0s19_LONDON_USER_ACCESS
+ network-object object S_10.106.0.0s19_LONDON_USER_ACCESS
+object-group network G_ESH_RDP_USERS
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+ network-object object S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+ network-object object S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+object-group network G_VTB_ESH_EUCLID_CIENTS
+ description CR1153128
+ network-object object S_10.72.0.0s13_MSK_RANGE
+ network-object object H_10.101.6.12_DLON4951
+ network-object object H_10.101.6.36_DLON4861
+ network-object object H_10.101.8.108_DLON4776
+ network-object object H_10.106.4.14_DLON6353
+object-group network G_VTB_ESH_EUCLID_SERVERS
+ description CR1153128
+ network-object object H_10.16.4.35_VTB_SE_EUCLID_VTBA
+ network-object object H_10.19.38.236_VTB_ESH_EUCLID_VTBD
+object-group network G_MOSCOW_SWIFT_CLIENTS
+ description CR1161676
+ network-object object S_10.74.0.0s19_VTBC_FT
+ network-object object S_10.74.96.0s19_VTBC_FT
+ network-object object S_10.77.32.0s19_VTBC_VO
+ network-object object S_10.79.0.0s21_VTBC_ET
+object-group network G_VTB_AUSTRIA_SWIFT_SGSVR
+ description CR1161676
+ network-object object H_10.16.0.31_SGSVR114
+ network-object object H_10.16.0.33_SGSVR116
+object-group network G_MSK_LDAP_KERBEROSS_CLIENTS
+ description CR1161846
+ network-object object H_10.76.198.97_SMSK01WE78
+ network-object object H_10.78.198.37_SMSK02WE78U
+ network-object object H_10.78.198.97_SMSK02WE78
+object-group network G_ESH_DC_SERVERS
+ description CR1161846
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.18.4.16_SGSVR032
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+ network-object object H_10.20.4.10_SGSVR018
+ network-object object H_10.20.4.19_SGSVR019
+object-group network G_MSK_TIBCO_ESH_CLIENTS
+ description CR1165999
+ network-object object H_10.76.194.13_SMSK01WE31
+ network-object object H_10.78.194.234_SMSK02WE31U
+object-group network G_VTBC_DC_SERVERS
+ description CR1167894
+ network-object object H_10.100.129.1_SLON01DC01
+ network-object object H_10.100.129.2_SLON01DC02
+ network-object object H_10.100.129.3_SLON01DC03
+ network-object object H_10.100.129.4_SLON01DC04
+ network-object object H_10.100.130.2_SLON01DC05
+ network-object object H_10.101.129.1_SLON02DC01
+ network-object object H_10.101.129.2_SLON02DC02
+ network-object object H_10.101.129.3_SLON02DC03
+ network-object object H_10.101.129.4_SLON02DC04
+ network-object object H_10.101.130.2_SLON02DC05
+ network-object object H_10.72.108.10_SMSK01DC01T
+ network-object object H_10.72.108.11_SMSK01DC02T
+ network-object object H_10.72.160.101_SMSK02DC01T
+ network-object object H_10.72.160.110_SMSK02DC02T
+ network-object object H_10.76.128.21_SMSK01DC01
+ network-object object H_10.76.128.22_SMSK01DC02
+ network-object object H_10.76.128.23_SMSK01DC03
+ network-object object H_10.76.128.24_SMSK01DC04
+ network-object object H_10.78.194.120_SMSK02DC03
+ network-object object H_10.78.194.121_SMSK02DC04
+ network-object object H_10.78.194.55_SMSK02DC01
+ network-object object H_10.78.194.56_SMSK02DC02
+ network-object object H_10.101.128.132_SLON02MG60
+ network-object object H_10.76.194.132_SMSK01MG60
+object-group network G_ESH_DC
+ description CR1167894 CR1217737
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.18.4.16_SGSVR032
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_ESH_RDP_CLIENTS
+ description Emergency, CR1320664
+ network-object object S_10.101.28.0s24_LONDON_USER_ACCESS
+ network-object object S_10.101.26.0s24_LONDON_USER_ACCESS
+ network-object object S_10.104.176.0s24_LONDON_USER_ACCESS
+ network-object object S_10.101.148.0s22_BLOOMBERG
+ network-object object H_10.76.194.84_SMSK01TE24
+ network-object object H_10.101.129.183_SLON02TE15
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_ESH_RDP_DESTINATIONS
+ description Emergency
+ network-object object H_10.16.8.31_VTB_SE_RDP_DESTINATION
+ network-object object H_10.16.5.110_SGSVR310
+object-group network G_ESH_VTB_EU_CLIENTS
+ description CR1177657
+ network-object object S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+ network-object object S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+object-group network G-POWERBROKER-SERVERS
+ description Powerbroker admin jumpbox servers
+ network-object object H_10.76.194.181_SMSK01SE35
+ network-object object H_10.78.194.92_SMSK02SE35
+object-group network G_ESH_LINUX
+ network-object object H_10.19.8.75_ESH_LINUX
+object-group network G_VTBC_TO_ESH_RDP_CLIENTS
+ description CR1192360
+ network-object object S_10.101.28.0s24_LONDON_USER_ACCESS
+ network-object object S_10.58.0.0s25_HKG3_USER_ACCESS
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_ESH_ADMIN_JUMP_HOSTS
+ description CR1192360
+ network-object object H_10.16.5.110_SGSVR310
+ network-object object H_10.16.5.111_SGSVR311
+ network-object object H_10.16.5.112_SGSVR312
+ network-object object H_10.16.5.113_SGSVR313
+ network-object object H_10.16.5.100_SGSVR300
+ network-object object H_10.16.8.31_VTB_SE_RDP_DESTINATION
+object-group network G_MOSCOW_COMMON_SUBNET
+ description CR1194233
+ network-object object S_10.64.0.0s12_MOSCOW_COMMON_SUBNET
+object-group network G_ESH_INTRANET_PORTAL_CLIENTS
+ description CR1116067
+ network-object object S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+ network-object object S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+object-group network G_ESH_SAN_SWITCHES
+ description CR1198890
+ network-object object H_10.19.8.206_DESTM001
+ network-object object H_10.19.8.209_DESTM004
+ network-object object H_10.19.8.210_DESTM005
+ network-object object H_10.19.8.229_DESTM006
+ network-object object H_10.19.8.232_DESTM009
+ network-object object H_10.19.8.233_DESTM010
+object-group network G_SCSM_SERVERS
+ description CR1203936
+ network-object object H_10.78.198.54_SMSK02AP136D
+ network-object object H_10.76.194.218_SMSK01AP97
+object-group network G_ESH_DC_SERVERS_FOR_SCSM_ACCESS
+ description CR1203936, CR1387271
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+object-group network G_RACKTABLES_SERVERS
+ description CR1210861
+ network-object object H_10.76.194.246_SMSK01MG33
+ network-object object H_10.76.194.249_SMSK01MG33
+ network-object object H_10.78.194.246_SMSK02MG33
+ network-object object H_10.78.194.252_SMSK02MG33
+object-group network G_VTBC_SAN_MONITORING_SERVERS
+ description CR1216594
+ network-object object H_10.76.194.246_SMSK01MG33
+ network-object object H_10.76.198.53_SMSK01MG54
+ network-object object H_10.78.194.246_SMSK02MG33
+ network-object object H_10.78.198.53_SMSK02MG54
+object-group network G_ESH_SAN_SWITCHES_TO_BNA
+ description CR1216594
+ network-object object H_10.19.8.209_DESTM004
+ network-object object H_10.19.8.210_DESTM005
+ network-object object H_10.19.8.232_DESTM009
+ network-object object H_10.19.8.233_DESTM010
+object-group network G_VTBC_MONITORING_SERVERS
+ description CR1217737
+ network-object object H_10.72.41.21_SMSK02MO09
+ network-object object H_10.76.194.222_SMSK01MO20
+ network-object object H_10.76.194.223_SMSK01MO21
+ network-object object H_10.78.194.222_SMSK02MO20
+ network-object object H_10.78.194.223_SMSK02MO21
+object-group network G_VTBC_MONITORING_SERVERS_TO_ESH_MONITORING_GATEWAYS
+ description CR1220552
+ network-object object H_10.76.194.222_SMSK01MO20
+ network-object object H_10.76.194.223_SMSK01MO21
+ network-object object H_10.78.194.222_SMSK02MO20
+ network-object object H_10.78.194.223_SMSK02MO21
+object-group network G_ESH_MONITORING_GATEWAYS
+ description CR1217802
+ network-object object H_10.16.8.49_SGSVR109
+ network-object object H_10.16.8.50_SGSVR110
+object-group network G_VTBC_PRTG_CORE_SERVER
+ description CR1220654
+ network-object object H_10.72.41.21_SMSK02MO09
+object-group network G_VTB_ESH_RMS_CLIENTS
+ description CR1220535
+ network-object object H_10.74.0.60_DMSK0653
+ network-object object H_10.74.3.121_DMSK0026
+ network-object object H_10.74.2.60_DMSK0026
+ network-object object H_10.74.0.25_DMSK0861
+object-group network G_VTB_ESH_RMS_SERVERS
+ description CR1220535
+ network-object object H_10.19.0.135_DESVR048
+ network-object object H_10.19.0.136_DESVR049
+ network-object object H_10.19.0.35_DESVR046
+object-group network G_ESH_MONITORING_RDP_CLIENTS
+ description CR1231687
+ network-object object S_10.77.32.0s19_VTBC_VO
+object-group network G_CRM_SERVERS
+ network-object object H_10.76.194.11_SMSK01WE28
+ network-object object H_10.76.194.12_SMSK01AP02
+ network-object object H_10.76.194.54_SMSK01AP11
+ network-object object H_10.78.194.10_SMSK02AP02D
+ network-object object H_10.78.194.146_SMSK02AP04U
+ network-object object H_10.78.194.171_SMSK02AP02
+ network-object object H_10.78.194.195_SMSK02WE03
+ network-object object H_10.78.194.37_SMSK02AP104U
+ network-object object H_10.78.194.46_SMSK02AP111
+object-group network G_MSK_JIRA_and_CONFLUENCE_SERVERS
+ description CR1233216
+ network-object object H_10.76.198.32_SMSK01WE43
+ network-object object H_10.78.198.32_SMSK02WE43
+ network-object object H_10.78.198.31_SMSK02WE43U
+ network-object object H_10.76.198.33_SMSK01WE43-01
+ network-object object H_10.78.198.33_SMSK02WE43-01
+ network-object object H_10.78.198.34_SMSK02WE43U-01
+object-group network G_ESH_VTBAUSTRIA_USER_ACCESS
+ description CR1233216
+ network-object object S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+ network-object object S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+object-group network G_MSK_AND_LON_SUBNETS
+ description CR1233249
+ network-object object S_10.72.0.0s13_MSK_RANGE
+ network-object object S_10.96.0.0s12_LON_COMMON_SUBNET
+object-group network G_ESH_FILE_SHARES_SERVERS
+ description CR1233249
+ network-object object H_10.19.0.202_FILE01
+ network-object object H_10.16.4.20_SGSVR012
+ network-object object H_10.16.5.224_SGSVR504
+ network-object object H_10.16.5.225_SGSVR505
+ network-object object H_10.16.5.226_SGSVR506
+ network-object object H_10.16.5.227_SGSVR507
+ network-object object H_10.16.5.228_SGSVR508
+ network-object object H_10.16.5.229_SGSVR509
+ network-object object H_10.16.5.230_SGSVR510
+object-group network G_MSK_VOICE_SERVERS
+ description CR1235255
+ network-object object H_10.72.212.20_MEETADMIN
+ network-object object H_10.72.212.21_SMSK01VS09
+ network-object object H_10.72.212.22_SMSK02VS09
+ network-object object H_10.72.212.23_SMSK01VS10
+ network-object object H_10.72.212.24_SMSK02VS10
+ network-object object H_10.72.25.6_MSK1VFDACM02
+ network-object object H_10.72.25.7_MSK1VFDACM03
+ network-object object H_10.72.29.5_MSK2VFDACM01
+object-group network G_VIENNA_DC_FOR_WEBEX_SERVERS
+ description CR1235255
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.19.4.23_SGSVR003
+ network-object object H_10.20.4.10_SGSVR018
+ network-object object H_10.20.4.15_SGSVR015
+ network-object object H_10.20.4.19_SGSVR019
+object-group network G_VOICE_SERVERS_VIENNA
+ description CR1239788
+ network-object object H-10.104.25.20-LON2VFDACM01
+ network-object object H-10.104.29.20-LON1VFDACM01
+ network-object object H_10.104.25.22_SLON02VS11
+ network-object object H_10.104.29.22_SLON01VS11
+ network-object object H_10.104.28.1_LON1VFDAVG01
+ network-object object H_10.104.28.2_LON1VFDAVG02
+ network-object object H_10.77.48.148_Test_IP_PHONE
+object-group network G_VIENNA_VOICE_SUBNET
+ description CR1239788
+ network-object object S_10.196.0.128s25_VIENNA_PHONE_SUBNET
+object-group network G_VIE1WANARO_DEVICES
+ description CR1239788, MA1269147
+ network-object object H_10.196.11.0_VIE1WANARO01
+ network-object object H_10.196.11.1_VIE1WANARO02
+ network-object object H_10.196.1.193_VIE1VFDAVG01
+ network-object object H_10.196.1.194_VIE1VFDAVG02
+object-group network G_VIENNA_VOICE_CLIENTS
+ network-object object S_10.120.0.0s13_SOFIA_COMMON_SUBNET
+ network-object object S_10.136.0.0s13_ZUG_COMMON_SUBNET
+ network-object object S_10.16.0.0s12_SINGAPORE_COMMON_SUBNET
+ network-object object S_10.48.0.0s12_HONG_KONG_COMMON_SUBNET
+ network-object object S_10.64.0.0s12_MOSCOW_COMMON_SUBNET
+ network-object object S_10.96.0.0s12_LONDON_COMMON_SUBNET
+object-group network G_VTBC_EXCHANGE_SERVERS
+ description CR1246845
+ network-object object H_10.100.156.5_SLON01MX15VM
+ network-object object H_10.100.156.6_SLON01MX16VM
+ network-object object H_10.101.156.5_SLON02MX15VM
+ network-object object H_10.101.156.6_SLON02MX16VM
+ network-object object H_10.72.133.70_SMSK01MX41
+ network-object object H_10.72.133.71_SMSK02MX41
+ network-object object H_10.72.197.70_SMSK01MX40
+ network-object object H_10.72.197.71_SMSK01MX41
+object-group network G_VTBSE_AUTODISCOVER_SERVERS
+ description CR1246845
+ network-object object H_10.16.2.12_SGCAS001
+object-group network G_MSK_USER_ACCESS
+ description CR1251568, CR1436416
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+ network-object object S_10.77.40.0s26_MSK9_USER_ACCESS
+object-group network G_VTBC_INFRA_SERVERS
+ description CR1251512
+ network-object object H_10.72.208.16_SMSK01WE16
+ network-object object H_10.76.194.58_SMSK01WE32U
+ network-object object H_10.78.194.196_SMSK02WE32U
+ network-object object H_10.78.194.19_SMSK02WE16
+ network-object object H_10.76.194.38_SMSK01WE32U
+ network-object object H_10.76.198.48_SMSK01WE16
+ network-object object H_10.78.198.48_SMSK02WE16
+object-group network G_VIENNA_ROUTERS
+ network-object object H_10.105.225.9_VIE1WANARO01_NATED
+ network-object object H_10.196.11.3_VIE1WANARO02
+object-group network G_VTBC_B2B_ROUTERS
+ network-object object H_10.105.2.7_LON2B2BBRO01
+ network-object object H_10.105.66.7_LON1B2BBRO01
+ network-object object H_10.144.22.129_FRA1WANARO01
+ network-object object H_10.144.22.1_FRA1WANARO02
+object-group network G_VIENNA_UNITY_SERVERS
+ description CR1264241
+ network-object object H_10.104.25.22_SLON02VS11
+ network-object object H_10.104.29.22_SLON01VS11
+object-group network G_TELEPHONY_INTERNATIONAL_SERVERS
+ description CR1266261
+ network-object object H-10.104.29.20-LON1VFDACM01
+ network-object object H-10.104.25.20-LON2VFDACM01
+ network-object object H_10.72.196.74_SMSK01VS05
+ network-object object H_10.72.131.77_SMSK02VS05
+ network-object object H_10.104.29.22_SLON01VS11
+ network-object object H_10.104.25.22_SLON02VS11
+object-group network G_ESH_DC_LDAP_AUTH_SERVERS
+ description CR1266261
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_CCTV_CLIENTS
+ description CR1269372
+ network-object object S_10.64.0.0s12_MOSCOW_COMMON_SUBNET
+ network-object object S_10.96.0.0s12_LONDON_COMMON_SUBNET
+object-group network G_CCTV_SERVER
+ description CR1269372
+ network-object object H_10.196.1.157_ATSVR181
+object-group network G_VIENNA_PHONE_WEB_CLIENTS
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_CCTV_SERVER_iLO
+ description CR1272786
+ network-object object H_10.196.1.158_ILOATSVR181
+object-group network G_ESH_vCENTER_SERVERS
+ description CR1285606
+ network-object object H_10.19.8.73_DESRV022
+object-group network G_VTB_ITPORTAL_SERVERS
+ description CR1287563, CR1289922
+ network-object object H_10.72.208.35_SCSM
+ network-object object H_10.72.208.46_CMSK00WE123
+ network-object object H_10.76.194.115_SMSK01WE123
+ network-object object H_10.76.194.218_SMSK01AP97
+ network-object object H_10.76.194.245_SMSK01MG39
+ network-object object H_10.78.194.188_SMSK02AP97
+ network-object object H_10.78.194.248_SMSK02WE123
+ network-object object H_10.78.198.54_SMSK02AP136D
+ network-object object H_10.76.194.210_SMSK01WE18
+object-group network G_VTBSE_ITPORTAL_CLIENTS
+ description CR1287563
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.18.4.16_SGSVR032
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_VIENNA_OOB_CLIENTS
+ description CR1302065
+ network-object object S_10.101.0.0s19_LONDON_USER_ACCESS
+ network-object object S_10.106.0.0s19_LONDON_USER_ACCESS
+ network-object object S_10.58.0.0s25_HKG3_USER_ACCESS
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_VIENNA_OOB_DEVICES
+ description CR1302065
+ network-object object H_10.196.11.0_VIE1WANARO01
+ network-object object H_10.196.11.1_VIE1WANARO02
+object-group network G_VTB_SE_USER_ACCESS
+ description CR1308980
+ network-object object S_10.19.38.0s23_ESH_USER_ACCESS
+object-group network G_VTBC_EXCHANGE_WITH_ACS
+ description CR1311638
+ network-object object H_10.72.133.101_SMSK02MX49
+ network-object object H_10.72.133.102_SMSK02MX50
+ network-object object H_10.72.197.101_SMSK01MX49
+ network-object object H_10.72.197.102_SMSK01MX50
+ network-object object H_10.104.132.73_SLON02MX38
+ network-object object H_10.104.132.74_SLON02MX39
+ network-object object H_10.104.196.73_SLON01MX38
+ network-object object H_10.104.196.74_SLON01MX39
+object-group network G_SNG_SUBNETS
+ description CR1328399
+ network-object object S_10.20.0.0s14_SNG_USER_ACCESS
+object-group network G_VTBC_VDI_DESKTOPS
+ description CR1333002
+ network-object object S_10.104.176.0s23_LON02_VDI_212_VLAN
+ network-object object S_10.104.240.0s23_LON01_VDI_212_VLAN
+object-group network G_VTBSE_CITRIX_ENVIRONMENT
+ description CR1333002
+ network-object object S_10.16.4.0s23_VTBAUSTRIA_USER_ACCESS
+ network-object object S_10.19.4.0s23_VTBAUSTRIA_USER_ACCESS
+object-group network G_VIENNA_IP_PHONE_TEST
+ description CR1340991
+ network-object object H_10.101.29.169_VIENNA_TEST_PHONE
+object-group network G_VIENNA_WANARO_DEVICES_TEST
+ description CR1340991
+ network-object object H_10.196.11.0_VIE1WANARO01
+ network-object object H_10.196.11.1_VIE1WANARO02
+object-group network G_VTBC_SCSM_AND_SP_SERVERS
+ description CR1351901
+ network-object object H_10.72.208.35_SCSM
+ network-object object H_10.72.208.46_CMSK00WE123
+ network-object object H_10.76.194.115_SMSK01WE123
+ network-object object H_10.76.194.218_SMSK01AP97
+ network-object object H_10.76.194.245_SMSK01MG39
+ network-object object H_10.78.194.188_SMSK02AP97
+ network-object object H_10.78.194.248_SMSK02WE123
+ network-object object H_10.78.198.54_SMSK02AP136D
+ network-object object H_10.76.194.210_SMSK01WE18
+ network-object object H_10.78.194.218_SMSK02WE18
+object-group network G_VTBC_ACTIVEBATCH_SERVERS
+ description CR1354129
+ network-object object H_10.101.128.55_SLON02AP355
+ network-object object H_10.100.128.63_SLON01AP355
+ network-object object H_10.100.128.95_SLON01AP391U
+object-group network G_VTBSE_ACTIVEBATCH_SCHED_CLIENTS
+ description CR1354129
+ network-object object H_10.16.0.54_SGDB0011
+object-group network G_APTARE_DATA_COLLECTOR
+ description CR1366040
+ network-object object H_10.76.194.59_SMSK01AP58
+object-group network G_ESH_3PAR_STORAGES
+ description CR1366040
+ network-object object H_10.19.8.206_DESTM001
+ network-object object H_10.19.8.229_DESTM006
+object-group network G_NEW_CALYPSO_SERVERS_PROD
+ description CR1378177
+ network-object object H_10.100.128.100_SLON01AP380
+ network-object object H_10.100.128.101_SLON01AP381
+ network-object object H_10.100.128.102_SLON01AP382
+ network-object object H_10.100.128.103_SLON01AP383
+ network-object object H_10.100.128.104_SLON01AP384
+ network-object object H_10.100.128.105_SLON01AP385
+ network-object object H_10.101.128.90_SLON02AP380
+ network-object object H_10.101.128.91_SLON02AP381
+ network-object object H_10.101.128.92_SLON02AP382
+ network-object object H_10.101.128.93_SLON02AP383
+ network-object object H_10.101.128.94_SLON02AP384
+ network-object object H_10.101.128.95_SLON02AP385
+object-group network G_ESH_SPACEWALK_SERVERS
+ description CR1380359
+ network-object object H_10.16.8.23_SGSVR107
+object-group network G_VTBSE_DC_SERVERS
+ description CR1403480
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.18.4.16_SGSVR032
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_EPAM_HORIZON_VIEW_VDI_SERVERS
+ description CR1426466
+ network-object object S_10.101.148.0s22_BLOOMBERG
+ network-object object S_10.104.176.0s23_LON02_VDI_212_VLAN
+ network-object object S_10.104.240.0s23_LON01_VDI_212_VLAN
+object-group network G_VTBSE_DB_SERVERS
+ description CR1426466
+ network-object object H_10.16.0.53_SGDB0010
+ network-object object H_10.16.0.54_SGDB0011
+object-group network G_VTBSE_APP_SERVERS
+ description CR1426466
+ network-object object H_10.16.0.60_SGSVR127
+object-group network G_VTBC_TO_VTBSE_RDP_CLIENTS
+ description CR1432409, CR1640704
+ network-object object H_10.74.6.13_DMSK0774
+ network-object object S_10.77.40.0s26_MSK9_USER_ACCESS
+object-group network G_VTBSE_RDP_SERVERS
+ description CR1432409
+ network-object object H_10.16.5.111_SGSVR311
+ network-object object H_10.16.5.112_SGSVR312
+ network-object object H_10.16.5.113_SGSVR313
+ network-object object H_10.16.5.114_SGSVR314
+object-group network G_HI_COMMAND_SUITE_SERVERS
+ description CR1439360
+ network-object object H_10.76.194.253_SMSK01MG42
+ network-object object H_10.78.198.253_SMSK02MG42
+object-group network G_FRANKFURT_SAN_STORAGES
+ description CR1439365
+ network-object object H_10.144.128.13_AFRA02NN01
+ network-object object H_10.144.192.13_AFRA01NN01
+object-group network G_ONEVIEW_SERVERS
+ description CR544877
+ network-object object H_10.76.194.75_SMSK01MG49
+ network-object object H_10.78.194.84_SMSK02MG49
+object-group network G_VTBSE_ILO
+ description CR1454464
+ network-object object S_10.16.8.0s23_VTBSE_ILO
+object-group network G_VTBC_TO_VTBSE_ILO_CLIENTS
+ description CR1454464
+ network-object object S_10.76.194.0s24_VTBC_SERVERS
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_VTBC_LONDON_CUCM_SERVERS
+ description CR1460438
+ network-object object H-10.104.25.20-LON2VFDACM01
+ network-object object H-10.104.29.20-LON1VFDACM01
+object-group network G_VTBSE_SIP_SERVERS
+ description CR1460438
+ network-object object H_10.19.18.24_VTBSE_SIP_TRUNK_SERVER
+object-group network G-CCS-SERVERS
+ description C18345, C25622 - Symantec CCS Manager (former ESM) servers
+ network-object object H_10.100.129.225_SLON01SE03
+ network-object object H_10.101.129.225_SLON02SE03
+object-group network G_VTBSE_CCS_AGENTS
+ description CR1464183
+ network-object object H_10.16.0.54_SGDB0011
+object-group network G_GLOBAL_CORPORATE_NETWORK
+ description Whole VTBC network worldwide
+ network-object object S_10.0.0.0s8_GLOBAL_VTBC_NETWORK
+object-group network G_VIENNA_BMS_SERVER
+ description CR1462097
+ network-object object H_10.196.1.76_VIENNA_BMS
+object-group network G_VTBSE_BACKUP_INVENTORY_SERVER
+ description CR1471678
+ network-object object H_10.19.0.89_COMMSERV01
+object-group network G_MSK_JIRA_SERVERS
+ description CR1483710
+ network-object object H_10.76.198.32_SMSK01WE43
+ network-object object H_10.78.198.31_SMSK02WE43U
+ network-object object H_10.78.198.32_SMSK02WE43
+object-group network G_ESH_EXCHANGE_SERVER
+ description CR1483710
+ network-object object H_10.16.2.12_SGCAS001
+object-group network G_SHAREPOINT_PORTAL_SERVERS
+ description CR1487184
+ network-object object H_10.76.198.113_SMSK01WE130
+ network-object object H_10.78.198.125_SMSK02WE130
+ network-object object H_10.78.198.129_SMSK02WE130U
+object-group network G_VTBSE_AD_DS_FIM_AGENT_SERVERS
+ description CR1487184
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.18.4.10_SGSVR001
+ network-object object H_10.18.4.10_SGSVR016
+ network-object object H_10.18.4.16_SGSVR032
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+ network-object object H_10.20.4.10_SGSVR018
+ network-object object H_10.20.4.19_SGSVR019
+object-group network G_VTBASG_DC
+ description CR1491709
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_VTBSE_SCOM_MONITORING_DEVICES
+ description CR1496869
+ network-object object H_10.144.128.14_SFRA02MG003
+ network-object object H_10.19.8.73_DESRV022
+object-group network G_VTBC_SWIFT_CLIENTS
+ description CR1497121
+ network-object object S_10.74.0.0_s22_MSK5_USER_ACCESS
+ network-object object S_10.74.4.0_s22_MSK5_USER_ACCESS
+ network-object object S_10.77.32.0s19_VTBC_VO
+object-group network G_ESH_NEW_SWIFT_UAT_SERVER
+ description CR1497121
+ network-object object H_10.16.16.6_SFRA01AP02U
+ network-object object H_10.16.16.16_SFRA01AP02
+ network-object object H_10.16.16.17_SFRA02AP02
+object-group network G_ACTIVEBATCH_EXECUTION_AGENT_SERVERS
+ description CR1500876
+ network-object object H_10.76.194.205_SMSK01GW12
+ network-object object H_10.78.194.148_SMSK02GW12
+object-group network G_VTBC_FT_USERS
+ description CR1513273
+ network-object object S_10.74.0.0_s22_MSK5_USER_ACCESS
+object-group network G_GLOBAL_USER_SUBNETS
+ description CR1529112
+ network-object object S_10.100.176.0s22_LON_USER_ACCESS
+ network-object object S_10.101.0.0s19_LONDON_USER_ACCESS
+ network-object object S_10.104.176.0s23_LON02_VDI_212_VLAN
+ network-object object S_10.104.240.0s23_LON01_VDI_212_VLAN
+ network-object object S_10.106.0.0s19_LONDON_USER_ACCESS
+ network-object object S_10.122.0.0s25_SOF_USER_ACCESS
+ network-object object S_10.138.0.0s25_ZUG_USER_ACCESS
+ network-object object S_10.22.0.0s24_SNG_USER_ACCESS
+ network-object object S_10.22.13.0s25_SNG_USER_ACCESS
+ network-object object S_10.22.5.0s25_SNG_USER_ACCESS
+ network-object object S_10.22.8.0s24_SNG_USER_ACCESS
+ network-object object S_10.58.0.0s25_HKG3_USER_ACCESS
+ network-object object S_10.60.0.0s25_HKG_USER_ACCESS
+ network-object object S_10.74.0.0s19_VTBC_FT
+ network-object object S_10.74.96.0s19_VTBC_FT
+ network-object object S_10.77.32.0s19_VTBC_VO
+ network-object object S_10.79.0.0s21_VTBC_ET
+object-group network G_VTBC_AUTOMATE_SERVERS
+ description CR1537427
+ network-object object H_10.76.194.170_SMSK01MO13
+ network-object object H_10.76.198.106_SMSK01MO40
+object-group network G_ACTIVEBATCH_UAT_SERVER
+ description CR1542852
+ network-object object H_10.100.128.95_SLON01AP391U
+object-group network G_MSK9_MANAGEMENT_NETWORKS
+ description CR1546175
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+object-group network G_FRANKFURT_MANAGEMENT_NETWORKS
+ description CR1546175
+ network-object object S_10.144.1.0s24_FRA_CORE_AREA_LOOPBACKS
+ network-object object S_10.144.4.0s24_FRA_CORE_DIST_AREA_P2P
+ network-object object S_10.145.128.0s24_FRA1_INTERNET_DMZ_SOUTH
+ network-object object S_10.145.129.0s24_FRA1_INTERNET_DMZ_NORTH
+ network-object object S_10.145.192.0s24_FRA2_INTERNET_DMZ_SOUTH
+ network-object object S_10.145.193.0s24_FRA2_INTERNET_DMZ_NORTH
+ network-object object S_10.19.84.201s32_FRA_ESH_INTERCONNECT
+ network-object object S_10.146.0.128s25_FRA3_LOOPBACKS
+ network-object object S_10.144.23.224s28_FRA1_VXLAN_OOBM
+ network-object object S_10.144.23.96s28_FRA2_VXLAN_OOBM
+object-group network G_FRANKFURT_CUCM_CLIENTS
+ description CR1547701
+ network-object object S_10.101.28.0s24_LONDON_USER_ACCESS
+ network-object object S_10.101.29.0s24_LON_USER_SUBNET
+ network-object object S_10.77.48.0s24_MSK9_USER_SUBNET
+object-group network G_FRANKFURT_CUCM_SERVERS
+ description CR1547701
+ network-object object H_10.144.129.165_SFRA02VS01
+ network-object object H_10.144.193.165_SFRA01VS01
+object-group network G_VTBC_VOICE_SERVERS
+ description CR1547701
+ network-object object H-10.104.25.20-LON2VFDACM01
+ network-object object H-10.104.29.20-LON1VFDACM01
+ network-object object H_10.22.34.1_SNG1VFDACM01
+ network-object object H_10.28.4.5_SNG2VFDACM01
+ network-object object H_10.72.25.6_MSK1VFDACM02
+ network-object object H_10.72.25.7_MSK1VFDACM03
+ network-object object H_10.72.29.5_MSK2VFDACM01
+object-group network G_FRANKFURT_VG_SERVERS
+ description CR1547852
+ network-object object H_10.144.24.1_FRA1VFDAVG01
+ network-object object H_10.144.28.1_FRA2VFDAVG01
+object-group network G_FRANKFURT_UNITY_SERVERS
+ description CR1547974
+ network-object object H_10.144.193.166_SFRA01VS02
+ network-object object H_10.144.129.166_SFRA02VS02
+object-group network G_FRANKFURT_UCCX_SERVERS
+ description CR1548094
+ network-object object H_10.144.193.167_SFRA01VS03
+ network-object object H_10.144.129.167_SFRA02VS03
+object-group network G_FRANKFURT_WEBEX_SERVERS
+ description CR1548108
+ network-object object H_10.144.193.170_SFRA01VS05
+ network-object object H_10.144.193.171_SFRA01VS06
+ network-object object H_10.144.193.173_SFRA01VS08
+object-group network G_FRANKFURT_VOICE_RECORDING_SERVERS
+ description CR1548125
+ network-object object H_10.144.193.168_SFRA01VS04
+ network-object object H_10.144.129.168_SFRA02VS04
+object-group network G_NETWORK_MANAGEMENT_ACCESS
+ description CR1553836, CR1563109
+ network-object object H_10.72.208.48_SMSK01MO39
+ network-object object H_10.73.209.132_SMSK01TE30
+ network-object object S_10.104.41.0s24_LON2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.104.57.0s24_LON1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.58.0.0s25_HKG3_USER_ACCESS
+ network-object object S_10.72.41.0s24_MSK2_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.72.57.0s24_MSK1_NETWORK_MANAGEMENT_SUBNET
+ network-object object S_10.77.32.0s20_MSK9_MGMT_SUBNET
+ network-object object H_10.105.145.132_SLON02TE29
+ network-object object S_10.100.0.0s15_LON_SUBNET
+ network-object object S_10.77.48.0s24_MSK9_USER_SUBNET
+object-group network G_FRA_WAN_AGGREGATION
+ description CR1553836
+ network-object object S_10.144.22.0s23_FRA_WAN_AGGREGATION_SUBNET
+object-group network G_VTBC_SINGAPORE_EXCHANGE_2016_SERVERS
+ description CR1562917
+ network-object object H_10.22.49.230_SSNG01MX14
+ network-object object H_10.22.49.231_SSNG01MX15
+ network-object object H_10.28.1.230_SSNG02MX14
+ network-object object H_10.28.1.231_SSNG02MX15
+object-group network G_VTBC_SNG_DC_SERVERS
+ description CR1566079
+ network-object object H_10.22.48.11_SSNG01DC03
+ network-object object H_10.22.48.12_SSNG01DC04
+ network-object object H_10.28.1.203_SSNG02DC03
+ network-object object H_10.28.1.204_SSNG02DC04
+object-group network G_ESH_ROOT_DC_SERVERS
+ description CR1566079
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.90_SGSVR083
+object-group network G_NEW_ESH_CITRIX_SERVERS
+ description CR1151076
+ network-object object H_10.100.128.52_SLON01TE40U
+ network-object object H_10.100.128.58_SLON01TE40
+ network-object object H_10.100.128.59_SLON01TE42
+ network-object object H_10.100.128.60_SLON01TE43
+ network-object object H_10.100.128.61_SLON01TE41
+ network-object object H_10.101.128.47_SLON02TE40
+ network-object object H_10.101.128.48_SLON02TE43
+ network-object object H_10.101.128.50_SLON02TE42
+ network-object object H_10.101.128.51_SLON02TE41
+ network-object object H_10.101.128.56_SLON02TE40U
+object-group network G_ESH_GERMANY_DC
+ description CR1571722
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.12_SGSVR017
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.19.4.23_SGSVR003
+object-group network G_RSA_FRANKFURT_SWIFT_CLIENTS
+ description CR1571825
+ network-object object H_10.100.129.30_SLON01SE01.UK.VTBCAPITAL.INTERNAL
+ network-object object H_10.101.129.28_SLON02SE01.UK.VTBCAPITAL.INTERNAL
+ network-object object H_10.76.194.128_SMSK01SE01.CORP.VTBCAPITAL.INTERNAL
+ network-object object H_10.78.194.54_SMSK02SE01.CORP.VTBCAPITAL.INTERNAL
+object-group network G_RSA_FRANKFURT_SWIFT_SERVERS
+ description CR1571825
+ network-object object H_10.16.16.18_SFRA01DC01.VTBSE.DMZ
+ network-object object H_10.16.16.19_SFRA02DC01.VTBSE.DMZ
+object-group network G_MOSCOW_USERS_SUBNETS
+ description CR1573815
+ network-object object S_10.74.0.0s19_VTBC_FT
+ network-object object S_10.74.96.0s19_VTBC_FT
+ network-object object S_10.77.39.0_MSK9_6TH_FLOOR
+ network-object object S_10.77.40.0s26_MSK9_USER_ACCESS
+ network-object object S_10.77.48.0s25_MSK9_USER_ACCESS
+ network-object object S_10.79.0.0s21_VTBC_ET
+object-group network G_VTBE_ACTIVEBATCH_AGENTS
+ description CR1573357, CR1573539
+ network-object object H_10.144.130.22_SFRA02DB01U.VTBASG.VTBGRP.INTERNAL
+ network-object object H_10.144.194.20_SFRA01DB01.VTBASG.VTBGRP.INTERNAL
+ network-object object H_10.144.194.21_SFRA01DB01D.VTBASG.VTBGRP.INTERNAL
+ network-object object H_10.144.130.23_SFRA02DB01.VTBASG.VTBGRP.INTERNAL
+object-group network G_FRA_GRE_ENDPOINT
+ description CR1578218
+ network-object object H_10.144.22.132_FRA1WANARO01
+ network-object object H_10.144.22.4_FRA2WANARO01
+object-group network G_LON_GRE_ENDPOINT
+ description CR1578218
+ network-object object H_10.105.2.8_LON2B2BBRO01
+ network-object object H_10.105.66.8_LON1B2BBRO01
+object-group network G_VTBC_MSK_EXCHANGE_SERVERS
+ description CR1579115
+ network-object object H_10.72.133.70_SMSK01MX41
+ network-object object H_10.72.133.71_SMSK02MX41
+ network-object object H_10.72.197.70_SMSK01MX40
+ network-object object H_10.72.197.71_SMSK01MX41
+object-group network G_VTBSE_EXCHANGE_SERVERS
+ description CR1246845
+ network-object object H_10.16.2.10_SGSVR007
+ network-object object H_10.16.2.11_SGSVR008
+object-group network G_CISCO_SMART_SOFTWARE_MANAGER_SATELLITE
+ description CR1645559
+ network-object object H_10.144.192.31_SFRA01SE04
+object-group network G_VTB_CAPITAL_CALYPSO_SERVERS
+ description CR1609350
+ network-object object H_10.101.129.174_SLON02AP193
+ network-object object H_10.100.129.203_SLON01AP196U
+ network-object object H_10.100.129.204_SLON01AP197U
+ network-object object H_10.100.129.28_SLON01AP204U
+ network-object object H_10.100.129.91_SLON01AP330U
+ network-object object H_10.101.129.172_SLON02AP185U
+ network-object object H_10.101.129.64_SLON02AP194U
+ network-object object H_10.101.129.58_SLON02AP195U
+ network-object object H_10.101.129.79_SLON02AP198U
+ network-object object H_10.101.129.89_SLON02AP330U
+ network-object object H_10.100.141.119_SLON01AP207U
+ network-object object H_10.100.141.120_SLON01AP208U
+ network-object object H_10.100.128.87_SLON01AP367U
+ network-object object H_10.100.128.91_SLON01AP368U
+ network-object object H_10.101.128.63_SLON02AP358U
+ network-object object H_10.101.128.87_SLON02AP370U
+ network-object object H_10.101.128.90_SLON02AP380
+ network-object object H_10.101.128.91_SLON02AP381
+ network-object object H_10.101.128.92_SLON02AP382
+ network-object object H_10.101.128.93_SLON02AP383
+ network-object object H_10.101.128.94_SLON02AP384
+ network-object object H_10.101.128.95_SLON02AP385
+ network-object object H_10.100.128.100_SLON01AP380
+ network-object object H_10.100.128.101_SLON01AP381
+ network-object object H_10.100.128.102_SLON01AP382
+ network-object object H_10.100.128.103_SLON01AP383
+ network-object object H_10.100.128.104_SLON01AP384
+ network-object object H_10.100.128.105_SLON01AP385
+ network-object object H_10.100.129.8_SLON01AP185
+ network-object object H_10.100.129.13_SLON01AP187
+ network-object object H_10.100.141.43_SLON01AP188
+ network-object object H_10.100.129.188_SLON01AP189
+ network-object object H_10.100.141.30_SLON01AP190
+ network-object object H_10.100.149.26_SLON01AP191
+ network-object object H_10.100.129.16_SLON01AP192
+ network-object object H_10.100.129.216_SLON01AP193
+ network-object object H_10.101.129.11_SLON02AP185
+ network-object object H_10.101.129.12_SLON02AP186
+ network-object object H_10.101.129.13_SLON02AP187
+ network-object object H_10.101.129.153_SLON02AP188
+ network-object object H_10.101.129.56_SLON02AP189
+ network-object object H_10.101.129.154_SLON02AP190
+ network-object object H_10.101.129.155_SLON02AP191
+ network-object object H_10.101.129.16_SLON02AP192
+ network-object object H_10.100.129.12_SLON01AP186
+object-group network G_VTB_GERMANY_DOMAIN_CONTROLLERS
+ description CR1609350
+ network-object object H_10.16.0.10_SGSVR001
+ network-object object H_10.16.0.11_SGSVR002
+ network-object object H_10.16.0.90_SGSVR083
+ network-object object H_10.19.4.23_SGSVR003
+ network-object object H_10.16.0.13_SGSVR004
+ network-object object H_10.16.4.14_SGSVR005
+ network-object object H_10.16.4.15_SGSVR006
+ network-object object H_10.19.4.15_SGSVR009
+ network-object object H_10.16.0.12_SGSVR017
+object-group network G_FRANKFURT_BE600M_VOICE_SERVERS
+ description CR1653580
+ network-object object H_10.144.128.91_SFRA02VH20MGMT01
+ network-object object H_10.144.128.92_SFRA02VH20
+ network-object object H_10.144.192.91_SFRA01VH20MGMT01
+ network-object object H_10.144.192.92_SFRA01VH20
+ network-object object H_10.144.192.93_SFRA01VH21MGMT01
+ network-object object H_10.144.192.94_SFRA01VH21
+ network-object object H_10.144.192.95_SFRA01VH22MGMT01
+ network-object object H_10.144.192.96_SFRA01VH22
+object-group network G_FRANKFURT_ALL_CUCM_SERVERS
+ description CR1653580
+ network-object object H_10.144.129.165_SFRA02VS01
+ network-object object H_10.144.129.166_SFRA02VS02
+ network-object object H_10.144.129.167_SFRA02VS03
+ network-object object H_10.144.193.165_SFRA01VS01
+ network-object object H_10.144.193.166_SFRA01VS02
+ network-object object H_10.144.193.167_SFRA01VS03
+object-group network G_VTBC_OFFICES_IPT_NETWORKS
+ description CR1653580
+ network-object object S_10.120.0.0s13_SOFIA_COMMON_SUBNET
+ network-object object S_10.136.0.0s13_ZUG_COMMON_SUBNET
+ network-object object S_10.16.0.0s12_SINGAPORE_COMMON_SUBNET
+ network-object object S_10.196.0.0s20_VIENNA_COMMON_SUBNET
+ network-object object S_10.48.0.0s12_HONG_KONG_COMMON_SUBNET
+ network-object object S_10.64.0.0s12_MOSCOW_COMMON_SUBNET
+ network-object object S_10.96.0.0s12_LONDON_COMMON_SUBNET
+object-group network G_FRANKFURT_OFFICE_IPT_RANGE
+ description CR1653580
+ network-object object H_10.144.129.180_FRA2VFDAVG01
+ network-object object H_10.144.193.180_FRA1VFDAVG01
+ network-object object S_10.146.32.0s20_FRA_OFFICE
+object-group network G_VTBC_CITRIX_FARM_DELIVERY_CONTROLLERS
+ description CR1660779
+ network-object object H_10.100.128.30_SLON01MG62
+ network-object object H_10.100.128.31_SLON01MG63
+ network-object object H_10.101.128.32_SLON02MG63
+ network-object object H_10.101.128.33_SLON02MG62
+object-group network G_VTBE_STOREFRONT_SERVERS
+ description CR1660779
+ network-object object H_10.16.5.100_SGSVR300
+ network-object object H_10.16.5.101_SGSVR301
+object-group network G_USER_SUBNETS_TO_VTBE_TRADER
+ description CR1665756
+ network-object object S_10.21.4.0s24_SNG_USER_LAN
+ network-object object S_10.72.0.0s13_MSK_RANGE
+ network-object object S_10.96.0.0s12_LONDON_COMMON_SUBNET
+object-group network G_VTBE_TRADER_WORKSTATION_DESTINATION
+ description CR1665756
+ network-object object H_VTBE_TRADER_WORKSTATION_DESTINATION
+object-group network G_VOICE_ENGINEERS_WORKSTATIONS
+ description CR1670064
+ network-object object H_10.101.28.128_DLON6006
+ network-object object H_10.77.48.50_DMSK0569
+ network-object object H_10.77.48.69_DMSK0621
+object-group network G_FRANKFURT_VOICE_SERVERS
+ description CR1670064
+ group-object G_FRANKFURT_ALL_CUCM_SERVERS
+ network-object object H_10.144.129.180_FRA2VFDAVG01
+ network-object object H_10.144.193.180_FRA1VFDAVG01
+object-group network G_PROJECT_CHARLOT_PCS
+ description CR1647967
+ network-object object S_10.19.47.0s24_PROJECT_CHARLOT_PCS
+object-group network G_VTBC_DBASUPPORT_TERMINAL_SERVERS
+ description CR1433271
+ network-object object H_10.76.194.84_SMSK01TE24
+ network-object object H_10.101.129.183_SLON02TE15
+object-group network G_VTBSE_CITRIX_ADMIN_SILO_SERVERS
+ description CR1433271
+ network-object object H_10.16.5.110_SGSVR310
+ network-object object H_10.16.5.111_SGSVR311
+ network-object object H_10.16.5.112_SGSVR312
+ network-object object H_10.16.5.113_SGSVR313
+object-group network G_FRANKFURT_VIDEO_KEYPOINT_CLIENTS
+ description CR1701533
+ network-object object S_10.101.28.0s24_LONDON_USER_ACCESS
+ network-object object S_10.101.29.0s24_LON_USER_SUBNET
+ network-object object S_10.58.0.0s24_HKG_USER_SUBNET
+ network-object object S_10.77.48.0s24_MSK9_USER_SUBNET
+ network-object object S_10.77.49.0s24_MSK9_6_FL_USER_SUBNET
+object-group network G_FRANKFURT_VIDEO_KEYPOINT_DEVICES
+ description CR1701533
+ network-object object H-172.16.16.11-VTB-ESH-VCSINT01-REAL-IP
+ network-object object H-172.16.16.12-VTB-ESH-VCSMCU01-REAL-IP
+ network-object object H-217.110.121.197-VTB-ESH-VCSEXT01-REAL-IP
+ network-object object H_10.16.8.12_FRA_TMS
+ network-object object H_10.19.36.30_DEVCSMUSSORGSKY
+ network-object object H_10.19.36.31_DEVCSPROKOFIEV
+ network-object object H_10.19.36.32_DEVCSCHOPIN
+ network-object object H_10.19.36.33_DEVCSMOZART
+ network-object object H_10.19.36.34_DEVCSBEETHOVEN
+ network-object object H_10.19.36.36_DEVCSSTRAUSS
+ network-object object H_10.19.36.37_DEVCSSCHOSTAKOVICH
+ network-object object H_10.19.36.38_DEVCSGLINKA
+ network-object object H_10.196.1.101_ATVCSSCHUBERT
+ network-object object H_10.196.1.102_ATVCSMEHIC
+object-group network G-SGH-NETWORK-DEVICES
+ network-object object H_10.105.52.56_SGH1WANARO01
+ network-object object H_10.105.52.57_SGH1WANARO02
+ network-object object H_10.105.52.58_SGH1UADAXR01
+ network-object object H_10.105.52.59_SGH1UADAXR02
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!! Config services !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+object-group service G-NETWORK-MANAGEMENT-OUT-SERVICES
+ description Ports used for network management (SSH, HTTPS)
+ service-object tcp destination eq ssh
+ service-object tcp destination eq https
+object-group service G_SNMP_SERVICES
+ service-object udp destination eq snmp
+object-group service G-VTBAUSTRIA-SFTP-SERVICES
+ description C16968, CR705773, CR827488 - SFTP and FTPS Ports used by VTB Austria
+ service-object tcp destination eq ssh
+object-group service G-VTBCZUG-VTBA-SFTP-SERVICES
+ service-object tcp destination eq 9022
+object-group service G_VTBAUSTRIA_DEAL_TRACKER_PROD_SERVICES
+ description CR529405, CR688396
+ service-object tcp destination eq 2510
+ service-object tcp destination eq 2511
+ service-object tcp destination eq 2512
+object-group service G_VTBAUSTRIA_DEAL_TRACKER_UAT_SERVICES
+ description CR529405, CR688396
+ service-object tcp destination eq 2510
+ service-object tcp destination eq 2511
+ service-object tcp destination eq 2512
+object-group service G-VTB-ESH-VOICE-SERVICES
+ description CR852604
+ service-object object RTP
+ service-object tcp-udp destination eq 5061
+ service-object tcp-udp destination eq sip
+object-group service G-VTB-ESH-VIDEO-SERVICES
+ description CR882022
+ service-object tcp-udp destination eq sip
+ service-object tcp-udp destination eq 5061
+ service-object tcp-udp destination eq 1719
+ service-object tcp-udp destination eq 1720
+ service-object tcp-udp destination eq 2776
+ service-object tcp-udp destination eq 2777
+ service-object tcp destination eq 7004
+ service-object udp destination eq 6004
+object-group service G-VTB-ESH-RDP-SERVICES
+ description CR937727
+ service-object object rdp
+object-group service G_ESH_PEERING_DC_SERVICES
+ description CR1095672 CR1098393
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+ service-object tcp destination eq 445
+ service-object udp destination eq 88
+ service-object tcp destination eq domain
+ service-object udp destination eq domain
+ service-object tcp destination eq 135
+ service-object udp destination eq ntp
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 464
+ service-object tcp destination eq 88
+ service-object udp destination eq 3268
+ service-object udp destination eq 464
+object-group service G_ESH_CITRIX_XENAPP_SERVICES
+ description CR1137197
+ service-object tcp destination eq 2598
+ service-object tcp destination eq 8080
+ service-object tcp destination eq citrix-ica
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+object-group service G_ESH_VTB_RDP_SERVICES
+ description CR1109366 RDP Access from Frankfurt to London physical PC
+ service-object tcp destination eq 3389
+object-group service RDP_VNC_SERVICES
+ description Emergency
+ service-object tcp destination eq 3389
+ service-object tcp destination eq 5900
+object-group service G_ESH_VTB_RADMIN_SERVICES
+ description Emergency_CR1161132
+ service-object tcp destination eq 4899
+object-group service G_HTTPS_SERVICES
+ description CR1151076
+ service-object tcp destination eq https
+object-group service G_ESH_DC_SERVICES
+ description CR1161846
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object tcp destination eq 88
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq 389
+ service-object udp destination eq 88
+object-group service G_DC_SERVICES
+ description CR1167894
+ service-object tcp destination eq 135
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object tcp destination eq 445
+ service-object tcp destination eq 88
+ service-object tcp destination eq domain
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq 389
+ service-object udp destination eq 464
+ service-object udp destination eq 88
+ service-object udp destination eq domain
+ service-object udp destination eq ntp
+ service-object tcp destination range 49152 65535
+ service-object udp destination range 49152 65535
+ service-object tcp destination eq 464
+object-group service G_ESH_CITRIX_SERVICES
+ description CR1202911
+ service-object tcp destination eq 88
+ service-object tcp destination eq domain
+ service-object udp destination eq 88
+ service-object udp destination eq domain
+ service-object tcp destination eq 135
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+object-group service G_SSH_SERVICES
+ service-object tcp destination eq ssh
+object-group service G_HTTP_HTTPS_SERVICES
+ description CR1116067
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+object-group service G_KERBEROS_SERVICES
+ description CR1197416
+ service-object tcp destination eq 88
+ service-object udp destination eq 88
+object-group service G_ESH_SCSM_SERVICES
+ description CR1203936
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+ service-object tcp destination eq 3268
+object-group service G_RACKTABLES_AUTORIZATION_SERVICES
+ description CR1210861
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object tcp destination eq 464
+ service-object tcp destination eq 88
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq 389
+ service-object udp destination eq 464
+ service-object udp destination eq 88
+object-group service G_DYNAMIC_RPC_SERVICES
+ description CR1210998
+ service-object tcp destination range 49152 65535
+object-group service G_BNA_TO_ESH_SAN_SWITCHES_SERVICES
+ description CR1216594
+ service-object tcp destination eq https
+ service-object tcp destination eq ssh
+ service-object udp destination eq snmp
+object-group service G_ESH_DC_VTBC_MONITORING_PEERING_SERVICES
+ description CR1217737
+ service-object tcp destination eq 135
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq 88
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+ service-object udp destination eq 88
+object-group service G_VTBC_MONITORING_TO_ESH_MONITORING_GATEWAYS_PEERING_SERVICES
+ description CR1220552
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq 5723
+ service-object tcp destination eq 5724
+object-group service G_ESH_MONITORING_SERVICES
+ description CR1220654
+ service-object tcp destination eq 29009
+ service-object tcp destination range 49152 65535
+object-group service G_HTTP_SERVICES
+ description CR707021
+ service-object tcp destination eq www
+object-group service G_CRM_SERVICES
+ description CR1232713
+ service-object tcp destination eq 3268
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq 88
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq 3268
+ service-object udp destination eq 389
+ service-object udp destination eq 636
+ service-object udp destination eq 88
+object-group service G_ESH_DC_USERS_AUTH_SERVICES
+ description CR1233216
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq 389
+ service-object udp destination eq 636
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object udp destination eq 3268
+ service-object udp destination eq 3269
+ service-object tcp destination eq 88
+ service-object udp destination eq 88
+ service-object tcp destination range 49152 65535
+object-group service G_FILE_SHARE_SERVICES
+ description CR1233249
+ service-object tcp destination eq 445
+ service-object udp destination eq 445
+object-group service G_VIENNA_IN_VOIP_SERVICES
+ description CR1239788
+ service-object tcp destination eq 5061
+ service-object tcp destination eq sip
+ service-object udp destination range 16384 32767
+ service-object udp destination eq sip
+object-group service G_VIENNA_IN_VOIP_GW_SERVICES
+ description CR1239788
+ service-object tcp destination eq 5061
+ service-object tcp destination eq h323
+ service-object tcp destination eq sip
+ service-object udp destination range 16384 32767
+ service-object udp destination eq sip
+ service-object udp destination range 8000 8099
+ service-object udp destination range 8000 48198
+ service-object udp
+object-group service G_VTBC_INFRA_SERVICES
+ description CR1251512
+ service-object tcp-udp destination eq 389
+ service-object tcp-udp destination range 49152 65535
+ service-object tcp-udp destination eq 88
+ service-object tcp destination eq 5725
+ service-object tcp-udp destination eq 135
+ service-object tcp-udp destination range 137 139
+ service-object tcp-udp destination eq 445
+ service-object tcp-udp destination eq domain
+object-group service G_GRE_IPSEC_SERVICES
+ service-object gre
+ service-object esp
+ service-object udp destination eq 4500
+ service-object udp destination eq isakmp
+object-group service G_UNITY_OUTBOUND_AUDIO_STREAMS_SERVICES
+ description CR1264241
+ service-object udp destination range 16384 32767
+object-group service G_ESH_LDAP_AUTH_SERVICES
+ description CR1266261
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+ service-object tcp destination eq 3268
+object-group service G_VIENNA_PHONE_WEB_SERVICES
+ description Ports used to administer phones from desktops
+ service-object tcp destination eq www
+ service-object tcp destination eq 8080
+ service-object tcp destination eq https
+ service-object tcp destination eq 8443
+object-group service G_VIENNA_OOB_SERVICES
+ description CR1302065
+ service-object tcp destination eq 2001
+ service-object tcp destination range 2026 2041
+object-group service G_VIENNA_VOICE_SERVICES_TEST
+ description CR1340991
+ service-object udp destination range 8000 48198
+object-group service G_VTVSE_SCSM_AND_SP_SERVICES
+ description CR1351901
+ service-object tcp destination eq 42
+ service-object tcp destination eq 135
+ service-object tcp destination eq netbios-ssn
+ service-object tcp destination eq 9389
+ service-object tcp destination eq domain
+ service-object tcp destination eq 137
+ service-object tcp destination eq 445
+ service-object tcp destination eq 464
+ service-object udp destination eq ntp
+ service-object udp destination eq netbios-dgm
+ service-object udp destination eq domain
+ service-object udp destination eq netbios-ns
+ service-object udp destination eq 445
+ service-object udp destination eq 464
+object-group service G_ACTIVEBATCH_SERVICES
+ description CR1354129
+ service-object tcp destination eq 3655
+object-group service G_APTARE_DATA_COLLECTOR_SERVICES
+ description CR1366040
+ service-object tcp destination eq 5988
+ service-object tcp destination eq ssh
+object-group service G_ESH_LDAP_SERVICES
+ description CR1195662
+ service-object tcp destination eq ldap
+ service-object udp destination eq 389
+object-group service G_EPAM_HORIZON_VIEW_VDI_SERVICES
+ description CR1426466
+ service-object tcp destination eq 1435
+ service-object tcp destination range 1433 1434
+ service-object udp destination range 1433 1434
+object-group service G_SAN_STORAGE_VSP_MGMT_SERVICES
+ description CR1439360
+ service-object tcp destination eq 1099
+ service-object tcp destination eq 10995
+ service-object tcp destination eq 2000
+ service-object tcp destination eq 23015
+ service-object tcp destination eq 31001
+ service-object tcp destination eq 34001
+ service-object tcp destination eq 427
+ service-object tcp destination eq 51099
+ service-object tcp destination eq 51100
+ service-object tcp destination eq 5989
+ service-object tcp destination eq www
+ service-object udp destination eq snmp
+object-group service G_VTBSE_ILO_SERVICES_IN
+ description CR1454464
+ service-object tcp destination eq 17988
+ service-object tcp destination eq https
+ service-object tcp destination eq ssh
+ service-object udp destination eq ntp
+ service-object udp destination eq snmp
+object-group service G_VTBSE_ILO_BROWSER_SERVICES
+ description CR1454464
+ service-object tcp destination eq 17990
+object-group service G_VTBC_VTBSE_SIP_TRUNK_SERVICES
+ description CR1460438
+ service-object tcp-udp destination eq 5061
+ service-object tcp-udp destination eq sip
+object-group service G_CCS_AGENT_OUT_SERVICES
+ description CR1464183
+ service-object tcp destination eq 5601
+ service-object tcp destination eq 5599
+object-group service G_VTBSE_BACKUP_INVENTORY_SERVICES
+ description CR1471678
+ service-object tcp destination eq 53043
+object-group service G_JIRA_POP_SERVICES
+ description CR1483710
+ service-object object pop3s
+ service-object tcp destination eq pop3
+object-group service G_AD_DS_SHAREPOINT_SERVICES
+ description CR1487184
+ service-object tcp-udp destination eq 445
+ service-object tcp-udp destination eq 464
+ service-object tcp-udp destination eq 88
+ service-object tcp-udp destination eq domain
+ service-object tcp destination eq 138
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object tcp destination eq netbios-ssn
+ service-object udp destination eq netbios-ns
+object-group service G_KERBEROS_TICKET
+ description CR1487184
+ service-object tcp-udp destination eq 88
+object-group service G_DOMAIN_CACHE
+ description CR1491709
+ service-object tcp destination eq 135
+ service-object tcp destination eq 445
+ service-object tcp destination eq ldap
+object-group service G_SCSM_SERVICES
+ description CR1529112
+ service-object tcp-udp destination eq 389
+ service-object tcp-udp destination eq 443
+ service-object tcp-udp destination eq 445
+ service-object tcp-udp destination eq 464
+ service-object tcp-udp destination eq 88
+ service-object tcp-udp destination eq domain
+ service-object tcp destination eq 135
+ service-object tcp destination eq 3268
+ service-object tcp destination eq 3269
+ service-object tcp destination range 49152 65535
+ service-object tcp destination eq 9389
+ service-object tcp destination eq ldaps
+ service-object tcp destination eq netbios-ssn
+ service-object udp destination eq ntp
+object-group service G_VTBC_AUTOMATE_SERVICES
+ description CR1537427, CR1550367
+ service-object tcp destination eq pop3
+ service-object tcp destination eq 995
+ service-object tcp destination eq https
+ service-object tcp destination eq www
+ service-object tcp destination eq imap4
+ service-object tcp destination eq 993
+ service-object tcp destination eq 587
+object-group service G_FRA_CUCM_WEB_ACCESS_SERVICES
+ description CR1547701
+ service-object tcp destination eq 8080
+ service-object tcp destination eq 8443
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+ service-object tcp destination eq ssh
+object-group service G_FRA_SIP_SERVICES
+ description CR1547701
+ service-object tcp destination eq 5061
+ service-object tcp destination eq h323
+ service-object tcp destination eq sip
+object-group service G_VIENNA_OUT_VOIP_SERVICES
+ description CR1239788
+ service-object tcp destination eq 2000
+ service-object tcp destination eq 2443
+ service-object tcp destination eq 2445
+ service-object tcp destination eq 3804
+ service-object tcp destination eq 5061
+ service-object tcp destination eq 6970
+ service-object tcp destination eq 8080
+ service-object tcp destination eq sip
+ service-object udp destination range 16384 32767
+ service-object udp destination eq sip
+ service-object udp destination eq tftp
+ service-object tcp destination eq 8443
+object-group service G_RTP_SERVICES
+ description CR1547852
+ service-object tcp destination eq ssh
+ service-object udp destination range 16384 32767
+object-group service G_FRA_UNITY_SERVICES
+ description CR1547974
+ service-object tcp destination eq 8080
+ service-object tcp destination eq 8443
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+ service-object tcp destination eq ssh
+ service-object tcp destination range 5000 5004
+ service-object tcp destination eq 20532
+ service-object tcp destination range 21000 21512
+ service-object udp destination range 16384 21511
+ service-object udp destination eq snmp
+object-group service G_FRA_WEBEX_SERVICES
+ description CR1548108
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+ service-object tcp destination eq ssh
+object-group service G_ROOT_DC_SERVICES
+ description CR1566079
+ service-object tcp-udp destination eq domain
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+ service-object udp destination eq ntp
+object-group service G_RSA_FRANKFURT_SWIFT_SERVICES
+ description CR1571825
+ service-object tcp destination eq ldap
+ service-object tcp destination eq ldaps
+object-group service G_VTB_SE_CITRIX_STOREFRONT_SERVICES
+ description CR1574014
+ service-object tcp destination eq 2598
+ service-object tcp destination eq 8080
+ service-object tcp destination eq citrix-ica
+ service-object tcp destination eq www
+ service-object tcp destination eq https
+object-group service G-GRE-SERVICES
+ service-object gre
+object-group service G-SMTP-SERVICES
+ service-object tcp destination eq smtp
+object-group service G_CISCO_SMART_SOFTWARE_MANAGER_SATELLITE_SERVICES
+ description CR1645559
+ service-object tcp destination eq 8443
+object-group service G_CUCM_FTP_SERVICES
+ description CR1653580
+ service-object tcp destination eq ftp
+object-group service G_RTP_STREAM_SERVICES
+ description CR1653580
+ service-object udp destination range 16384 32767
+object-group service G_VTBE_TRADER_WORKSTATION_SERVICES
+ description CR1665756
+ service-object tcp destination eq 3389
+object-group service G_FRANKFURT_VIDEO_KEYPOINT_SERVICES
+ description CR1701533
+ service-object tcp destination eq ftp
+ service-object tcp destination eq www
+ service-object tcp destination eq https

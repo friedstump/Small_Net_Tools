@@ -1,0 +1,279 @@
+access-list VTBAUSTRIA-in remark Infrastructure rule global / NETWORK
+access-list VTBAUSTRIA-in remark ### ALLOW ICMP FOR MONITORING ###
+access-list VTBAUSTRIA-in extended permit object-group G_ICMP_SERVICES any4 any4 
+access-list VTBAUSTRIA-in remark Permit access from VTB Austria to Calypso Citrix servers
+access-list VTBAUSTRIA-in extended permit object-group G-CITRIX-XENAPP-SERVICES object-group G-CALYPSO-CITRIX-CLIENTS object-group G-CALYPSO-CITRIX-SERVERS 
+access-list VTBAUSTRIA-in remark CR172705 - Permit VTBA to Sungard Adaptiv
+access-list VTBAUSTRIA-in extended permit object-group G-VTBAUSTRIA-TO-SUNGARD-ADAPTIV-SERVICES object-group G-VTBAUSTRIA-SUNGARD-ADAPTIV-CLIENTS object-group G-VTBAUSTRIA-TO-SUNGARD-ADAPTIV-SERVERS 
+access-list VTBAUSTRIA-in remark CR852604 - Permit access between VTBC and VTB ESH voice systems
+access-list VTBAUSTRIA-in extended permit object-group G-VTB-ESH-VOICE-SERVICES object-group G-VTB-ESH-REMOTE-VOICE-SYSTEMS object-group G-VTB-ESH-LOCAL-VOICE-SYSTEMS 
+access-list VTBAUSTRIA-in remark CR882022 - Permit access between VTBC and VTB ESH VIDEO systems
+access-list VTBAUSTRIA-in extended permit object-group G-VTB-ESH-VIDEO-SERVICES object-group G-VTB-ESH-REMOTE-VIDEO-SYSTEMS object-group G-VTB-ESH-LOCAL-VIDEO-SYSTEMS 
+access-list VTBAUSTRIA-in remark CR912162 - Permit VTB ESH NETFLOW SERVICES
+access-list VTBAUSTRIA-in extended permit object-group G-VTB-ESH-NETFLOW-SERVICES object-group G-VTB-ESH-NETFLOW-CLIENTS-REAL-IP object-group G_GLOBAL_NETFLOW_SERVERS log warnings 
+access-list VTBAUSTRIA-in remark MA932935, CR1472650, CR1473928 - VTB ESH CONNECTION TO TIBCO EMS UAT
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ESH_EMS_TIBCO_UAT_SERVICES object-group G_VTB_ESH_EMS_TIBCO_UAT_GERMANY_CLIENTS object-group G_VTB_ESH_EMS_TIBCO_UAT_SERVERS log warnings 
+access-list VTBAUSTRIA-in remark MA932935, CR1472650, CR1473928 - VTB ESH CONNECTION TO TIBCO EMS PROD
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ESH_INTRADAY_EOD_EMS_TIBCO_PROD_SERVICES object-group G_VTB_ESH_EMS_TIBCO_PROD_GERMANY_CLIENTS object-group G_VTB_ESH_EMS_TIBCO_PROD_SERVERS 
+access-list VTBAUSTRIA-in remark CR1095672 ESH-VTBC TRUST DC communication
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_PEERING_DC_SERVICES object-group G_ESH_PEERING_ESH_DC object-group G_ESH_PEERING_VTBC_DC 
+access-list VTBAUSTRIA-in remark CR1109366 RDP Access from Frankfurt to London physical PC
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_ESH_RDP_USERS object-group G_LONDON_NETS_FOR_ESH_RDP_ACCESS 
+access-list VTBAUSTRIA-in remark CR1116067
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_INTRANET_PORTAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1117406, CR1210535
+access-list VTBAUSTRIA-in extended permit object-group G_REC7_SERVICES object-group G_REC7_ESH_CLIENTS object-group G_REC7_SERVERS 
+access-list VTBAUSTRIA-in remark CR1126026
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBD_ADMIN_OFFICE object-group G_LONDON_NETS_FOR_ESH_RDP_ACCESS 
+access-list VTBAUSTRIA-in remark CR1123666
+access-list VTBAUSTRIA-in extended permit object-group G_ORACLE_HRMS_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_ORACLE_HRMS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1151046
+access-list VTBAUSTRIA-in extended permit object-group G_ORACLE_HRMS_UAT_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_ORACLE_HRMS_UAT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1151076
+access-list VTBAUSTRIA-in extended permit object-group G-CITRIX-XENAPP-SERVICES object-group G_ESH_CITRIX_USER_SUBNETS object-group G_NEW_ESH_CITRIX_SERVERS 
+access-list VTBAUSTRIA-in remark CR1151076
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_ESH_STOREFRONT_CLIENTS object-group G_STOREFRONT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1158604
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_ITBJET_SERVERS log 
+access-list VTBAUSTRIA-in remark CR1167894
+access-list VTBAUSTRIA-in extended permit object-group G_DC_SERVICES object-group G_ESH_DC object-group G_VTBC_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1167379
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ESH_HR_APP_DB_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_VTB_ESH_HR_APP_DB_SERVERS 
+access-list VTBAUSTRIA-in remark CR1177657
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTB_EU_SERVERS 
+access-list VTBAUSTRIA-in remark CR1182094
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_CITRIX_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTBC_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1184913
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_PKI_VTBCAPITAL 
+access-list VTBAUSTRIA-in remark CR1197596
+access-list VTBAUSTRIA-in extended permit object-group G_ORACLE_HRMS_SERVICES object-group G_VTBAUSTRIA_CLIENT_TO_MSK_ORACLE_SUBNETS object-group G_ORACLE_HRMS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1195662
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_ESH_REMOTE_DESCTOP_LICENSE_SERVER object-group G_ESH_REMOTE_DESKTOP_LICENSE_SERVER_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1197416
+access-list VTBAUSTRIA-in extended permit object-group G_KERBEROS_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_MSK_LDAP_KERBEROSS_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1203576
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ESH_HR_APP_DB_SERVICES object-group G_VTB_ESH_HR_APP_DB_CLIENTS object-group G_VTB_ESH_HR_APP_DB_SERVERS 
+access-list VTBAUSTRIA-in remark CR1210385
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_RACKTABLES_CLIENTS object-group G_RACKTABLES_SERVERS 
+access-list VTBAUSTRIA-in remark CR1216594
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_SAN_SWITCHES_TO_BNA_SERVICES object-group G_ESH_SAN_SWITCHES_TO_BNA object-group G_VTBC_SAN_MONITORING_SERVERS 
+access-list VTBAUSTRIA-in remark CR1217737
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_DC_VTBC_MONITORING_PEERING_SERVICES object-group G_ESH_DC object-group G_VTBC_MONITORING_SERVERS 
+access-list VTBAUSTRIA-in remark CR1217802
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_SERVICES object-group G_ESH_MONITORING_GATEWAYS object-group G_PKI_VTBCAPITAL 
+access-list VTBAUSTRIA-in remark CR1220552
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_MONITORING_TO_ESH_MONITORING_GATEWAYS_PEERING_SERVICES object-group G_ESH_MONITORING_GATEWAYS object-group G_VTBC_MONITORING_SERVERS_TO_ESH_MONITORING_GATEWAYS 
+access-list VTBAUSTRIA-in remark CR1220654
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_MONITORING_SERVICES object-group G_ESH_MONITORING_GATEWAYS object-group G_VTBC_PRTG_CORE_SERVER 
+access-list VTBAUSTRIA-in remark CR1220242
+access-list VTBAUSTRIA-in extended permit object-group G_PRINT_SERVICES object-group G_VTB_ESH_EUCLID_SERVERS_2 object-group G_MSK_PRN0207 
+access-list VTBAUSTRIA-in remark CR1232713
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_SIEBEL_CRM_SERVERS 
+access-list VTBAUSTRIA-in remark CR1233216
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_MSK_JIRA_and_CONFLUENCE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1240128
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_ESH_RDP_DESTINATIONS object-group G_ESH_REMOTE_DESKTOP_LICENSE_SERVER_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1239788
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_CUCM_ACCESS_SERVICES object-group G_VIENNA_USER_SUBNET object-group G_VOICE_SERVERS_VIENNA 
+access-list VTBAUSTRIA-in remark CR1239788
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_OUT_VOIP_SERVICES object-group G_VIENNA_VOICE_SUBNET object-group G_VOICE_SERVERS_VIENNA 
+access-list VTBAUSTRIA-in remark CR1239788
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_OUT_VOIP_GW_SERVICES object-group G_VIE1WANARO_DEVICES object-group G_VOICE_SERVERS_VIENNA 
+access-list VTBAUSTRIA-in remark CR1246845
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBSE_EXCHANGE_SERVERS object-group G_VTBC_AUTODISCOVER_SERVERS 
+access-list VTBAUSTRIA-in remark CR1251512
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_VTBC_INFRA_SERVERS 
+access-list VTBAUSTRIA-in remark Emer CR1257045
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_JUMPBOX_SERVICES object-group G_ESH_ADMIN_JUMP_HOSTS object-group G_ESH_REMOTE_DESKTOP_LICENSE_SERVER_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1258141
+access-list VTBAUSTRIA-in extended permit object-group G_GRE_IPSEC_SERVICES object-group G_VTBC_B2B_ROUTERS object-group G_VIENNA_ROUTERS 
+access-list VTBAUSTRIA-in remark CR1258141
+access-list VTBAUSTRIA-in extended permit object-group G-TACACS-SERVICES object-group G_B2B_ESH_NETWORK_DEVICES object-group G-GLOBAL-TACACS-SERVERS 
+access-list VTBAUSTRIA-in remark CR1258141
+access-list VTBAUSTRIA-in extended permit object-group G-SYSLOG-SERVICES object-group G_B2B_ESH_NETWORK_DEVICES object-group G-GLOBAL-SYSLOG-SERVERS 
+access-list VTBAUSTRIA-in remark CR1258141
+access-list VTBAUSTRIA-in extended permit object-group G-NTP-SERVICES object-group G_B2B_ESH_NETWORK_DEVICES object-group G-LON-NTP-SERVERS 
+access-list VTBAUSTRIA-in remark CR1264241
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_CUCM_ACCESS_SERVICES object-group G_VIENNA_USER_SUBNET object-group G_VIENNA_UNITY_SERVERS 
+access-list VTBAUSTRIA-in remark CR1264241
+access-list VTBAUSTRIA-in extended permit object-group G_UNITY_WORKSTATION_SERVICES object-group G_VIENNA_USER_SUBNET object-group G_VIENNA_UNITY_SERVERS 
+access-list VTBAUSTRIA-in remark CR1264241
+access-list VTBAUSTRIA-in extended permit object-group G_UNITY_CONNECTION_SERVICES object-group G_VIENNA_VOICE_SUBNET object-group G_VIENNA_UNITY_SERVERS 
+access-list VTBAUSTRIA-in remark CR1264241
+access-list VTBAUSTRIA-in extended permit object-group G_UNITY_INBOUND_AUDIO_STREAMS_SERVICES object-group G_VIENNA_VOICE_SUBNET object-group G_VIENNA_UNITY_SERVERS 
+access-list VTBAUSTRIA-in extended permit object-group G_VOICE_CORP_DIRECTORY_SERVICES object-group G_VIENNA_VOICE_SUBNET object-group G_VOICE_CORP_DIRECTORY_SERVERS 
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_IN_VOIP_GW_SERVICES object-group G_VIENNA_VOICE_SUBNET object-group G_VIENNA_VOICE_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1272320
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBSE_SUNGARD_ADAPTIVE_CLIENTS object-group G_SUNGARD_ADAPTIVE 
+access-list VTBAUSTRIA-in extended permit object-group G_RADIUS_SERVICES object-group G_RADIUS_CLIENTS object-group G_RADIUS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1285606
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_ESH_vCENTER_SERVERS object-group G_VTBC_INFRA_SERVERS 
+access-list VTBAUSTRIA-in remark CR1287546
+access-list VTBAUSTRIA-in extended permit object-group G_HRMS_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTB_ORACLE_HRMS_SERVER 
+access-list VTBAUSTRIA-in remark CR1287563
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ITPORTAL_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTB_ITPORTAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1310112
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_ACCELERATE_SERVERS_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_VTBC_ACCELERATE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1308980
+access-list VTBAUSTRIA-in extended permit object-group G_VTB_ITPORTAL_SERVICES object-group G_VTB_SE_USER_ACCESS object-group G_VTB_ITPORTAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1314347
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_ESH_SCSM_CLIENTS object-group G_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1332960, CR1369532
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_CITRIX_XENAPP_SERVICES object-group G_VTBSE_VDI_CLIENTS object-group G_VTBC_VDI_SERVERS 
+access-list VTBAUSTRIA-in remark CR1340991
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_VOICE_SERVICES_TEST object-group G_VIENNA_WANARO_DEVICES_TEST object-group G_VIENNA_IP_PHONE_TEST 
+access-list VTBAUSTRIA-in remark CR1350156 CR1352688
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBSE_ACTIVEBATCH_CLIENTS object-group G_BLOOMBERG_MiFID_II_REPORTING_SOURCES 
+access-list VTBAUSTRIA-in remark CR1373793
+access-list VTBAUSTRIA-in extended permit object-group G_ACTIVEBATCH_SERVICES object-group G_VTBSE_ACTIVEBATCH_SCHED_CLIENTS object-group G_VTBC_ACTIVEBATCH_SERVERS 
+access-list VTBAUSTRIA-in remark CR1380359
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_ESH_SPACEWALK_SERVERS object-group G_VTBC_INFRA_SERVERS 
+access-list VTBAUSTRIA-in remark CR1394926
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBSE_RDP_USERS object-group G_MOSCOW_NETS_FOR_VTBSE_RDP_ACCESS 
+access-list VTBAUSTRIA-in remark CR1408068
+access-list VTBAUSTRIA-in extended permit object-group G_DC_SERVICES object-group G_VTBSE_DC_SERVERS object-group G_VTBC_ACTIVEBATCH_SERVERS 
+access-list VTBAUSTRIA-in remark CR1423163
+access-list VTBAUSTRIA-in extended permit object-group G_SNMPTRAP_SERVICES object-group G_ESH_SWIFT_ALLIANCE_ACCESS object-group G_VTBC_NETWORK_MONITORING_SERVERS 
+access-list VTBAUSTRIA-in remark CR1433271
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_VTB_RDP_SERVICES object-group G_VTBSE_CITRIX_ADMIN_SILO_SERVERS object-group G_VTBC_DBASUPPORT_TERMINAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1438422
+access-list VTBAUSTRIA-in extended permit object-group G_VTVSE_SCSM_AND_SP_SERVICES object-group G_ESH_SCSM_CLIENTS object-group G_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1439360
+access-list VTBAUSTRIA-in extended permit object-group G_SYSLOG_SERVICES object-group G_FRANKFURT_SAN_STORAGES object-group G_SAN_SYSLOG_SERVERS 
+access-list VTBAUSTRIA-in remark CR1452433
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_SERVICES object-group G_ESH_RDP_USERS object-group G_CALYPSO_TESTHARNESS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1454464
+access-list VTBAUSTRIA-in extended permit object-group G_VTBSE_ILO_SERVICES_OUT object-group G_VTBSE_ILO object-group G_ONEVIEW_SERVERS 
+access-list VTBAUSTRIA-in remark CR1460438
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_VTBSE_SIP_TRUNK_SERVICES object-group G_VTBSE_SIP_SERVERS object-group G_VTBC_LONDON_CUCM_SERVERS 
+access-list VTBAUSTRIA-in remark CR1463070
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_VTBSE_CITRIX_ENVIRONMENT object-group G_TESTHARNESS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1464183
+access-list VTBAUSTRIA-in extended permit object-group G_CCS_AGENT_IN_SERVICES object-group G_VTBSE_CCS_AGENTS object-group G-CCS-SERVERS 
+access-list VTBAUSTRIA-in remark CR1462119
+access-list VTBAUSTRIA-in extended permit object-group G_DC_SERVICES object-group G_VTBSE_CITRIX_ENVIRONMENT object-group G_CALYPSO_TESTHARNESS_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1471727
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_ESH_RACKTABLES_CLIENTS object-group G_VTBC_VTBQR_LIBRARY_SERVERS 
+access-list VTBAUSTRIA-in remark CR1476292
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_VTBSE_VDI_CLIENTS object-group G_VTBC_FILE_SHARE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1478305
+access-list VTBAUSTRIA-in extended permit object-group G_SCSM_FILE_SHARE_SERVICES object-group G_VTBSE_CITRIX_ENVIRONMENT object-group G_SCSM_ATTACHMENTS_FS 
+access-list VTBAUSTRIA-in remark CR1478305
+access-list VTBAUSTRIA-in extended permit object-group G_SCSM_FILE_SHARE_SERVICES object-group G_VTB_SE_USER_ACCESS object-group G_SCSM_ATTACHMENTS_FS 
+access-list VTBAUSTRIA-in remark CR1487184
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_SHAREPOINT_PORTAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1489377
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_VTBSE_COGNOST_CLIENTS object-group G_VTBCAPITAL_SHARE 
+access-list VTBAUSTRIA-in remark CR1500409
+access-list VTBAUSTRIA-in extended permit object-group G_COMMVAULT_METRIX_REPORTING_SERVICES object-group G_VTBSE_BACKUP_INVENTORY_SERVER object-group G_COMMVAULT_METRIX_REPORTING_SERVER 
+access-list VTBAUSTRIA-in remark CR1500409
+access-list VTBAUSTRIA-in extended permit object-group G-DMZ-LDAPS-SERVICES object-group G_VTBSE_BACKUP_INVENTORY_SERVER object-group G_LDAP_SERVERS_FOR_COMMVAULT 
+access-list VTBAUSTRIA-in remark CR1500409
+access-list VTBAUSTRIA-in extended permit object-group G_SEPM_SERVICES object-group G_VTBSE_BACKUP_INVENTORY_SERVER object-group G_COMMVAULT_FILE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1513262
+access-list VTBAUSTRIA-in extended permit object-group G_SCSM_FILE_SHARE_SERVICES object-group G_ESH_INTRANET_PORTAL_CLIENTS object-group G_COMMVAULT_FILE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1517220
+access-list VTBAUSTRIA-in extended permit object-group G_RUBIK_DB_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTB_CAPITAL_RUBIK_DB_SERVERS 
+access-list VTBAUSTRIA-in remark CR1517508
+access-list VTBAUSTRIA-in extended permit object-group G_RUBIK_APPLICATION_SERVICES object-group G_ESH_VTB_EU_CLIENTS object-group G_VTB_CAPITAL_RUBIK_APPLICATION_SERVERS 
+access-list VTBAUSTRIA-in remark CR1521416
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_VTBCAPITAL_SHARE 
+access-list VTBAUSTRIA-in remark CR1521510
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_CALYPSO_IWS_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_VTBC_CALYPSO_IWS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1526925
+access-list VTBAUSTRIA-in extended permit object-group G_SNMPTRAP_SERVICES object-group G_ESH_SWIFT_ALLIANCE_ACCESS_NEW_SERVERS object-group G_VTBC_NETWORK_MONITORING_SERVERS 
+access-list VTBAUSTRIA-in remark CR1541209
+access-list VTBAUSTRIA-in extended permit object-group G_CALYPSO_IWS_SERVICES object-group G_ESH_VTBAUSTRIA_USER_ACCESS object-group G_CALYPSO_IWS_UAT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1546062
+access-list VTBAUSTRIA-in extended permit object-group G_ADAPTIVE_UAT_SERVICES object-group G_VTBE_ADAPTIVE_UAT_CLIENTS object-group G_ADAPTIVE_UAT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1547701
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_SERVICES object-group G_FRANKFURT_CUCM_SERVERS object-group G_FRANKFURT_CUCM_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1547800
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_IN_VOIP_SERVICES object-group G_FRANKFURT_CUCM_SERVERS object-group G_FRANKFURT_CUCM_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1547852
+access-list VTBAUSTRIA-in extended permit object-group G_UNITY_OUTBOUND_AUDIO_STREAMS_SERVICES object-group G_FRANKFURT_VG_SERVERS object-group G_FRANKFURT_CUCM_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1547974
+access-list VTBAUSTRIA-in extended permit object-group G_FRA_VOICE_SERVICES object-group G_FRANKFURT_UNITY_SERVERS object-group G_FRANKFURT_CUCM_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1548323
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_FRA_COMMON_NETWORK object-group G_DELL_ONE_PORTAL 
+access-list VTBAUSTRIA-in remark CR1573428
+access-list VTBAUSTRIA-in extended permit object-group G_ACTIVEBATCH_SERVICES object-group G_VTBE_ACTIVEBATCH_AGENTS object-group G_VTBC_ACTIVEBATCH_SERVERS 
+access-list VTBAUSTRIA-in remark CR1573292
+access-list VTBAUSTRIA-in extended permit object-group G_SWIFT_RSA_SERVICES object-group G_RSA_FRANKFURT_SERVERS object-group G_RSA_FRANKFURT_SWIFT_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1575515
+access-list VTBAUSTRIA-in extended permit object-group G_SCSM_FILE_SHARE_SERVICES object-group G_VTBSE_SUBNETS object-group G_UK_FS_CLUSTER_SERVERS 
+access-list VTBAUSTRIA-in remark CR1578218
+access-list VTBAUSTRIA-in extended permit object-group G-GRE-SERVICES object-group G_LON_GRE_ENDPOINT object-group G_FRA_GRE_ENDPOINT 
+access-list VTBAUSTRIA-in remark CR1579115
+access-list VTBAUSTRIA-in extended permit object-group G-SMTP-SERVICES object-group G_VTBSE_EXCHANGE_SERVERS object-group G_VTBC_MSK_EXCHANGE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1580087
+access-list VTBAUSTRIA-in extended permit object-group G_IWS_FILESHARE_SERVICES object-group G_VTBSE_SUBNETS object-group G_TESTHARNESS_SERVERS 
+access-list VTBAUSTRIA-in remark CR1582383
+access-list VTBAUSTRIA-in extended permit object-group G_MOSCOW_QUIK_QORT_SERVICES object-group G_VTBSE_SUBNETS object-group G_MOSCOW_QUIK_QORT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1582894
+access-list VTBAUSTRIA-in extended permit object-group G-SCOM-IN-SERVICES object-group G_ESH_SWIFT_ALLIANCE_ACCESS_NEW_SERVERS object-group G_VTBC_MONITORING_SERVERS_TO_ESH_MONITORING_GATEWAYS 
+access-list VTBAUSTRIA-in extended permit object-group G_VIENNA_IN_VOIP_SERVICES object-group G_FRANKFURT_CUCM_SERVERS object-group G_VTBC_VOICE_SERVERS inactive 
+access-list VTBAUSTRIA-in remark CR1647967
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_INFRA_SERVICES_CHARLOT object-group G_PROJECT_CHARLOT_PCS object-group G_VTBC_INFRA_SCSM_SERVERS_CHARLOT 
+access-list VTBAUSTRIA-in remark CR1647967
+access-list VTBAUSTRIA-in extended permit object-group G_ESH_LDAP_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_ESH_REMOTE_DESKTOP_LICENSE_SERVER_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1647967
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_BLOOMBERG_MiFID_II_REPORTING_SOURCES 
+access-list VTBAUSTRIA-in remark CR1652109
+access-list VTBAUSTRIA-in extended permit object-group G_IWS_FILESHARE_SERVICES object-group G_VTB_SE_SUBNETS object-group G_FILE_ICPF_SERVERS 
+access-list VTBAUSTRIA-in remark CR1647967, CR1651718
+access-list VTBAUSTRIA-in extended permit object-group G_IWS_CALYPSO_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_DC_SERVERS 
+access-list VTBAUSTRIA-in remark CR1651718
+access-list VTBAUSTRIA-in extended permit object-group G_VTBC_CALYPSO_IWS_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_IWSCPSLIVE_CALYPSO_SERVERS 
+access-list VTBAUSTRIA-in remark CR1651718
+access-list VTBAUSTRIA-in extended permit object-group G_IWSCPSSUPPORT_CALYPSO_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_CALYPSO_IWS_UAT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1653580
+access-list VTBAUSTRIA-in extended permit object-group G_FRA_SIP_SERVICES object-group G_FRANKFURT_CUCM_SERVERS object-group G_VTBC_VOICE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1653580
+access-list VTBAUSTRIA-in extended permit object-group G_FTP_SFTP_SERVICES object-group G_FRANKFURT_ALL_CUCM_SERVERS object-group G_FRANKFURT_CUCM_CLIENTS 
+access-list VTBAUSTRIA-in remark CR1653580
+access-list VTBAUSTRIA-in extended permit object-group G_RTP_STREAM_SERVICES object-group G_FRANKFURT_OFFICE_IPT_RANGE object-group G_VTBC_OFFICES_IPT_NETWORKS 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_DC_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_DC_SERVERS_2 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_CALYPSO_SERVERS 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_CALYPSO_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_CALYPSO_IWS_UAT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_RUBIK_DB_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_VTB_CAPITAL_RUBIK_DB_SERVERS 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_RUBIK_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_RUBIK_SERVERS 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_RUBIK_SERVICES_2 object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_RUBIK_SERVERS_2 
+access-list VTBAUSTRIA-in remark CR1661761
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_RUBIK_SERVICES_3 object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_RUBIK_SERVERS_3 
+access-list VTBAUSTRIA-in remark CR1663789
+access-list VTBAUSTRIA-in extended permit object-group G_FILE_SHARE_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_FILE_SERVERS 
+access-list VTBAUSTRIA-in remark CR1663789
+access-list VTBAUSTRIA-in extended permit object-group G_NEW_ESH_CITRIX_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_NEW_ESH_CITRIX_SERVERS 
+access-list VTBAUSTRIA-in remark CR1663789
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_DC_SERVICES_2 object-group G_PROJECT_CHARLOT_PCS object-group G_PROJECT_CHARLOT_DC_SERVERS_3 
+access-list VTBAUSTRIA-in remark CR1665756
+access-list VTBAUSTRIA-in extended permit object-group G_PROJECT_CHARLOT_FILE_SHARE_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_FILE_SHARES_FOR_PROJECT_CHARLOT 
+access-list VTBAUSTRIA-in remark CR1669908
+access-list VTBAUSTRIA-in extended permit object-group G_HTTPS_SERVICES object-group G_VTBE_STOREFRONT_SERVERS object-group G_VTBC_CITRIX_FARM_DELIVERY_CONTROLLERS 
+access-list VTBAUSTRIA-in remark CR1670191
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_ITPORTAL_SERVERS 
+access-list VTBAUSTRIA-in remark CR1670064
+access-list VTBAUSTRIA-in extended permit object-group G_SSH_SERVICES object-group G_FRANKFURT_VOICE_SERVERS object-group G_VOICE_ENGINEERS_WORKSTATIONS 
+access-list VTBAUSTRIA-in remark CR1673248
+access-list VTBAUSTRIA-in extended permit object-group G_HTTP_HTTPS_SERVICES object-group G_PROJECT_CHARLOT_PCS object-group G_SIEBEL_CRM_SERVERS 
+access-list VTBAUSTRIA-in remark CR1681175
+access-list VTBAUSTRIA-in extended permit object-group G_MOSCOW_QUIK_QORT_SERVICES object-group G_FRA_QUIK_QORT_TERMINALS_SUBNETS object-group G_MOSCOW_QUIK_QORT_SERVERS 
+access-list VTBAUSTRIA-in remark CR1686433
+access-list VTBAUSTRIA-in extended permit object-group G_NEW_ESH_CITRIX_SERVICES object-group G_VTB_SE_VDI_CLIENTS object-group G_VTBC_FRA_VDI_SERVERS 
+access-list VTBAUSTRIA-in remark CR1695081, CR1702389
+access-list VTBAUSTRIA-in extended permit object-group G_ACTIVEBATCH_SERVICES_1 object-group G_ACTIVEBATCH_VTB_ESH_DEVELOPERS object-group G_ACTIVEBATCH_SERVER 
+access-list VTBAUSTRIA-in remark CR1700600
+access-list VTBAUSTRIA-in extended permit object-group G_CHARLOT_QUICK_SERVICE object-group G_PROJECT_CHARLOT_PCS object-group G_MSK_QUICK_SERVERS 
+access-list VTBAUSTRIA-in remark CR1700600
+access-list VTBAUSTRIA-in extended permit object-group G_CHARLOT_QUICK_UAT_SERVICE object-group G_PROJECT_CHARLOT_PCS object-group G_MSK_QUICK_UAT_SERVER 
+access-list VTBAUSTRIA-in remark CR1701523
+access-list VTBAUSTRIA-in extended permit object-group G_SP_AD_SERVICES object-group G_VTBSE_SH_SERVERS object-group G_PROJECT_CHARLOT_DC_SERVERS_4 
+access-list VTBAUSTRIA-in remark CR1701533
+access-list VTBAUSTRIA-in extended permit object-group G_FRANKFURT_VIDEO_KEYPOINT_SERVICES object-group G_FRANKFURT_VIDEO_KEYPOINT_DEVICES object-group G_FRANKFURT_VIDEO_KEYPOINT_CLIENTS 
