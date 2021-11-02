@@ -1,0 +1,110 @@
+
+    !################################################################
+    !########################## -- {{S1}} -- ########################
+    !################################################################
+
+
+      !###################### First switch ##########################
+        interface port-channel{{PC1}}
+          description -i- _{{asw1}}_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address {{S1_asw1_IP}}/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area {{ospf_area}}
+
+        interface Ethernet1/{{E1}}
+          description -i- _{{asw1}}_NOSMS_NOMON_
+          mtu 9000
+          channel-group {{PC1}} mode active
+          no shutdown
+      
+      !###################### Second switch ##########################
+        interface port-channel{{PC2}}
+          description -i- _{{asw2}}_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address {{S1_asw2_IP}}/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area {{ospf_area}}
+        !  
+        interface Ethernet1/{{E2}}
+          description -i- _{{asw2}}_NOSMS_NOMON_
+          mtu 9000
+          channel-group {{PC2}} mode active
+          no shutdown
+      !
+      !###################### BGP  ##########################     
+        router bgp 65000.6200{{SpineAS}}
+          neighbor {{asw1_S1_IP}}
+            inherit peer ACCESS
+            remote-as 65000.{{asw1_BGP_AS}}
+            description {{asw1}}
+            shutdown
+          neighbor {{asw2_S1_IP}}
+            inherit peer ACCESS
+            remote-as 65000.{{asw2_BGP_AS}}
+            description {{asw2}}
+            shutdown
+    
+    
+    
+    
+    !################################################################
+    !########################## -- {{S2}} -- ########################
+    !################################################################
+
+      !###################### First switch ##########################
+        interface port-channel{{PC1}}
+          description -i- _{{asw1}}_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address {{S2_asw1_IP}}/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area {{ospf_area}}
+
+        interface Ethernet1/{{E1}}
+          description -i- _{{asw1}}_NOSMS_NOMON_
+          mtu 9000
+          channel-group {{PC1}} mode active
+          no shutdown
+      
+      !###################### Second switch ##########################
+        interface port-channel{{PC2}}
+          description -i- _{{asw2}}_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address {{S2_asw2_IP}}/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area {{ospf_area}}
+        !  
+        interface Ethernet1/{{E2}}
+          description -i- _{{asw2}}_NOSMS_NOMON_
+          mtu 9000
+          channel-group {{PC2}} mode active
+          no shutdown
+      !
+      !###################### BGP  ##########################     
+        router bgp 65000.6200{{SpineAS}}
+          neighbor {{asw1_S2_IP}}
+            inherit peer ACCESS
+            remote-as 65000.{{asw1_BGP_AS}}
+            description {{asw1}}
+            shutdown
+          neighbor {{asw2_S2_IP}}
+            inherit peer ACCESS
+            remote-as 65000.{{asw2_BGP_AS}}
+            description {{asw2}}
+            shutdown
