@@ -1,0 +1,110 @@
+
+    !################################################################
+    !########################## -- nspck1 -- ########################
+    !################################################################
+
+
+      !###################### First switch ##########################
+        interface port-channel129
+          description -i- _nextck92_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address 172.28.249.100/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area 0.0.3.1
+
+        interface Ethernet1/29
+          description -i- _nextck92_NOSMS_NOMON_
+          mtu 9000
+          channel-group 129 mode active
+          no shutdown
+      
+      !###################### Second switch ##########################
+        interface port-channel130
+          description -i- _nextck93_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address 172.28.249.104/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area 0.0.3.1
+        !  
+        interface Ethernet1/30
+          description -i- _nextck93_NOSMS_NOMON_
+          mtu 9000
+          channel-group 130 mode active
+          no shutdown
+      !
+      !###################### BGP  ##########################     
+        router bgp 65000.62001
+          neighbor 172.28.249.101
+            inherit peer ACCESS
+            remote-as 65000.61092
+            description nextck92
+            shutdown
+          neighbor 172.28.249.105
+            inherit peer ACCESS
+            remote-as 65000.61093
+            description nextck93
+            shutdown
+    
+    
+    
+    
+    !################################################################
+    !########################## -- nspck2 -- ########################
+    !################################################################
+
+      !###################### First switch ##########################
+        interface port-channel129
+          description -i- _nextck92_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address 172.28.249.102/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area 0.0.3.1
+
+        interface Ethernet1/29
+          description -i- _nextck92_NOSMS_NOMON_
+          mtu 9000
+          channel-group 129 mode active
+          no shutdown
+      
+      !###################### Second switch ##########################
+        interface port-channel130
+          description -i- _nextck93_NOSMS_NOMON_
+          mtu 9000
+          no ip redirects
+          ip address 172.28.249.106/31
+          logging event port link-status
+          ip ospf cost 100
+          ip ospf network point-to-point
+          no ip ospf passive-interface
+          ip router ospf 1 area 0.0.3.1
+        !  
+        interface Ethernet1/30
+          description -i- _nextck93_NOSMS_NOMON_
+          mtu 9000
+          channel-group 130 mode active
+          no shutdown
+      !
+      !###################### BGP  ##########################     
+        router bgp 65000.62001
+          neighbor 172.28.249.103
+            inherit peer ACCESS
+            remote-as 65000.61092
+            description nextck92
+            shutdown
+          neighbor 172.28.249.107
+            inherit peer ACCESS
+            remote-as 65000.61093
+            description nextck93
+            shutdown
