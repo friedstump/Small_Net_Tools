@@ -1,4 +1,4 @@
-#As you see it's not so universal screept, so here it's example how it works
+#As you see it's not so universal script, so here it's example how it works
 
 Please Enter username: ansible_test
 Password:
