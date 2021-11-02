@@ -6,8 +6,7 @@ from datetime import datetime
 import pyodbc
 import ipaddress
 
-#You will understoot nothin from this whole code, because you have no idea about DB strcuture and task which I try to solve )))
-#I'm trying here to analyse data from SQL, group it and put result to excel file
+
 
 
 # START
